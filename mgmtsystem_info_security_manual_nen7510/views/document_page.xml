@@ -77,6 +77,17 @@
       </field>
   </record>
 
+  <record model="ir.ui.view" id="view_category_tree">
+      <field name="name">view_category_tree</field>
+      <field name="model">document.page</field>
+      <field name="inherit_id" ref="document_page.view_category_tree"/>
+      <field name="arch" type="xml">
+          <xpath expr="//field[@name='name']" position="after">
+            <field name="nen_chapter" optional="show"/>
+          </xpath>
+      </field>
+  </record>
+
   <record model="ir.ui.view" id="view_wiki_filter">
       <field name="name">document.page.search</field>
       <field name="model">document.page</field>
