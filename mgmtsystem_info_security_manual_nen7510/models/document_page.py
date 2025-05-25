@@ -1,6 +1,7 @@
 #    Copyright (C) 2025 Open2bizz BV www.open2bizz.nl
 
 from odoo import fields, models
+from markupsafe import Markup
 
 class DocumentPage(models.Model):
     """
@@ -19,6 +20,7 @@ class DocumentPage(models.Model):
     external_reference = fields.Html("External Reference(s)")
     internal_reference = fields.Html("Internal Reference(s)")
 
+    mgmtsystem_action_ids = fields.Many2many("mgmtsystem.action", string="Management System Action")
 
     def action_open_childs(self):
         for record in self:
@@ -30,3 +32,29 @@ class DocumentPage(models.Model):
                 "view_mode": "tree,form",
                 "target": "current",
             }
+
+    def action_create_mgmt_action(self):
+        self.ensure_one()
+        add_value = "<p><br/></p><hr/><p>Document Page value:</p><br/>"
+        if self.content:
+            new_value = Markup(add_value) + Markup(self.content)
+        else:
+            new_value = add_value
+        vals = {
+            'name': self.name,
+            'type_action': 'improvement',
+            'description': Markup(new_value),
+            'user_id': self.env.user.id,
+            'linked_procedure_ids': [(4,self.id)]
+        }
+        action = self.env['mgmtsystem.action'].create(vals)
+        return {
+            'name': _('Management System Action'),
+            'type': 'ir.actions.act_window',
+            'res_model': 'mgmtsystem.action',
+            'res_id': action.id,
+            'view_mode': 'form',
+            'view_type': 'form',
+            'target': 'current',
+        }
+

@@ -30,7 +30,16 @@
                       <label for="external_reference"/>
                       <field name="external_reference" nolabel="1" colspan="2"/>
                   </group>
+                  <group>
+                      <label for="mgmtsystem_action_ids"/>
+                      <field name="mgmtsystem_action_ids" nolabel="1" colspan="2"/>
+                  </group>
               </page>
+          </xpath>
+          <xpath expr="//sheet" position="before">
+              <header>
+                  <button name="action_create_mgmt_action" class="oe_highlight" data-hotkey="x" string="Create Action" type="object"/>
+              </header>
           </xpath>
       </field>
   </record>
