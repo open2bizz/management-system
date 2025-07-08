@@ -150,6 +150,7 @@
                     <field name="parent_id" icon="fa-folder" string="Categories" enable_counters="1"/>
                     <field name="nen_chapter" icon="fa-shield" string="Chapter" enable_counters="1"/>
                     <field name="state_compliant" icon="fa-hourglass-3" string="Compliant" enable_counters="1"/>
+                    <field name="nen_judgement_assessor_status" icon="fa-battery-2" string="Ass Status" enable_counters="1"/>
                 </searchpanel>
             </xpath>
             <xpath expr="//field[@name='company_id']" position="after">
@@ -160,7 +161,7 @@
                 <separator/>
                 <filter string="Open" name="open" domain="[('nen_judgement_assessor_status', '=', 'open')]"/>
                 <filter string="In progress" name="progress" domain="[('nen_judgement_assessor_status', '=', 'progress')]"/>
-                <filter string="Completed" name="progress" domain="[('nen_judgement_assessor_status', '=', 'open')]"/>
+                <filter string="Completed" name="completed" domain="[('nen_judgement_assessor_status', '=', 'completed')]"/>
             </xpath>
         </field>
     </record>

@@ -2,6 +2,8 @@
 
 from odoo import fields, models, api, _
 from markupsafe import Markup
+from odoo.tools import html_escape
+
 
 class DocumentPage(models.Model):
     """
@@ -12,10 +14,10 @@ class DocumentPage(models.Model):
 
     nen_chapter = fields.Many2one("document.page.chapter", "NEN Chapter")
     nen_control = fields.Char("NEN Control")
-    nen_mandatory = fields.Boolean("Mandatory")
+    nen_mandatory = fields.Boolean("Mandatory", track_visibility=True)
     state_compliant = fields.Selection(
         [('compliant', 'Compliant'), ('implemented', 'Implemented'), ('non_compliant', 'None Compliant')],
-        string="State Compliant", default='non_compliant'
+        string="State Compliant", default='non_compliant', track_visibility=True
     )
     external_reference = fields.Html("External Reference(s)")
     internal_reference = fields.Html("Internal Reference(s)")
@@ -26,13 +28,13 @@ class DocumentPage(models.Model):
     nen_sources = fields.Html("Sources", help="List of sources; person, document, log, other")
     nen_observations = fields.Html("Observations", help="Observation, evidence. (intent, existence and operation)")
     nen_judgement_assessor = fields.Float(
-        string="Judgement Assessor (%)",
+        string="Judgement Assessor (%)", track_visibility=True,
         help="Judgement Assessor / auditor in percentage completed. (0% = open, 100% = completed)"
     )
     nen_judgement_assessor_status = fields.Selection(
         [('open', 'Open'), ('progress', 'In progress'), ('completed', 'Completed')],
         compute="_compute_nen_judgement_assessor_status", default='open',
-        string="Judgement Assessor Status", store=True
+        string="Judgement Assessor Status", store=True, track_visibility=True
     )
     nen_judgement_assessor_notes = fields.Html("Notes Judgement Assessor", help="Notes from Judgement Assessor / auditor")
 
@@ -62,6 +64,12 @@ class DocumentPage(models.Model):
             'linked_procedure_ids': [(4,self.id)]
         }
         action = self.env['mgmtsystem.action'].create(vals)
+        self.message_post(
+            body=_(
+                "A management action has been created. You can view it <a href='/web#id=%s&model=mgmtsystem.action' target='_blank'>here</a>.")
+                 % html_escape(action.id),
+            subtype_id=self.env.ref('mail.mt_note').id,
+        )
         return {
             'name': _('Management System Action'),
             'type': 'ir.actions.act_window',
