@@ -25,7 +25,7 @@ class DocumentPage(models.Model):
     # Feature O2B 26778
     nen_sources = fields.Html("Sources", help="List of sources; person, document, log, other")
     nen_observations = fields.Html("Observations", help="Observation, evidence. (intent, existence and operation)")
-    nen_judgement_assessor = fields.float(
+    nen_judgement_assessor = fields.Float(
         string="Judgement Assessor (%)",
         help="Judgement Assessor / auditor in percentage completed. (0% = open, 100% = completed)"
     )
