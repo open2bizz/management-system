@@ -1,6 +1,6 @@
 #    Copyright (C) 2025 Open2bizz BV www.open2bizz.nl
 
-from odoo import fields, models, _
+from odoo import fields, models, api, _
 from markupsafe import Markup
 
 class DocumentPage(models.Model):
