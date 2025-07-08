@@ -15,7 +15,7 @@ class DocumentPage(models.Model):
     nen_mandatory = fields.Boolean("Mandatory")
     state_compliant = fields.Selection(
         [('compliant', 'Compliant'), ('implemented', 'Implemented'), ('non_compliant', 'None Compliant')],
-        string="State Compliant"
+        string="State Compliant", default='non_compliant'
     )
     external_reference = fields.Html("External Reference(s)")
     internal_reference = fields.Html("Internal Reference(s)")
@@ -32,7 +32,7 @@ class DocumentPage(models.Model):
     nen_judgement_assessor_status = fields.Selection(
         [('open', 'Open'), ('progress', 'In progress'), ('completed', 'Completed')],
         compute="_compute_nen_judgement_assessor_status", default='open',
-        string="Judgement Assessor Status"
+        string="Judgement Assessor Status", store=True
     )
     nen_judgement_assessor_notes = fields.Html("Notes Judgement Assessor", help="Notes from Judgement Assessor / auditor")
 
@@ -72,6 +72,7 @@ class DocumentPage(models.Model):
             'target': 'current',
         }
 
+    @api.depends('nen_judgement_assessor', 'state_compliant')
     def _compute_nen_judgement_assessor_status(self):
         for record in self:
             nen_judgement_assessor_status = 'open'

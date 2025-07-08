@@ -37,10 +37,6 @@
                         </group>
                     </group>
                     <group>
-                        <label for="nen_sources"/>
-                        <field name="nen_sources" nolabel="1" colspan="2"/>
-                        <label for="nen_observations"/>
-                        <field name="nen_observations" nolabel="1" colspan="2"/>
                         <label for="internal_reference"/>
                         <field name="internal_reference" nolabel="1" colspan="2"/>
                         <label for="external_reference"/>
@@ -123,8 +119,13 @@
         <field name="model">document.page</field>
         <field name="inherit_id" ref="document_page.view_category_tree"/>
         <field name="arch" type="xml">
+            <xpath expr="//tree" position="attributes">
+                <attribute name="multi_edit">1</attribute>
+            </xpath>
             <xpath expr="//field[@name='name']" position="after">
                 <field name="nen_chapter" optional="show"/>
+                <field name="state_compliant" optional="show"/>
+                <field name="nen_judgement_assessor" optional="hide" widget="percentage"/>
             </xpath>
         </field>
     </record>
@@ -148,7 +149,18 @@
                 <searchpanel>
                     <field name="parent_id" icon="fa-folder" string="Categories" enable_counters="1"/>
                     <field name="nen_chapter" icon="fa-shield" string="Chapter" enable_counters="1"/>
+                    <field name="state_compliant" icon="fa-hourglass-3" string="Compliant" enable_counters="1"/>
                 </searchpanel>
+            </xpath>
+            <xpath expr="//field[@name='company_id']" position="after">
+                <separator/>
+                <filter string="Compliant" name="compliant" domain="[('state_compliant', '=', 'compliant')]"/>
+                <filter string="Non compliant" name="non_compliant" domain="['|',('state_compliant', '=', 'non_compliant'), ('state_compliant', '=', False)]"/>
+                <filter string="Implemented" name="implemented" domain="[('state_compliant', '=', 'implemented')]"/>
+                <separator/>
+                <filter string="Open" name="open" domain="[('nen_judgement_assessor_status', '=', 'open')]"/>
+                <filter string="In progress" name="progress" domain="[('nen_judgement_assessor_status', '=', 'progress')]"/>
+                <filter string="Completed" name="progress" domain="[('nen_judgement_assessor_status', '=', 'open')]"/>
             </xpath>
         </field>
     </record>
