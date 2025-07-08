@@ -50,7 +50,8 @@
                     </group>
                     <group>
                         <group>
-                            <field name="nen_judgement_assessor" widget="percentage"/>
+                            <label for="nen_judgement_assessor"/>
+                            <field name="nen_judgement_assessor" nolabel="1" widget="percentage" class="oe_inline" />
                         </group>
                         <label for="nen_judgement_assessor_notes"/>
                         <field name="nen_judgement_assessor_notes" nolabel="1" colspan="2"/>
