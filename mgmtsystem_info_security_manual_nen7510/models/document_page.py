@@ -74,10 +74,11 @@ class DocumentPage(models.Model):
 
     def _compute_nen_judgement_assessor_status(self):
         for record in self:
-            if record.nen_judgement_assessor:
-                if record.nen_judgement_assessor == 0.0:
-                    record.nen_judgement_assessor_status = 'open'
-                if record.nen_judgement_assessor >= 1.0:
-                    record.nen_judgement_assessor_status = 'completed'
-                else:
-                    record.nen_judgement_assessor_status = 'progress'
+            nen_judgement_assessor_status = 'open'
+            if record.nen_judgement_assessor == 0.0:
+                nen_judgement_assessor_status = 'open'
+            if record.nen_judgement_assessor >= 1.0:
+                nen_judgement_assessor_status = 'completed'
+            else:
+                nen_judgement_assessor_status = 'progress'
+            record.nen_judgement_assessor_status = nen_judgement_assessor_status
