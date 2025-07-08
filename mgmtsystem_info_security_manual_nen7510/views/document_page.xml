@@ -12,6 +12,12 @@
                 </div>
             </button>
           </xpath>
+          <xpath expr="//div[@name='button_box']" position="before">
+            <widget name="web_ribbon" title="Compliant" bg_color="text-bg-success" invisible="state_compliant != 'compliant'"/>
+            <widget name="web_ribbon" title="Open" bg_color="text-bg-danger" invisible="nen_judgement_assessor_status != 'open' or state_compliant == 'compliant'"/>
+            <widget name="web_ribbon" title="Completed" bg_color="text-bg-success" invisible="nen_judgement_assessor_status != 'completed' or state_compliant == 'compliant'"/>
+            <widget name="web_ribbon" title="In Progress" bg_color="text-bg-warning" invisible="nen_judgement_assessor_status != 'progress' or state_compliant == 'compliant'"/>
+          </xpath>
           <xpath expr="//page[@name='history']" position="before">
               <page name="nen_7510" string="NEN 7510">
                   <group>
@@ -25,13 +31,31 @@
                       </group>
                   </group>
                   <group>
+                      <label for="nen_sources"/>
+                      <field name="nen_sources" nolabel="1" colspan="2"/>
+                      <label for="nen_observations"/>
+                      <field name="nen_observations" nolabel="1" colspan="2"/>
                       <label for="internal_reference"/>
                       <field name="internal_reference" nolabel="1" colspan="2"/>
                       <label for="external_reference"/>
                       <field name="external_reference" nolabel="1" colspan="2"/>
                   </group>
+                  <group string="Assessor">
+                      <label for="nen_sources"/>
+                      <field name="nen_sources" nolabel="1" colspan="2"/>
+                      <label for="nen_observations"/>
+                      <field name="nen_observations" nolabel="1" colspan="2"/>
+                  </group>
                   <group>
-                      <label for="mgmtsystem_action_ids"/>
+                      <group>
+                          <field name="nen_judgement_assessor" widget="percentage"/>
+                      </group>
+                      <label for="nen_judgement_assessor_notes"/>
+                      <field name="nen_judgement_assessor_notes" nolabel="1" colspan="2"/>
+                  </group>
+              </page>
+              <page name="nen_actions" string="Actions">
+                  <group>
                       <field name="mgmtsystem_action_ids" nolabel="1" colspan="2"/>
                   </group>
               </page>

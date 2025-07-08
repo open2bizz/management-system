@@ -14,13 +14,27 @@ class DocumentPage(models.Model):
     nen_control = fields.Char("NEN Control")
     nen_mandatory = fields.Boolean("Mandatory")
     state_compliant = fields.Selection(
-        [('compliant', 'Compliant'), ('non_compliant', 'None Compliant')],
+        [('compliant', 'Compliant'), ('implemented', 'Implemented'), ('non_compliant', 'None Compliant')],
         string="State Compliant"
     )
     external_reference = fields.Html("External Reference(s)")
     internal_reference = fields.Html("Internal Reference(s)")
 
     mgmtsystem_action_ids = fields.Many2many("mgmtsystem.action", string="Management System Action")
+
+    # Feature O2B 26778
+    nen_sources = fields.Html("Sources", help="List of sources; person, document, log, other")
+    nen_observations = fields.Html("Observations", help="Observation, evidence. (intent, existence and operation)")
+    nen_judgement_assessor = fields.float(
+        string="Judgement Assessor (%)",
+        help="Judgement Assessor / auditor in percentage completed. (0% = open, 100% = completed)"
+    )
+    nen_judgement_assessor_status = fields.Selection(
+        [('open', 'Open'), ('progress', 'In progress'), ('completed', 'Completed')],
+        compute="_compute_nen_judgement_assessor_status", default='open',
+        string="Judgement Assessor Status"
+    )
+    nen_judgement_assessor_notes = fields.Html("Notes Judgement Assessor", help="Notes from Judgement Assessor / auditor")
 
     def action_open_childs(self):
         for record in self:
@@ -58,3 +72,12 @@ class DocumentPage(models.Model):
             'target': 'current',
         }
 
+    def _compute_nen_judgement_assessor_status(self):
+        for record in self:
+            if record.nen_judgement_assessor:
+                if record.nen_judgement_assessor == 0.0:
+                    record.nen_judgement_assessor_status = 'open'
+                if record.nen_judgement_assessor >= 1.0:
+                    record.nen_judgement_assessor_status = 'completed'
+                else:
+                    record.nen_judgement_assessor_status = 'progress'
