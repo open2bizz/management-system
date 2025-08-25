@@ -16,7 +16,8 @@ class DocumentPage(models.Model):
     nen_control = fields.Char("NEN Control")
     nen_mandatory = fields.Boolean("Mandatory", track_visibility=True)
     state_compliant = fields.Selection(
-        [('compliant', 'Compliant'), ('implemented', 'Implemented'), ('non_compliant', 'None Compliant')],
+        [('compliant', 'Compliant'), ('implemented', 'Implemented'),
+         ('non_compliant', 'None Compliant'), ('compliant_improvement', 'Compliant with points for improvement')],
         string="State Compliant", default='non_compliant', track_visibility=True
     )
     external_reference = fields.Html("External Reference(s)")
