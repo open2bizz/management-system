@@ -960,7 +960,7 @@ msgstr "Niet compliant"
 #: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__state_compliant__non_compliant
 #, fuzzy
 msgid "None Compliant"
-msgstr "Geen Conform"
+msgstr "Niet compliant"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_judgement_assessor_notes
@@ -1119,7 +1119,7 @@ msgstr "Bronnen"
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__state_compliant
 #, fuzzy
 msgid "State Compliant"
-msgstr "In overeenstemming met de staat"
+msgstr "Status Compliant"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_state
