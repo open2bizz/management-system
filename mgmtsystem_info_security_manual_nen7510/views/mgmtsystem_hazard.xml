@@ -19,8 +19,9 @@
                 <group>
                     <group>
                         <field name="code"/>
-                        <field name="type_id"/>
-                        <field name="risk_type_id"/>
+                        <field name="type_id" required="1"/>
+                        <field name="risk_type_id" required="1"/>
+                        <field name="hazard_class" required="1"/>
                         <field name="company_id" groups="base.group_multi_company"/>
                     </group>
                     <group>

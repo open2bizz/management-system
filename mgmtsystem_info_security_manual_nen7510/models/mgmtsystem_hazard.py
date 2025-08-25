@@ -21,6 +21,9 @@ class MgmtsystemHazard(models.Model):
         "document.page",
         string="Linked Procedures"
     )
+    hazard_class = fields.Selection(
+        [("low", "Low"), ("medium", "Medium"), ("high", "High")], string="Class" , default="low", index=True
+    )
 
     @api.model
     def create(self, vals):
