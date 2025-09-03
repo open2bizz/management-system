@@ -44,11 +44,21 @@ class MgmtsystemAction(models.Model):
         """
         self.ensure_one()
         ending_stage = self.env.ref('mgmtsystem_action_project.mgmtsystem_stage_task')
+        all_tag_ids = []
         tag = self.env['ir.model.data'].sudo()._xmlid_to_res_id(
             'mgmtsystem_action_project.mgmtsystem_action_proj_tag'
         )
         if not tag or not ending_stage:
             raise exceptions.UserError(_("Project tag or stage not known. please update module"))
+        else:
+            all_tag_ids += tag
+        # Also add tags from action to task. (if not created, create the tag)
+        tag_others = self.tag_ids
+        for tag_other in tag_others:
+            tag_task = self.env['project.tags'].search([('name', '=', tag_other.name)], limit=1)
+            if not tag_task:
+                tag_task = self.env['project.tags'].create({'name': tag_other.name})
+            all_tag_ids += tag_task.id
         if self.task_id:
             raise exceptions.UserError(_("Task already exists"))
         elif not self.project_id:
@@ -58,10 +68,21 @@ class MgmtsystemAction(models.Model):
                 'project_id': self.project_id.id,
                 'name': self.name,
                 'description': self.description,
-                'tag_ids': [(4, tag)],
+                'tag_ids': [(4, all_tag_ids)],
                 "mgmtsystem_action_id": self.id,
                 'date_deadline': self.date_deadline or False,
             }
+            # Open2Bizz special feature: Check if OCA module task_type is used, and set to internal task type
+            # We do not want a dependeny for this, so we solved it this way
+            if self.env['ir.module.module'].sudo().search(
+                [('name', '=', 'project_type'), ('state', '=', 'installed')], limit=1):
+                try:
+                    type_id = self.env.ref('project_task_open2bizz.project_type_open2bizz_parent_004')
+                    vals.update(
+                        {'type_id': type_id.id})
+                except:
+                    raise exceptions.UserError(_("Task type internal cannot be found. "
+                                                 "Update the module 'project_task_open2bizz'"))
             user = self.user_id
             if user:
                 vals.update({'user_ids': [(4, self.user_id.id)]})
