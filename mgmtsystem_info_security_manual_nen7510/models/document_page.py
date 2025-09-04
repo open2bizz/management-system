@@ -38,7 +38,7 @@ class DocumentPage(models.Model):
         string="Judgement Assessor Status", store=True, track_visibility=True
     )
     nen_judgement_assessor_notes = fields.Html("Notes Judgement Assessor", help="Notes from Judgement Assessor / auditor")
-    nen_theme_id = fields.Many2one("document.page.themer", "NEN Theme")
+    nen_theme_id = fields.Many2one("document.page.theme", "NEN Theme")
 
     def action_open_childs(self):
         for record in self:
