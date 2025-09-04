@@ -40,6 +40,9 @@ class MgmtsystemHazard(models.Model):
             record.mgmtsystem_action_count = len(record.mgmtsystem_action_ids)
 
     def action_open_actions(self):
+        default_tag = self.env.ref('mgmtsystem_info_security_manual_nen7510.mgmtsystem_action_tag_risk')
+        if not default_tag:
+            raise UserError(_(f"No default tag found! Please reload the module 'mgmtsystem_info_security_manual_nen7510'"))
         for record in self:
             return {
                 "type": "ir.actions.act_window",
@@ -52,6 +55,7 @@ class MgmtsystemHazard(models.Model):
                     'default_origin_hazard_id': record.id,
                     'default_name': record.name,
                     'default_user_id': record.responsible_user_id.id or self.env.user.id,
+                    'default_tag_ids': [(6, 0, [default_tag.id])],
                 }
             }
 
@@ -65,7 +69,9 @@ class MgmtsystemHazardControlMeasure(models.Model):
 
     def action_create_mgmt_action(self):
         self.ensure_one()
-
+        default_tag = self.env.ref('mgmtsystem_info_security_manual_nen7510.mgmtsystem_action_tag_risk')
+        if not default_tag:
+            raise UserError(_(f"No default tag found! Please reload the module 'mgmtsystem_info_security_manual_nen7510'"))
         action_name = _(f"{self.hazard_id.name} - {self.name}")
         add_value = _("<p><br/></p><hr/><p>Control Measure of hazard comments:</p><br/>")
         if self.comments:
@@ -79,6 +85,7 @@ class MgmtsystemHazardControlMeasure(models.Model):
             'type_action': 'improvement',
             'description': Markup(new_value),
             'user_id': self.responsible_user_id.id or self.env.user.id,
+            'tag_ids': [(6, 0, [default_tag.id])],
         }
         action = self.env['mgmtsystem.action'].create(vals)
         self.hazard_id.message_post(
