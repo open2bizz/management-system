@@ -68,8 +68,8 @@ class MgmtsystemHazardControlMeasure(models.Model):
 
         action_name = _(f"{self.hazard_id.name} - {self.name}")
         add_value = _("<p><br/></p><hr/><p>Control Measure of hazard comments:</p><br/>")
-        if self.comment:
-            new_value = Markup(add_value) + Markup(self.comment)
+        if self.comments:
+            new_value = Markup(add_value) + Markup(self.comments)
         else:
             new_value = add_value
         vals = {

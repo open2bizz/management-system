@@ -38,10 +38,10 @@
                        context="{'default_parent_id': %(document_page_procedure.document_page_group_procedure)d}"/>
                 </page>
             </xpath>
-            <xpath expr="//sheet[1]/group[1]" position="before">
-                <div class="button_box">
+            <xpath expr="//sheet" position="inside">
+                <div class="oe_button_box" name="button_box">
                     <button name="action_open_actions" type="object" icon="fa-list-ol">
-                        Actions: <field name="mgmtsystem_action_count"/>
+                        (<field name="mgmtsystem_action_count"/>)&#160;actions
                     </button>
                 </div>
             </xpath>
@@ -84,7 +84,7 @@
         <field name="inherit_id" ref="mgmtsystem_hazard.view_mgmtsystem_hazard_control_measure_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='comments']" position="after">
-                <field name="mgmtsystem_action_ids" options="{'no_create': 1}"/>
+                <field name="mgmtsystem_action_ids" widget="many2many_tags" readonly="1"/>
             </xpath>
             <xpath expr="//group[1]" position="before">
                 <header>
