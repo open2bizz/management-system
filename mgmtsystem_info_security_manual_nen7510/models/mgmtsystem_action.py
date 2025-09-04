@@ -12,3 +12,12 @@ class MgmtsystemAction(models.Model):
         string="Linked Procedures"
     )
 
+    origin_hazard_id = fields.Many2one(
+        "mgmtsystem.hazard",
+        string="Origin Hazard"
+    )
+
+    origin_hazard_control_measure_id = fields.Many2one(
+        "mgmtsystem.hazard.control_measure",
+        string="Origin Hazard Control Measure"
+    )
