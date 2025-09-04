@@ -38,7 +38,7 @@
                        context="{'default_parent_id': %(document_page_procedure.document_page_group_procedure)d}"/>
                 </page>
             </xpath>
-            <xpath expr="//group[@name='main']" position="before">
+            <xpath expr="//sheet[1]/group[1]" position="before">
                 <div class="button_box">
                     <button name="action_open_actions" type="object" icon="fa-list-ol">
                         Actions: <field name="mgmtsystem_action_count"/>
