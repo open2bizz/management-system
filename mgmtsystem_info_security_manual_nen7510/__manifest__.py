@@ -15,6 +15,7 @@
     ],
     "data": [
         "data/document_page_chapter.xml",
+        "data/document_page_theme.xml",
         "data/document_page.xml",
         'data/mgmtsystem_hazard_type.xml',
         "data/mgmtsystem_hazard_hazard.xml",

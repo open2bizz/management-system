@@ -38,6 +38,7 @@
                         <group>
                             <field name="nen_chapter"/>
                             <field name="nen_control"/>
+                            <field name="nen_theme_id"/>
                         </group>
                         <group>
                             <field name="nen_mandatory" widget="boolean_toggle"/>
@@ -135,6 +136,7 @@
                 <field name="nen_chapter" optional="show"/>
                 <field name="state_compliant" optional="show"/>
                 <field name="nen_judgement_assessor" optional="hide" widget="percentage"/>
+                <field name="mgmtsystem_action_ids" widget="many2many_tags" optional="hide"/>
             </xpath>
         </field>
     </record>
