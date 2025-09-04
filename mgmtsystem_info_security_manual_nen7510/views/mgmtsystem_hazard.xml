@@ -86,7 +86,7 @@
             <xpath expr="//field[@name='comments']" position="after">
                 <field name="mgmtsystem_action_ids" options="{'no_create': 1}"/>
             </xpath>
-            <xpath expr="//group[0]" position="before">
+            <xpath expr="//group[1]" position="before">
                 <header>
                     <button name="action_create_mgmt_action" type="object" string="Create action" class="btn-primary"/>
                 </header>
