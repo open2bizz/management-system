@@ -134,6 +134,7 @@
             </xpath>
             <xpath expr="//field[@name='name']" position="after">
                 <field name="nen_chapter" optional="show"/>
+                <field name="nen_theme_id" optional="show"/>
                 <field name="state_compliant" optional="show"/>
                 <field name="nen_judgement_assessor" optional="hide" widget="percentage"/>
                 <field name="mgmtsystem_action_ids" widget="many2many_tags" optional="hide"/>
@@ -159,6 +160,7 @@
             <xpath expr="//group" position="after">
                 <searchpanel>
                     <field name="parent_id" icon="fa-folder" string="Categories" enable_counters="1"/>
+                    <field name="nen_theme_id" icon="fa-certificate" string="Themes" enable_counters="1"/>
                     <field name="nen_chapter" icon="fa-shield" string="Chapter" enable_counters="1"/>
                     <field name="state_compliant" icon="fa-hourglass-3" string="Compliant" enable_counters="1"/>
                     <field name="nen_judgement_assessor_status" icon="fa-battery-2" string="Ass Status" enable_counters="1"/>

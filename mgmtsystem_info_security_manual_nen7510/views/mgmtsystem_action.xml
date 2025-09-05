@@ -15,7 +15,7 @@
                 </xpath>
                 <xpath expr="//field[@name='create_date']" position="after">
                     <field name="origin_hazard_id"/>
-                    <field name="origin_hazard_control_measure_id" invisible="not origin_hazard_id" domain="[('hazard_id', '=', origin_hazard_id]"/>
+                    <field name="origin_hazard_control_measure_id" invisible="not origin_hazard_id" domain="[('hazard_id', '=', origin_hazard_id)]"/>
                 </xpath>
             </field>
         </record>
