@@ -23,6 +23,7 @@
         "data/mgmtsystem_action_tag.xml",
         "security/ir_model_access.xml",
         "views/document_page.xml",
+        "views/document_page_theme.xml",
         "views/document_page_chapter.xml",
         "views/mgmtsystem_risk_canvas.xml",
         "views/mgmtsystem_action.xml",
