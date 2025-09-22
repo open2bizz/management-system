@@ -19,8 +19,8 @@ class DocumentPage(models.Model):
          ('non_compliant', 'None Compliant'), ('compliant_improvement', 'Compliant with points for improvement')],
         string="State Compliant", default='non_compliant', track_visibility=True
     )
-    external_reference = fields.Html("External Reference(s)", track_visibility=True)
-    internal_reference = fields.Html("Internal Reference(s)", track_visibility=True)
+    external_reference = fields.Html("External Reference(s)")
+    internal_reference = fields.Html("Internal Reference(s)")
 
     mgmtsystem_action_ids = fields.Many2many("mgmtsystem.action", string="Management System Action")
 
