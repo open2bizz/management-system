@@ -18,7 +18,7 @@ class DocumentPage(models.Model):
         ('compliant', 'Compliant'),
         ('implemented', 'Implemented'),
         ('non_compliant', 'None Compliant'),
-        ('compliant_improvement', 'Compliant with points for improvement')
+        ('compliant_improvement', 'Compliant with points for improvement'),
         ('not_applicable', 'Not applicable'),
         ],
         string="State Compliant", default='non_compliant', track_visibility=True
