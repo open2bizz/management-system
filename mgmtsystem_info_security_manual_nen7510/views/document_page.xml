@@ -43,6 +43,9 @@
                         <group>
                             <field name="nen_mandatory" widget="boolean_toggle"/>
                             <field name="state_compliant"/>
+                            <field name="not_applicable_reason" invisible="state_compliant != 'not_applicable'"
+                                required="state_compliant == 'not_applicable'"
+                            />
                         </group>
                     </group>
                     <group>
@@ -95,6 +98,9 @@
                     <group>
                         <field name="nen_mandatory" readonly="1"/>
                         <field name="state_compliant"/>
+                        <field name="not_applicable_reason" invisible="state_compliant != 'not_applicable'"
+                            required="state_compliant == 'not_applicable'"
+                        />
                     </group>
                 </group>
                 <group>

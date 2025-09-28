@@ -14,11 +14,17 @@ class DocumentPage(models.Model):
     nen_chapter = fields.Many2one("document.page.chapter", "NEN Chapter")
     nen_control = fields.Char("NEN Control")
     nen_mandatory = fields.Boolean("Mandatory", track_visibility=True)
-    state_compliant = fields.Selection(
-        [('compliant', 'Compliant'), ('implemented', 'Implemented'),
-         ('non_compliant', 'None Compliant'), ('compliant_improvement', 'Compliant with points for improvement')],
+    state_compliant = fields.Selection([
+        ('compliant', 'Compliant'),
+        ('implemented', 'Implemented'),
+        ('non_compliant', 'None Compliant'),
+        ('compliant_improvement', 'Compliant with points for improvement')
+        ('not_applicable', 'Not applicable'),
+        ],
         string="State Compliant", default='non_compliant', track_visibility=True
     )
+    not_applicable_reason = fields.Html("Reason or comments why Not applicable")
+
     external_reference = fields.Html("External Reference(s)")
     internal_reference = fields.Html("Internal Reference(s)")
 
