@@ -12,14 +12,14 @@ class MgmtsystemRiskCanvas(models.Model):
     _description = "Risk Model Canvas"
     _inherit = ['mail.thread', 'mail.activity.mixin']
 
-    name = fields.Char(string='Canvas Name', required=True, track_visibility=True,)
-    system_id = fields.Many2one('mgmtsystem.system', 'System', required=True, track_visibility=True,)
+    name = fields.Char(string='Canvas Name', required=True, tracking=True,)
+    system_id = fields.Many2one('mgmtsystem.system', 'System', required=True, tracking=True,)
     company_id = fields.Many2one('res.company', 'Company', related="system_id.company_id", store=True)
 
     # Just add HTML fields to add the list of risks in the canvas.
     # Todo: Maybe link them later to hazards?
     risks_key_partners = fields.Html(
-        string='Key Partners', translate=False, track_visibility=True,
+        string='Key Partners', translate=False, tracking=True,
         help='De bouwsteen kern partners gaat over het netwerk van leveranciers en partners die '
              'nodig zijn om het businessmodel te laten werken. Bedrijven gaan om allerlei redenen '
              'partnerschappen aan. Het creëren van het juiste netwerk kan als een belangrijke factor '
@@ -29,7 +29,7 @@ class MgmtsystemRiskCanvas(models.Model):
              'succesvol te zijn, te groeien en te concurreren.'
     )
     risks_key_activities = fields.Html(
-        string='Key Activities', translate=False, track_visibility=True,
+        string='Key Activities', translate=False, tracking=True,
         help='In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten beschreven '
               'die een onderneming nodig heeft om goed te presteren. Het gaat dus om de '
               'kernactiviteiten die de organisatie moet uitvoeren om de waardepropositie te '
@@ -37,7 +37,7 @@ class MgmtsystemRiskCanvas(models.Model):
               'Welke activiteiten dit zijn hangt compleet af van de inrichting van het businessmodel'
     )
     risks_key_resources = fields.Html(
-        string='Key Resources', translate=False, track_visibility=True,
+        string='Key Resources', translate=False, tracking=True,
         help='De key resources Business Model Canvas bouwsteen beschrijft de belangrijkste middelen'
              'die nodig zijn om de waardepropositie te kunnen realiseren en het businessmodel te laten '
              'werken. Key resources kunnen in eigendom zijn van het bedrijf, '
@@ -46,13 +46,13 @@ class MgmtsystemRiskCanvas(models.Model):
              'intellectueel en menselijk (human resources).'
     )
     risks_key_value_prop = fields.Html(
-        string='Key Value Proposition', translate=False, track_visibility=True,
+        string='Key Value Proposition', translate=False, tracking=True,
         help='De ”Waardeproposities” vormt de kern van je bedrijf. Richt je op de waarde die je voor '
              'je klanten creëert, de belofte aan je klanten; dat is meer dan een opsomming van '
              'producten. Wat is de kern van je product aanbod, welke elementen zijn uniek'
     )
     risks_key_cust_relations = fields.Html(
-        string='Key Customer Relations', translate=False, track_visibility=True,
+        string='Key Customer Relations', translate=False, tracking=True,
         help='In de bouwsteen ”klantrelaties” wordt er beschreven hoe de onderneming in contact '
              'staat met de klant en hoe relaties opgebouwd en onderhouden worden met ieder '
              'klantsegment. Er zijn verschillende type relaties die men aan kan gaan met klanten. '
@@ -63,7 +63,7 @@ class MgmtsystemRiskCanvas(models.Model):
              'Persoonlijke relatie, digitale relatie, community, co-creatie en zelfservice.'
     )
     risks_key_cust_segments = fields.Html(
-        string='Key Customer Segments', translate=False, track_visibility=True,
+        string='Key Customer Segments', translate=False, tracking=True,
         help='Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de markt; '
              'op één of meerdere segmenten.'
     )
@@ -79,7 +79,7 @@ class MgmtsystemRiskCanvas(models.Model):
              'kanalen.'
     )
     risks_key_costs = fields.Html(
-        string='Cost structure', translate=False, track_visibility=True,
+        string='Cost structure', translate=False, tracking=True,
         help='De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die gemaakt worden '
              'bij het uitvoeren van een businessmodel. Kosten zijn onvermijdbaar! Het creëren van '
              'waarde, het onderhouden van klantrelaties en het genereren van inkomsten brengen '
@@ -89,7 +89,7 @@ class MgmtsystemRiskCanvas(models.Model):
              'zaken, terwijl dit in andere businessmodellen minder belangrijk is'
     )
     risks_key_income = fields.Html(
-        string='Income structure', translate=False, track_visibility=True,
+        string='Income structure', translate=False, tracking=True,
         help='Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten genereren. De '
              'inkomsten die een bedrijf genereert moeten hoog genoeg zijn om de kosten te dekken en '
              'onder aan de streep een mooi bedrijfsresultaat(winst) over te houden. Een bedrijf '

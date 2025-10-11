@@ -13,7 +13,7 @@ class DocumentPage(models.Model):
 
     nen_chapter = fields.Many2one("document.page.chapter", "NEN Chapter")
     nen_control = fields.Char("NEN Control")
-    nen_mandatory = fields.Boolean("Mandatory", track_visibility=True)
+    nen_mandatory = fields.Boolean("Mandatory", tracking=True)
     state_compliant = fields.Selection([
         ('compliant', 'Compliant'),
         ('implemented', 'Implemented'),
@@ -21,7 +21,7 @@ class DocumentPage(models.Model):
         ('compliant_improvement', 'Compliant with points for improvement'),
         ('not_applicable', 'Not applicable'),
         ],
-        string="State Compliant", default='non_compliant', track_visibility=True
+        string="State Compliant", default='non_compliant', tracking=True
     )
     not_applicable_reason = fields.Html("Reason or comments why Not applicable")
 
@@ -34,13 +34,13 @@ class DocumentPage(models.Model):
     nen_sources = fields.Html("Sources", help="List of sources; person, document, log, other")
     nen_observations = fields.Html("Observations", help="Observation, evidence. (intent, existence and operation)")
     nen_judgement_assessor = fields.Float(
-        string="Judgement Assessor (%)", track_visibility=True,
+        string="Judgement Assessor (%)", tracking=True,
         help="Judgement Assessor / auditor in percentage completed. (0% = open, 100% = completed)"
     )
     nen_judgement_assessor_status = fields.Selection(
         [('open', 'Open'), ('progress', 'In progress'), ('completed', 'Completed')],
         compute="_compute_nen_judgement_assessor_status", default='open',
-        string="Judgement Assessor Status", store=True, track_visibility=True
+        string="Judgement Assessor Status", store=True, tracking=True
     )
     nen_judgement_assessor_notes = fields.Html("Notes Judgement Assessor", help="Notes from Judgement Assessor / auditor")
     nen_theme_id = fields.Many2one("document.page.theme", "NEN Theme")
