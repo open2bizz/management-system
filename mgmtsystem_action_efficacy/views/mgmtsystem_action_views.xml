@@ -23,9 +23,9 @@
                                 <field name="efficacy_user_id" />
                             </group>
                         </group>
+                        <label for="efficacy_description"/>
+                        <field name="efficacy_description" nolabel="1"/>
                         <group id="main_group_2">
-                            <label for="efficacy_description"/>
-                            <field name="efficacy_description" nolabel="1"/>
                         </group>
                     </page>
                 </notebook>
