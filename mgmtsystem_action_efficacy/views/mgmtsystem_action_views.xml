@@ -17,7 +17,7 @@
                     <page string="Efficacy" name="page_efficacy" id="page_efficacy">
                         <group id="main_group_1">
                             <group id="group_left">
-                                <field name="efficacy_value" />
+                                <field name="efficacy_value" widget="percentage"/>
                             </group>
                             <group id="group_right">
                                 <field name="efficacy_user_id" />

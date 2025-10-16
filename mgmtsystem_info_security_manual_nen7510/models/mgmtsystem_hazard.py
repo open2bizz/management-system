@@ -29,11 +29,12 @@ class MgmtsystemHazard(models.Model):
     mgmtsystem_action_ids = fields.One2many("mgmtsystem.action", "origin_hazard_id", string="Management System Action")
     mgmtsystem_action_count = fields.Integer(compute="_compute_mgmtsystem_action_count")
 
-    @api.model
-    def create(self, vals):
-        if vals.get('code', '/') == '/':
-            vals['code'] = self.env['ir.sequence'].next_by_code('mgmtsystem.hazard') or '/'
-        return super(MgmtsystemHazard, self).create(vals)
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if vals.get('code', '/') == '/':
+                vals['code'] = self.env['ir.sequence'].next_by_code('mgmtsystem.hazard') or '/'
+        return super(MgmtsystemHazard, self).create(vals_list)
 
     def _compute_mgmtsystem_action_count(self):
         for record in self:
@@ -103,6 +104,3 @@ class MgmtsystemHazardControlMeasure(models.Model):
             'view_type': 'form',
             'target': 'current',
         }
-
-
-
