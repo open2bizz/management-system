@@ -23,14 +23,16 @@
 
             <xpath expr="//div[@name='button_box']" position="before">
                 <field name="nen_judgement_assessor_status" invisible="1"/>
+                <widget name="web_ribbon" title="NVT" bg_color="text-bg-info"
+                        invisible="state_compliant != 'not_applicable'"/>
                 <widget name="web_ribbon" title="Compliant" bg_color="text-bg-success"
-                        invisible="state_compliant != 'compliant'"/>
+                        invisible="state_compliant not in ('compliant', 'compliant_improvement')"/>
                 <widget name="web_ribbon" title="Open" bg_color="text-bg-danger"
-                        invisible="nen_judgement_assessor_status != 'open' or state_compliant == 'compliant'"/>
+                        invisible="nen_judgement_assessor_status != 'open' or state_compliant in ('compliant', 'compliant_improvement')"/>
                 <widget name="web_ribbon" title="Completed" bg_color="text-bg-success"
-                        invisible="nen_judgement_assessor_status != 'completed' or state_compliant == 'compliant'"/>
+                        invisible="nen_judgement_assessor_status != 'completed' or state_compliant in ('compliant', 'compliant_improvement')"/>
                 <widget name="web_ribbon" title="In Progress" bg_color="text-bg-warning"
-                        invisible="nen_judgement_assessor_status != 'progress' or state_compliant == 'compliant'"/>
+                        invisible="nen_judgement_assessor_status != 'progress' or state_compliant in ('compliant', 'compliant_improvement')"/>
             </xpath>
             <xpath expr="//page[@name='history']" position="before">
                 <page name="nen_7510" string="NEN 7510">
@@ -43,6 +45,9 @@
                         <group>
                             <field name="nen_mandatory" widget="boolean_toggle"/>
                             <field name="state_compliant"/>
+                            <field name="not_applicable_reason" invisible="state_compliant != 'not_applicable'"
+                                required="state_compliant == 'not_applicable'"
+                            />
                         </group>
                     </group>
                     <group>
@@ -95,6 +100,9 @@
                     <group>
                         <field name="nen_mandatory" readonly="1"/>
                         <field name="state_compliant"/>
+                        <field name="not_applicable_reason" invisible="state_compliant != 'not_applicable'"
+                            required="state_compliant == 'not_applicable'"
+                        />
                     </group>
                 </group>
                 <group>
@@ -134,6 +142,7 @@
             </xpath>
             <xpath expr="//field[@name='name']" position="after">
                 <field name="nen_chapter" optional="show"/>
+                <field name="nen_theme_id" optional="show"/>
                 <field name="state_compliant" optional="show"/>
                 <field name="nen_judgement_assessor" optional="hide" widget="percentage"/>
                 <field name="mgmtsystem_action_ids" widget="many2many_tags" optional="hide"/>
@@ -159,6 +168,7 @@
             <xpath expr="//group" position="after">
                 <searchpanel>
                     <field name="parent_id" icon="fa-folder" string="Categories" enable_counters="1"/>
+                    <field name="nen_theme_id" icon="fa-certificate" string="Themes" enable_counters="1"/>
                     <field name="nen_chapter" icon="fa-shield" string="Chapter" enable_counters="1"/>
                     <field name="state_compliant" icon="fa-hourglass-3" string="Compliant" enable_counters="1"/>
                     <field name="nen_judgement_assessor_status" icon="fa-battery-2" string="Ass Status" enable_counters="1"/>
@@ -176,5 +186,21 @@
             </xpath>
         </field>
     </record>
+
+    <record id="action_manuals_form" model="ir.actions.act_window.view">
+        <field name="sequence" eval="5" />
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="document_page.view_wiki_form" />
+        <field name="act_window_id" ref="action_manuals" />
+    </record>
+
+    <menuitem
+        id="menu_mgmtsystem_manuals_manuals"
+        name="Standardization"
+        action="action_manuals"
+        parent="mgmtsystem.menu_mgmtsystem_manuals"
+        sequence="0"
+        groups="mgmtsystem.group_mgmtsystem_viewer"
+    />
 
 </odoo>
