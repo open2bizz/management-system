@@ -215,17 +215,17 @@
         <field name="name">view_risk_canvas_list</field>
         <field name="model">mgmtsystem.risk.canvas</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="name"/>
                 <field name="system_id"/>
-            </tree>
+            </list>
         </field>
     </record>
 
     <record id="view_risk_canvas_action" model="ir.actions.act_window">
         <field name="name">Risk Model Canvas</field>
         <field name="res_model">mgmtsystem.risk.canvas</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
         <field name="view_id" ref="view_risk_canvas_list"/>
     </record>
 

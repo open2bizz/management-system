@@ -12,7 +12,7 @@
         <field name="name">mgmtsystem.nonconformity.tree</field>
         <field name="model">mgmtsystem.nonconformity</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="ref" />
                 <field name="create_date" />
                 <field name="partner_id" />
@@ -23,7 +23,7 @@
                 <field name="system_id" />
                 <field name="company_id" groups="base.group_multi_company" />
                 <field name="stage_id" />
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -32,7 +32,6 @@
         <field name="model">mgmtsystem.nonconformity</field>
         <field name="arch" type="xml">
             <search>
-                <group name="filters">
                     <filter
                         name="draft"
                         icon="terp-document-new"
@@ -71,9 +70,9 @@
                     />
                     <field name="system_id" />
                     <field name="company_id" groups="base.group_multi_company" />
-                </group>
+
                 <newline />
-                <group expand="0" string="Group By...">
+
                     <filter
                         name="groupby_author"
                         string="Author"
@@ -112,7 +111,6 @@
                         icon="terp-stock_symbol-selection"
                         context="{'group_by':'procedure_ids'}"
                     />
-                </group>
             </search>
         </field>
     </record>
@@ -277,12 +275,12 @@
                                 readonly="state not in 'analysis'"
                                 options="{'no_create': True}"
                             >
-                                <tree create="1" delete="1" decoration-info="parent_id">
+                                <list create="1" delete="1" decoration-info="parent_id">
                                     <field name="parent_id" />
                                     <field name="name" />
                                     <field name="description" />
                                     <field name="sequence" />
-                                </tree>
+                                </list>
                             </field>
 
                             <separator string="Analysis Confirmation" />
@@ -336,15 +334,7 @@
                     </notebook>
                 </sheet>
 
-                <div class="oe_chatter">
-                    <field
-                        name="message_follower_ids"
-                        widget="mail_followers"
-                        groups="base.group_user"
-                    />
-                    <field name="activity_ids" widget="mail_activity" />
-                    <field name="message_ids" widget="mail_thread" />
-                </div>
+                <chatter/>
 
             </form>
         </field>
@@ -353,7 +343,7 @@
     <record model="ir.actions.act_window" id="open_mgmtsystem_nonconformity_list">
         <field name="name">Nonconformities</field>
         <field name="res_model">mgmtsystem.nonconformity</field>
-        <field name="view_mode">kanban,tree,form</field>
+        <field name="view_mode">kanban,list,form</field>
         <field name="view_id" ref="view_mgmtsystem_nonconformity_kanban" />
         <field name="search_view_id" ref="view_mgmtsystem_nonconformity_filter" />
         <field name="context">{"search_default_user_id":uid}</field>
@@ -365,7 +355,7 @@
     >
         <field name="name">Nonconformities</field>
         <field name="res_model">mgmtsystem.nonconformity</field>
-        <field name="view_mode">kanban,tree,form</field>
+        <field name="view_mode">kanban,list,form</field>
         <field
             name="domain"
         >[('res_id', '=', id), ('res_model', '=', mgmtsystem_nonconformity)]
