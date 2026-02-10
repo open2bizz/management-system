@@ -71,13 +71,13 @@ class MgmtsystemAction(models.Model):
 
     def _compute_color(self):
         for action in self:
-            if action.record.type_action == 'immediate':
+            if action.type_action == 'immediate':
                 action.color = 1
-            elif action.record.type_action == 'correction':
+            elif action.type_action == 'correction':
                 action.color = 2
-            elif action.record.type_action == 'prevention':
+            elif action.type_action == 'prevention':
                 action.color = 6
-            elif action.record.type_action == 'improvement':
+            elif action.type_action == 'improvement':
                 action.color = 8
             else:
                 action.color = 0
