@@ -5,7 +5,7 @@
 {
     'name': 'mgmtsystem_action_project',
     'summary': 'Create a task linked to a management system action and a project',
-    'version': '17.0.1.0.0',
+    'version': '19.0.1.0.0',
     'category': 'Management System',
     'website': 'https://www.open2bizz.nl/',
     'author': 'Open2Bizz',

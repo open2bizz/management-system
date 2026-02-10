@@ -18,9 +18,13 @@ class MgmtsystemAction(models.Model):
         "res.company", "Company", default=lambda self: self.env.company
     )
     active = fields.Boolean(default=True)
-    priority = fields.Selection(
-        [("0", "Low"), ("1", "Normal")], default="0", index=True
-    )
+    priority = fields.Selection([
+        ('0', 'Low priority'),
+        ('1', 'Medium priority'),
+        ('2', 'High priority'),
+        ('3', 'Urgent'),
+    ], default='0', index=True, string="Priority", tracking=True)
+
     sequence = fields.Integer(
         index=True,
         default=10,
