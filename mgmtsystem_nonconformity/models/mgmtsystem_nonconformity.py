@@ -19,9 +19,9 @@ class MgmtsystemNonconformity(models.Model):
         ].search([("is_starting", "=", True)], limit=1)
 
     @api.model
-    def _stage_groups(self, stages, domain, order):
-        stage_ids = self.env["mgmtsystem.nonconformity.stage"].search([])
-        return stage_ids
+    def _stage_groups(self, stages=None, domain=None, order=None):
+        domain = domain or []
+        return self.env["mgmtsystem.nonconformity.stage"].search(domain, order=order)
 
     # 1. Description
     name = fields.Char()
@@ -140,6 +140,18 @@ class MgmtsystemNonconformity(models.Model):
     )
     res_model = fields.Char(index=True)
     res_id = fields.Integer(index=True)
+    color = fields.Integer(string="Color", compute="_compute_color")
+
+    def _compute_color(self):
+        for action in self:
+            if action.kanban_state == 'blocked':
+                action.color = 1
+            elif action.kanban_state == 'normal':
+                action.color = 4
+            elif action.kanban_state == 'done':
+                action.color = 10
+            else:
+                action.color = 0
 
     @api.model
     def _default_reference(self):
