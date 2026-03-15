@@ -5,6 +5,10 @@
         <field name="model">document.page</field>
         <field name="inherit_id" ref="document_page.view_wiki_form"/>
         <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                    <button name="action_create_mgmt_action" class="oe_highlight" data-hotkey="x" string="Create Action"
+                            type="object"/>
+            </xpath>
             <xpath expr="//div[@name='button_box']" position="inside">
                 <button type="object" class="oe_stat_button" id="child_button" icon="fa-list" name="action_open_childs"
                         title="All items" context="{'default_parent_id': id}">
@@ -76,12 +80,6 @@
                         <field name="mgmtsystem_action_ids" nolabel="1" colspan="2"/>
                     </group>
                 </page>
-            </xpath>
-            <xpath expr="//sheet" position="before">
-                <header>
-                    <button name="action_create_mgmt_action" class="oe_highlight" data-hotkey="x" string="Create Action"
-                            type="object"/>
-                </header>
             </xpath>
         </field>
     </record>
