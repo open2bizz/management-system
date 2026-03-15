@@ -35,10 +35,10 @@
         <field name="name">view_document_page_theme_list</field>
         <field name="model">document.page.theme</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="sequence" widget="handle"/>
                 <field name="name"/>
-            </tree>
+            </list>
         </field>
     </record>
 

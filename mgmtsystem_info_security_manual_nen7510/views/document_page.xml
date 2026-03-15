@@ -156,13 +156,13 @@
         <field name="sequence" eval="5" />
         <field name="view_mode">form</field>
         <field name="view_id" ref="document_page.view_wiki_form" />
-        <field name="act_window_id" ref="action_manuals" />
+        <field name="act_window_id" ref="mgmtsystem_manual.action_manuals" />
     </record>
 
     <menuitem
         id="menu_mgmtsystem_manuals_manuals"
         name="Standardization"
-        action="action_manuals"
+        action="action_manuals_form"
         parent="mgmtsystem.menu_mgmtsystem_manuals"
         sequence="0"
         groups="mgmtsystem.group_mgmtsystem_viewer"
