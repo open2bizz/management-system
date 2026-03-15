@@ -1,6 +1,0 @@
-- Loïc Faure-Lacroix \<<loic.lacroix@savoirfairelinux.com>\>
-- Gervais Naoussi \<<gervaisnaoussi@gmail.com>\>
-- [Guadaltech](https://www.guadaltech.es):
-  - Fernando La Chica \<<fernando.lachica@guadaltech.es>\>
-- [Binhex](https://binhex.cloud//com):
-  - David Luis Mora \<<d.luis@binhex.cloud>\>

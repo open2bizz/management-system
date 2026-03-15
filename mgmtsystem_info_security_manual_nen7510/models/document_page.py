@@ -52,7 +52,7 @@ class DocumentPage(models.Model):
                 "name": "Child Documents",
                 "res_model": "document.page",
                 "domain": [('parent_id', '=', record.id)],
-                "view_mode": "tree,form,pivot,graph",
+                "view_mode": "list,form",
                 "target": "current",
             }
 

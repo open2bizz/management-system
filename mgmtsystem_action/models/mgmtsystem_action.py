@@ -18,9 +18,13 @@ class MgmtsystemAction(models.Model):
         "res.company", "Company", default=lambda self: self.env.company
     )
     active = fields.Boolean(default=True)
-    priority = fields.Selection(
-        [("0", "Low"), ("1", "Normal")], default="0", index=True
-    )
+    priority = fields.Selection([
+        ('0', 'Low priority'),
+        ('1', 'Medium priority'),
+        ('2', 'High priority'),
+        ('3', 'Urgent'),
+    ], default='0', index=True, string="Priority", tracking=True)
+
     sequence = fields.Integer(
         index=True,
         default=10,
@@ -63,6 +67,20 @@ class MgmtsystemAction(models.Model):
         group_expand="_stage_groups",
     )
     tag_ids = fields.Many2many("mgmtsystem.action.tag", string="Tags")
+    color = fields.Integer(string="Color", compute="_compute_color")
+
+    def _compute_color(self):
+        for action in self:
+            if action.type_action == 'immediate':
+                action.color = 1
+            elif action.type_action == 'correction':
+                action.color = 2
+            elif action.type_action == 'prevention':
+                action.color = 6
+            elif action.type_action == 'improvement':
+                action.color = 8
+            else:
+                action.color = 0
 
     def _default_owner(self):
         return self.env.user

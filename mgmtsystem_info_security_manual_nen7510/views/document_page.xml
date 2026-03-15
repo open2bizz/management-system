@@ -115,57 +115,22 @@
         </field>
     </record>
 
-    <record model="ir.ui.view" id="view_wiki_tree">
-        <field name="name">view_wiki_tree</field>
-        <field name="model">document.page</field>
-        <field name="inherit_id" ref="document_page.view_wiki_tree"/>
-        <field name="arch" type="xml">
-            <xpath expr="//field[@name='parent_id']" position="replace">
-                <field name="parent_id" optional="hide"/>
-                <field name="nen_chapter" optional="show"/>
-                <field name="nen_control" optional="hide"/>
-            </xpath>
-            <xpath expr="//field[@name='content_date']" position="after">
-                <button type="object" icon="fa-list" name="action_open_childs" string="All items"
-                        context="{'default_parent_id': id}"/>
-            </xpath>
-        </field>
-    </record>
-
-    <record model="ir.ui.view" id="view_category_tree">
-        <field name="name">view_category_tree</field>
-        <field name="model">document.page</field>
-        <field name="inherit_id" ref="document_page.view_category_tree"/>
-        <field name="arch" type="xml">
-            <xpath expr="//tree" position="attributes">
-                <attribute name="multi_edit">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='name']" position="after">
-                <field name="nen_chapter" optional="show"/>
-                <field name="nen_theme_id" optional="show"/>
-                <field name="state_compliant" optional="show"/>
-                <field name="nen_judgement_assessor" optional="hide" widget="percentage"/>
-                <field name="mgmtsystem_action_ids" widget="many2many_tags" optional="hide"/>
-            </xpath>
-        </field>
-    </record>
-
-    <record model="ir.ui.view" id="view_wiki_filter">
-        <field name="name">document.page.search</field>
-        <field name="model">document.page</field>
-        <field name="inherit_id" ref="document_page.view_wiki_filter"/>
-        <field name="arch" type="xml">
-            <xpath expr="//searchpanel" position="inside">
-                <field name="nen_chapter" icon="fa-shield" string="Chapter" enable_counters="1"/>
-            </xpath>
-        </field>
-    </record>
-    <record model="ir.ui.view" id="view_document_category_filter">
-        <field name="name">document.page.search</field>
-        <field name="model">document.page</field>
-        <field name="inherit_id" ref="document_page.view_document_category_filter"/>
-        <field name="arch" type="xml">
-            <xpath expr="//group" position="after">
+  <record model="ir.ui.view" id="view_wiki_filter">
+      <field name="name">document.page.search</field>
+      <field name="model">document.page</field>
+      <field name="inherit_id" ref="document_page.view_wiki_filter"/>
+      <field name="arch" type="xml">
+          <xpath expr="//searchpanel" position="inside">
+              <field name="nen_chapter" icon="fa-shield" string="Chapter" enable_counters="1"/>
+          </xpath>
+      </field>
+  </record>
+  <record model="ir.ui.view" id="view_document_category_filter">
+      <field name="name">document.page.search</field>
+      <field name="model">document.page</field>
+      <field name="inherit_id" ref="document_page.view_document_category_filter"/>
+      <field name="arch" type="xml">
+          <xpath expr="//search" position="inside">
                 <searchpanel>
                     <field name="parent_id" icon="fa-folder" string="Categories" enable_counters="1"/>
                     <field name="nen_theme_id" icon="fa-certificate" string="Themes" enable_counters="1"/>
