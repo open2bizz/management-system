@@ -18,6 +18,7 @@
             <form string="Tags">
                 <group name="main">
                     <field name="name" />
+                    <field name="color" widget="color_picker"/>
                 </group>
             </form>
         </field>

@@ -6,145 +6,343 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-07 20:02+0000\n"
-"PO-Revision-Date: 2025-02-07 20:02+0000\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2025-07-08 17:53+0000\n"
+"PO-Revision-Date: 2025-07-08 20:10+0200\n"
+"Last-Translator: Thomas Pot | Open2bizz <info@open2bizz.nl>\n"
 "Language-Team: \n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
 msgid "<span class=\"o_stat_text\">All items</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">Alle items</span>"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid ""
 "<strong>Inkomstenstromen.</strong>\n"
 "                                <br/>\n"
-"                                Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten genereren. De\n"
-"                                inkomsten die een bedrijf genereert moeten hoog genoeg zijn om de kosten te dekken en\n"
-"                                onder aan de streep een mooi bedrijfsresultaat(winst) over te houden. Een bedrijf zonder\n"
-"                                goed verdienmodel is gedoemd te falen! De kassa moet rinkelen, want een druppelende\n"
+"                                Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten "
+"genereren. De\n"
+"                                inkomsten die een bedrijf genereert moeten hoog genoeg zijn om de kosten te "
+"dekken en\n"
+"                                onder aan de streep een mooi bedrijfsresultaat(winst) over te houden. Een "
+"bedrijf zonder\n"
+"                                goed verdienmodel is gedoemd te falen! De kassa moet rinkelen, want een "
+"druppelende\n"
 "                                geldkraan is niet genoeg om te overleven."
 msgstr ""
+"<strong>Inkomstenstromen.</strong>\n"
+"                               <br/>\n"
+"                                Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten "
+"genereren. De\n"
+"                                inkomsten die een bedrijf genereert moeten hoog genoeg zijn om de kosten te "
+"dekken en\n"
+"                                onder aan de streep een mooi bedrijfsresultaat(winst) over te houden. Een "
+"bedrijf zonder\n"
+"                                goed verdienmodel is gedoemd te mislukken! De kassa moet rinkelen, want een "
+"druppelende\n"
+"                                geldkraan is niet genoeg om te overleven."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid ""
 "<strong>Kanalen.</strong>\n"
 "                                <br/>\n"
-"                                Met kanalen worden al de manieren waarmee een organisatie in contact staat met de klant\n"
-"                                bedoeld. Het vinden van de juiste mix van kanalen is cruciaal om klanten met de\n"
-"                                waardepropositie te bereiken. In de bouwsteen kanalen beschrijf je hoe je bedrijf met de\n"
-"                                verschillende klanten communiceert en hoe je deze klanten met de waardepropositie\n"
-"                                bereikt. De manieren hoe men in contact staat met de klant kunnen op diverse manieren\n"
-"                                onderverdeeld worden. Zo is er onderscheidt te maken in communicatie-, distributie- en\n"
-"                                verkoopkanalen. Ook kan er onderscheidt gemaakt worden tussen online- en fysieke\n"
+"                                Met kanalen worden al de manieren waarmee een organisatie in contact staat "
+"met de klant\n"
+"                                bedoeld. Het vinden van de juiste mix van kanalen is cruciaal om klanten "
+"met de\n"
+"                                waardepropositie te bereiken. In de bouwsteen kanalen beschrijf je hoe je "
+"bedrijf met de\n"
+"                                verschillende klanten communiceert en hoe je deze klanten met de "
+"waardepropositie\n"
+"                                bereikt. De manieren hoe men in contact staat met de klant kunnen op "
+"diverse manieren\n"
+"                                onderverdeeld worden. Zo is er onderscheidt te maken in communicatie-, "
+"distributie- en\n"
+"                                verkoopkanalen. Ook kan er onderscheidt gemaakt worden tussen online- en "
+"fysieke\n"
 "                                kanalen."
 msgstr ""
+"<strong>Kanalen.</strong>\n"
+"                               <br/>\n"
+"                                Met kanalen worden alle manieren waarmee een organisatie in contact staat "
+"met de klant\n"
+"                                bedoeld. Het vinden van de juiste mix van kanalen is cruciaal om klanten "
+"met de\n"
+"                                waardepropositie te bereiken. In de bouwsteen kanalen beschrijf je hoe je "
+"bedrijf met de\n"
+"                                verschillende klanten communiceert en hoe je deze klanten met de "
+"waardepropositie\n"
+"                                bereikt. De manieren waarop men in contact staat met de klant kunnen op "
+"diverse manieren\n"
+"                                onderverdeeld worden. Zo is er onderscheidt te maken in communicatie-, "
+"distributie- en\n"
+"                                verkoopkanalen. Ook kan er onderscheidt gemaakt worden tussen online- en "
+"fysieke\n"
+"                                kanalen."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid ""
 "<strong>Kern (strategische) partners.</strong>\n"
 "                                <br/>\n"
-"                                De bouwsteen kern partners gaat over het netwerk van leveranciers en partners die nodig\n"
-"                                zijn om het businessmodel te laten werken. Bedrijven gaan om allerlei redenen\n"
-"                                partnerschappen aan. Het creëren van het juiste netwerk kan als een belangrijke factor\n"
-"                                voor succesvol ondernemerschap gezien worden. Een oude wijsheid luidt niet voor niks:\n"
-"                                ”Het geheel is meer dan de som der delen”. Partners kunnen een organisatie helpen om\n"
-"                                dingen te doen die alleen niet mogelijk zijn. De juiste partnerships helpen om succesvol\n"
+"                                De bouwsteen kern partners gaat over het netwerk van leveranciers en "
+"partners die nodig\n"
+"                                zijn om het businessmodel te laten werken. Bedrijven gaan om allerlei "
+"redenen\n"
+"                                partnerschappen aan. Het creëren van het juiste netwerk kan als een "
+"belangrijke factor\n"
+"                                voor succesvol ondernemerschap gezien worden. Een oude wijsheid luidt niet "
+"voor niks:\n"
+"                                ”Het geheel is meer dan de som der delen”. Partners kunnen een organisatie "
+"helpen om\n"
+"                                dingen te doen die alleen niet mogelijk zijn. De juiste partnerships helpen "
+"om succesvol\n"
 "                                te zijn, te groeien en te concurreren"
 msgstr ""
+"<strong>Kern (strategische) partners.</strong>\n"
+"                               <br/>\n"
+"                                De bouwsteen kernpartners gaat over het netwerk van leveranciers en "
+"partners die nodig\n"
+"                                zijn om het businessmodel te laten werken. Bedrijven gaan om allerlei "
+"redenen\n"
+"                                partnerschappen aan. Het creëren van het juiste netwerk kan als een "
+"belangrijke factor\n"
+"                                voor succesvol ondernemerschap gezien worden. Een oude wijsheid luidt niet "
+"voor niks:\n"
+"                                \"Het geheel is meer dan de som der delen\". Partners kunnen een "
+"organisatie helpen om\n"
+"                                dingen te doen die alleen niet mogelijk zijn. De juiste partnerships helpen "
+"om succesvol\n"
+"                                te zijn, te groeien en te concurreren"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid ""
 "<strong>Kernmiddelen.</strong>\n"
 "                                <br/>\n"
-"                                De key resources Business Model Canvas bouwsteen beschrijft de belangrijkste middelen\n"
-"                                die nodig zijn om de waardepropositie te kunnen realiseren en het businessmodel te laten\n"
-"                                werken. Key resources kunnen in eigendom zijn van het bedrijf, maar kunnen ook geleased\n"
-"                                worden of bij key partners verkregen worden. Key resources kunnen in de volgende\n"
-"                                categorieën worden ingedeeld: fysiek, financieel, intellectueel en menselijk (human\n"
+"                                De key resources Business Model Canvas bouwsteen beschrijft de "
+"belangrijkste middelen\n"
+"                                die nodig zijn om de waardepropositie te kunnen realiseren en het "
+"businessmodel te laten\n"
+"                                werken. Key resources kunnen in eigendom zijn van het bedrijf, maar kunnen "
+"ook geleased\n"
+"                                worden of bij key partners verkregen worden. Key resources kunnen in de "
+"volgende\n"
+"                                categorieën worden ingedeeld: fysiek, financieel, intellectueel en "
+"menselijk (human\n"
 "                                resources)."
 msgstr ""
+"<strong>Kernmiddelen.</strong>\n"
+"                               <br/>\n"
+"                                De belangrijkste middelen Business Model Canvas bouwsteen beschrijft de "
+"belangrijkste middelen\n"
+"                                die nodig zijn om de waardepropositie te kunnen realiseren en het "
+"businessmodel te laten\n"
+"                                werken. Key resources kunnen in eigendom zijn van het bedrijf, maar kunnen "
+"ook geleased\n"
+"                                worden of bij belangrijke partners verkregen worden. Key resources kunnen "
+"in de volgende\n"
+"                                categorieën worden ingedeeld: fysiek, financieel, intellectueel en "
+"menselijk (human\n"
+"                                middelen)."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid ""
 "<strong>Kernprocessen.</strong>\n"
 "                                <br/>\n"
-"                                In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten beschreven die een\n"
-"                                onderneming nodig heeft om goed te presteren. Het gaat dus om de kernactiviteiten die de\n"
-"                                organisatie moet uitvoeren om de waardepropositie te realiseren, klanten te bereiken,\n"
-"                                klantrelaties te onderhouden en inkomsten te verdienen. Welke activiteiten dit zijn\n"
+"                                In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten "
+"beschreven die een\n"
+"                                onderneming nodig heeft om goed te presteren. Het gaat dus om de "
+"kernactiviteiten die de\n"
+"                                organisatie moet uitvoeren om de waardepropositie te realiseren, klanten te "
+"bereiken,\n"
+"                                klantrelaties te onderhouden en inkomsten te verdienen. Welke activiteiten "
+"dit zijn\n"
 "                                hangt compleet af van de inrichting van het businessmodel."
 msgstr ""
+"<strong>Kernprocessen.</strong>\n"
+"                               <br/>\n"
+"                                In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten "
+"beschreven die een\n"
+"                                onderneming nodig heeft om goed te presteren. Het gaat dus om de "
+"kernactiviteiten die de\n"
+"                                organisatie moet uitvoeren om de waardepropositie te realiseren, klanten te "
+"bereiken,\n"
+"                                klantrelaties te onderhouden en inkomsten te verdienen. Welke activiteiten "
+"dit zijn\n"
+"                                hangt compleet af van de inrichting van het businessmodel."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid ""
 "<strong>Klantrelaties.</strong>\n"
 "                                <br/>\n"
-"                                In de bouwsteen ”klantrelaties” wordt er beschreven hoe de onderneming in contact staat\n"
-"                                met de klant en hoe relaties opgebouwd en onderhouden worden met ieder klantsegment. Er\n"
-"                                zijn verschillende type relaties die men aan kan gaan met klanten. Voor een onderneming\n"
-"                                is het belangrijk om te motiveren waarom men een bepaalde relatie aan wil gaan met een\n"
-"                                klantsegment. De keuze van het type klantrelatie heeft namelijk invloed op alles wat een\n"
-"                                bedrijf doet en beïnvloedt ook de andere bouwstenen in het Business Model Canvas. Er\n"
-"                                zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke relatie, digitale\n"
+"                                In de bouwsteen ”klantrelaties” wordt er beschreven hoe de onderneming in "
+"contact staat\n"
+"                                met de klant en hoe relaties opgebouwd en onderhouden worden met ieder "
+"klantsegment. Er\n"
+"                                zijn verschillende type relaties die men aan kan gaan met klanten. Voor een "
+"onderneming\n"
+"                                is het belangrijk om te motiveren waarom men een bepaalde relatie aan wil "
+"gaan met een\n"
+"                                klantsegment. De keuze van het type klantrelatie heeft namelijk invloed op "
+"alles wat een\n"
+"                                bedrijf doet en beïnvloedt ook de andere bouwstenen in het Business Model "
+"Canvas. Er\n"
+"                                zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke "
+"relatie, digitale\n"
 "                                relatie, community, co-creatie en zelfservice."
 msgstr ""
+"<strong>Klantrelaties.</strong>\n"
+"                               <br/>\n"
+"                                In de bouwsteen \"klantrelaties\" wordt er beschreven hoe de onderneming in "
+"contact staat\n"
+"                                met de klant en hoe relaties opgebouwd en onderhouden worden met ieder "
+"klantsegment. Er\n"
+"                                zijn verschillende type relaties die men aan kan gaan met klanten. Voor een "
+"onderneming\n"
+"                                is het belangrijk om te motiveren waarom men een bepaalde relatie aan wil "
+"gaan met een\n"
+"                                klantsegment. De keuze van het type klantrelatie heeft namelijk invloed op "
+"alles wat een\n"
+"                                bedrijf doet en beïnvloedt ook de andere bouwstenen in het Business Model "
+"Canvas. Er\n"
+"                                zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke "
+"relatie, digitale\n"
+"                                relatie, community, co-creatie en zelfservice."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid ""
 "<strong>Klantsegmenten.</strong>\n"
 "                                <br/>\n"
-"                                Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de markt; op één\n"
+"                                Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de "
+"markt; op één\n"
 "                                of meerdere segmenten.\n"
 "                                Waarde propositie\n"
-"                                De ”Waardeproposities” vormt de kern van je bedrijf. Richt je op de waarde die je voor\n"
-"                                je klanten creëert, de belofte aan je klanten; dat is meer dan een opsomming van\n"
+"                                De ”Waardeproposities” vormt de kern van je bedrijf. Richt je op de waarde "
+"die je voor\n"
+"                                je klanten creëert, de belofte aan je klanten; dat is meer dan een "
+"opsomming van\n"
 "                                producten. Wat is de kern van je product aanbod, welke elementen zijn uniek."
 msgstr ""
+"<strong>Klantsegmenten.</strong>\n"
+"                               <br/>\n"
+"                                Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de "
+"markt; op één\n"
+"                                of meerdere segmenten.\n"
+"                                Waarde propositie\n"
+"                                De \"Waardeproposities\" vormt de kern van je bedrijf. Richt je op de "
+"waarde die je voor\n"
+"                                je klanten creëert, de belofte aan je klanten; dat is meer dan een "
+"opsomming van\n"
+"                                producten. Wat is de kern van je productaanbod, welke elementen zijn uniek."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid ""
 "<strong>Kostenstructuur.</strong>\n"
 "                                <br/>\n"
-"                                De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die gemaakt worden bij\n"
-"                                het uitvoeren van een businessmodel. Kosten zijn onvermijdbaar! Het creëren van waarde,\n"
-"                                het onderhouden van klantrelaties en het genereren van inkomsten brengen allemaal kosten\n"
-"                                met zich mee. Zoals vanzelfsprekend is het belangrijk om de kosten binnen de perken te\n"
-"                                houden en te focussen op zaken die daadwerkelijk waarde toevoegen voor klanten. Voor het\n"
-"                                ene businessmodel is kostenreductie één van de belangrijkste zaken, terwijl dit in\n"
+"                                De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die "
+"gemaakt worden bij\n"
+"                                het uitvoeren van een businessmodel. Kosten zijn onvermijdbaar! Het creëren "
+"van waarde,\n"
+"                                het onderhouden van klantrelaties en het genereren van inkomsten brengen "
+"allemaal kosten\n"
+"                                met zich mee. Zoals vanzelfsprekend is het belangrijk om de kosten binnen "
+"de perken te\n"
+"                                houden en te focussen op zaken die daadwerkelijk waarde toevoegen voor "
+"klanten. Voor het\n"
+"                                ene businessmodel is kostenreductie één van de belangrijkste zaken, terwijl "
+"dit in\n"
 "                                andere businessmodellen minder belangrijk is."
 msgstr ""
+"<strong>Kostenstructuur.</strong>\n"
+"                               <br/>\n"
+"                                De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die "
+"gemaakt worden bij\n"
+"                                het uitvoeren van een businessmodel. Kosten zijn onvermijdbaar! Het creëren "
+"van waarde,\n"
+"                                het onderhouden van klantrelaties en het genereren van inkomsten brengen "
+"allemaal kosten\n"
+"                                met zich mee. Zoals vanzelfsprekend is het belangrijk om de kosten binnen "
+"de perken te\n"
+"                                houden en te focussen op zaken die daadwerkelijk waarde toevoegen voor "
+"klanten. Voor het\n"
+"                                ene businessmodel is kostenreductie één van de belangrijkste zaken, terwijl "
+"dit in\n"
+"                                andere businessmodellen minder belangrijk is."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid ""
 "<strong>Voordelen van het gebruik van Risk Model Canvas.</strong>\n"
 "                                <br/>\n"
-"                                Breng je bedrijf en context met 1 pagina op overzichtelijke en transparante manier in\n"
+"                                Breng je bedrijf en context met 1 pagina op overzichtelijke en transparante "
+"manier in\n"
 "                                kaart.\n"
-"                                Éen plaatje zegt meer dan duizend woorden en communiceert makkelijk met derden.\n"
-"                                Het is een multifunctionele tool die én brug slaat tussen business en techniek.\n"
+"                                Éen plaatje zegt meer dan duizend woorden en communiceert makkelijk met "
+"derden.\n"
+"                                Het is een multifunctionele tool die én brug slaat tussen business en "
+"techniek.\n"
 "                                Het helpt je om je bedrijf van een afstandje te analyseren.\n"
-"                                Het is een methode die bruikbaar is om invulling te geven aan de basis vereisten van\n"
+"                                Het is een methode die bruikbaar is om invulling te geven aan de basis "
+"vereisten van\n"
 "                                kwaliteitsnormen zoals ISO27001, NEN7510 of ISO9001\n"
 "                                Lees meer over Risk Model Canvas op: riskmodelcanvas.net\n"
 "                                Lees meer over the business model canvas op: strategyzer.com\n"
-"                                Risk Model © 2023 by Gilbert van Zeijl and Vincent van Dijk is licensed under CC BY-SA\n"
+"                                Risk Model © 2023 by Gilbert van Zeijl and Vincent van Dijk is licensed "
+"under CC BY-SA\n"
 "                                4.0"
 msgstr ""
+"<strong>Voordelen van het gebruik van Risk Model Canvas.</strong>\n"
+"                               <br/>\n"
+"                                Breng je bedrijf en context met 1 pagina op overzichtelijke en transparante "
+"manier in\n"
+"                                kaart.\n"
+"                                Éen plaatje zegt meer dan duizend woorden en communiceert makkelijk met "
+"derden.\n"
+"                                Het is een multifunctionele tool die én brug slaat tussen business en "
+"techniek.\n"
+"                                Het helpt je om je bedrijf van een afstandje te analyseren.\n"
+"                                Het is een methode die bruikbaar is om invulling te geven aan de basis "
+"vereisten van\n"
+"                                kwaliteitsnormen zoals ISO27001, NEN7510 of ISO9001\n"
+"                                Lees meer over Risk Model Canvas op: riskmodelcanvas.net\n"
+"                                Lees meer over het business model canvas op: strategyzer.com\n"
+"                                Risk Model © 2023 door Gilbert van Zeijl en Vincent van Dijk is "
+"gelicenseerd onder CC BY-SA\n"
+"                                4.0"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#. odoo-python
+#: code:addons/mgmtsystem_info_security_manual_nen7510/models/document_page.py:0
+#, fuzzy, python-format
+msgid ""
+"A management action has been created. You can view it <a href='/web#id=%s&model=mgmtsystem.action' "
+"target='_blank'>here</a>."
+msgstr ""
+"Er is een managementactie aangemaakt. Je kunt deze <a href='/web#id=%s&model=mgmtsystem.action' "
+"target='_blank'>hier</a> bekijken."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_mgmtsystem_action
@@ -154,110 +352,142 @@ msgstr "Actie"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Vereist actie"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
+msgid "Actions"
+msgstr "Acties"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_ids
 msgid "Activities"
-msgstr ""
+msgstr "Activiteiten"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Activiteitsuitzonderingicoon"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "Activiteit status"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_type_icon
 msgid "Activity Type Icon"
-msgstr ""
+msgstr "Activiteittype pictogram"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_tree
 msgid "All items"
-msgstr ""
+msgstr "Alle items"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_category_filter
+msgid "Ass Status"
+msgstr "Ass. Status"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
+#, fuzzy
+msgid "Assessor"
+msgstr "Assessor"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Aantal bijlagen"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
 msgid "Canvas"
-msgstr ""
+msgstr "Canvas"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_hazard__canvas_name
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__name
+#, fuzzy
 msgid "Canvas Name"
-msgstr ""
+msgstr "Naam canvas"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_category_filter
 msgid "Categories"
-msgstr ""
+msgstr "Categorieën"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_category_filter
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_filter
 msgid "Chapter"
-msgstr ""
+msgstr "Hoofdstuk"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__code
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__company_id
 msgid "Company"
-msgstr ""
+msgstr "Bedrijf"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__nen_judgement_assessor_status__completed
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_category_filter
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
+msgid "Completed"
+msgstr "Voltooid"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__state_compliant__compliant
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_category_filter
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
 msgid "Compliant"
-msgstr ""
+msgstr "Compliant"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__content
 msgid "Content"
-msgstr ""
+msgstr "Inhoud"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_info_security_manual_nen7510.hazard_core_activities
+#, fuzzy
 msgid "Core Activities"
-msgstr ""
+msgstr "Kernactiviteiten"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_info_security_manual_nen7510.hazard_core_partners
+#, fuzzy
 msgid "Core Partners"
-msgstr ""
+msgstr "Kernpartners"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_info_security_manual_nen7510.hazard_core_resources
+#, fuzzy
 msgid "Core Resources"
-msgstr ""
+msgstr "Kerngegevens"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_info_security_manual_nen7510.hazard_core_resources_channels
+#, fuzzy
 msgid "Core Resources/Channels"
-msgstr ""
+msgstr "Kernbronnen/Kanalen"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_info_security_manual_nen7510.hazard_core_resources_value
+#, fuzzy
 msgid "Core Resources/Value Proposition"
-msgstr ""
+msgstr "Kernmiddelen/waardepropositie"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_info_security_manual_nen7510.hazard_costs
+#, fuzzy
 msgid "Cost Structure"
-msgstr ""
+msgstr "Kostenstructuur"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_costs
@@ -266,89 +496,115 @@ msgid "Cost structure"
 msgstr "Kosten structuur"
 
 #. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
+msgid "Create Action"
+msgstr "Actie maken"
+
+#. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__create_uid
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Aangemaakt door"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__create_date
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Aangemaakt op"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_info_security_manual_nen7510.hazard_customers_segments
+#, fuzzy
 msgid "Customer Relationships/Key Customer Segments"
-msgstr ""
+msgstr "Klantrelaties/Key Customer Segments"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_info_security_manual_nen7510.hazard_customers_core
+#, fuzzy
 msgid "Customer Relationships/Key Customers"
-msgstr ""
+msgstr "Klantrelaties/Key Customers"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_info_security_manual_nen7510.hazard_customers_value
+#, fuzzy
 msgid "Customer Relationships/Value Proposition"
-msgstr ""
+msgstr "Klantrelaties/waardepropositie"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_partners
+#, fuzzy
 msgid ""
-"De bouwsteen kern partners gaat over het netwerk van leveranciers en "
-"partners die nodig zijn om het businessmodel te laten werken. Bedrijven gaan"
-" om allerlei redenen partnerschappen aan. Het creëren van het juiste netwerk"
-" kan als een belangrijke factor voor succesvol ondernemerschap gezien "
-"worden. Een oude wijsheid luidt niet voor niks: -Het geheel is meer dan de "
-"som der delen-. Partners kunnen een organisatie helpen om dingen te doen die"
-" alleen niet mogelijk zijn. De juiste partnerships helpen om succesvol te "
-"zijn, te groeien en te concurreren."
+"De bouwsteen kern partners gaat over het netwerk van leveranciers en partners die nodig zijn om het "
+"businessmodel te laten werken. Bedrijven gaan om allerlei redenen partnerschappen aan. Het creëren van het "
+"juiste netwerk kan als een belangrijke factor voor succesvol ondernemerschap gezien worden. Een oude "
+"wijsheid luidt niet voor niks: -Het geheel is meer dan de som der delen-. Partners kunnen een organisatie "
+"helpen om dingen te doen die alleen niet mogelijk zijn. De juiste partnerships helpen om succesvol te zijn, "
+"te groeien en te concurreren."
 msgstr ""
+"De bouwsteen kern partners gaat over het netwerk van leveranciers en partners die nodig zijn om het "
+"businessmodel te laten werken. Bedrijven gaan om allerlei redenen partnerschappen aan. Het creëren van het "
+"juiste netwerk kan als een belangrijke factor voor succesvol ondernemerschap gezien worden. Een oude "
+"wijsheid luidt niet voor niks: -Het geheel is meer dan de som der delen-. Partners kunnen een organisatie "
+"helpen om dingen te doen die alleen niet mogelijk zijn. De juiste partnerships helpen om succesvol te zijn, "
+"te groeien en te concurreren."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_costs
+#, fuzzy
 msgid ""
-"De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die gemaakt"
-" worden bij het uitvoeren van een businessmodel. Kosten zijn onvermijdbaar! "
-"Het creëren van waarde, het onderhouden van klantrelaties en het genereren "
-"van inkomsten brengen allemaal kosten met zich mee. Zoals vanzelfsprekend is"
-" het belangrijk om de kosten binnen de perken te houden en te focussen op "
-"zaken die daadwerkelijk waarde toevoegen voor klanten. Voor het ene "
-"businessmodel is kostenreductie één van de belangrijkste zaken, terwijl dit "
-"in andere businessmodellen minder belangrijk is"
+"De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die gemaakt worden bij het uitvoeren van "
+"een businessmodel. Kosten zijn onvermijdbaar! Het creëren van waarde, het onderhouden van klantrelaties en "
+"het genereren van inkomsten brengen allemaal kosten met zich mee. Zoals vanzelfsprekend is het belangrijk "
+"om de kosten binnen de perken te houden en te focussen op zaken die daadwerkelijk waarde toevoegen voor "
+"klanten. Voor het ene businessmodel is kostenreductie één van de belangrijkste zaken, terwijl dit in andere "
+"businessmodellen minder belangrijk is"
 msgstr ""
+"De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die gemaakt worden bij het uitvoeren van "
+"een businessmodel. Kosten zijn onvermijdbaar! Het creëren van waarde, het onderhouden van klantrelaties en "
+"het genereren van inkomsten brengen allemaal kosten met zich mee. Zoals vanzelfsprekend is het belangrijk "
+"om de kosten binnen de perken te houden en te focussen op zaken die daadwerkelijk waarde toevoegen voor "
+"klanten. Voor het ene businessmodel is kostenreductie één van de belangrijkste zaken, terwijl dit in andere "
+"businessmodellen minder belangrijk is"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_resources
+#, fuzzy
 msgid ""
-"De key resources Business Model Canvas bouwsteen beschrijft de belangrijkste"
-" middelendie nodig zijn om de waardepropositie te kunnen realiseren en het "
-"businessmodel te laten werken. Key resources kunnen in eigendom zijn van het"
-" bedrijf, maar kunnen ook geleased worden of bij key partners verkregen "
-"worden. Key resources kunnen in de volgende categorieën worden ingedeeld: "
-"fysiek, financieel, intellectueel en menselijk (human resources)."
+"De key resources Business Model Canvas bouwsteen beschrijft de belangrijkste middelendie nodig zijn om de "
+"waardepropositie te kunnen realiseren en het businessmodel te laten werken. Key resources kunnen in "
+"eigendom zijn van het bedrijf, maar kunnen ook geleased worden of bij key partners verkregen worden. Key "
+"resources kunnen in de volgende categorieën worden ingedeeld: fysiek, financieel, intellectueel en "
+"menselijk (human resources)."
 msgstr ""
+"De key resources Business Model Canvas bouwsteen beschrijft de belangrijkste middelendie nodig zijn om de "
+"waardepropositie te kunnen realiseren en het businessmodel te laten werken. Key resources kunnen in "
+"eigendom zijn van het bedrijf, maar kunnen ook geleased worden of bij key partners verkregen worden. Key "
+"resources kunnen in de volgende categorieën worden ingedeeld: fysiek, financieel, intellectueel en "
+"menselijk (human resources)."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_value_prop
+#, fuzzy
 msgid ""
-"De ”Waardeproposities” vormt de kern van je bedrijf. Richt je op de waarde "
-"die je voor je klanten creëert, de belofte aan je klanten; dat is meer dan "
-"een opsomming van producten. Wat is de kern van je product aanbod, welke "
-"elementen zijn uniek"
+"De ”Waardeproposities” vormt de kern van je bedrijf. Richt je op de waarde die je voor je klanten creëert, "
+"de belofte aan je klanten; dat is meer dan een opsomming van producten. Wat is de kern van je product "
+"aanbod, welke elementen zijn uniek"
 msgstr ""
+"De \"Waardeproposities\" vormt de kern van je bedrijf. Richt je op de waarde die je voor je klanten "
+"creëert, de belofte aan je klanten; dat is meer dan een opsomming van producten. Wat is de kern van je "
+"productaanbod, welke elementen zijn uniek"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__display_name
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Weergavenaam"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.actions.act_window,name:mgmtsystem_info_security_manual_nen7510.document_page_chapter_action
 #: model:ir.ui.menu,name:mgmtsystem_info_security_manual_nen7510.menu_document_page_chapter
 msgid "Document Chapters"
-msgstr ""
+msgstr "Document Hoofdstukken"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_document_page
@@ -362,90 +618,119 @@ msgstr "Uitleg/Toelichting"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__external_reference
+#, fuzzy
 msgid "External Reference(s)"
-msgstr ""
+msgstr "Externe referentie(s)"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Volgers"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Volgers (Relaties)"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr ""
+msgstr "Lettertype icoon bijv. fa-tasks"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Heeft bericht"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_mgmtsystem_hazard
 msgid "Hazards of the health and safety management system"
-msgstr "Gevaren van het gezondheids- en veiligheidsbeheersysteem"
+msgstr "Gevaren van het Managementsysteem"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__id
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_exception_icon
 msgid "Icon"
-msgstr ""
+msgstr "Icoon"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Activiteit Icoon."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Indien aangevinkt vragen nieuwe berichten uw aandacht."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_has_error
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Indien aangevinkt hebben sommige berichten een afleverfout."
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__state_compliant__implemented
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_category_filter
+#, fuzzy
+msgid "Implemented"
+msgstr "Geïmplementeerd"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
+msgid "In Progress"
+msgstr "In uitvoering"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_activities
+#, fuzzy
 msgid ""
-"In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten "
-"beschreven die een onderneming nodig heeft om goed te presteren. Het gaat "
-"dus om de kernactiviteiten die de organisatie moet uitvoeren om de "
-"waardepropositie te realiseren, klanten te bereiken, klantrelaties te "
-"onderhouden en inkomsten te verdienen. Welke activiteiten dit zijn hangt "
-"compleet af van de inrichting van het businessmodel"
+"In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten beschreven die een onderneming nodig "
+"heeft om goed te presteren. Het gaat dus om de kernactiviteiten die de organisatie moet uitvoeren om de "
+"waardepropositie te realiseren, klanten te bereiken, klantrelaties te onderhouden en inkomsten te "
+"verdienen. Welke activiteiten dit zijn hangt compleet af van de inrichting van het businessmodel"
 msgstr ""
+"In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten beschreven die een onderneming nodig "
+"heeft om goed te presteren. Het gaat dus om de kernactiviteiten die de organisatie moet uitvoeren om de "
+"waardepropositie te realiseren, klanten te bereiken, klantrelaties te onderhouden en inkomsten te "
+"verdienen. Welke activiteiten dit zijn hangt compleet af van de inrichting van het businessmodel"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_cust_relations
+#, fuzzy
 msgid ""
-"In de bouwsteen ”klantrelaties” wordt er beschreven hoe de onderneming in "
-"contact staat met de klant en hoe relaties opgebouwd en onderhouden worden "
-"met ieder klantsegment. Er zijn verschillende type relaties die men aan kan "
-"gaan met klanten. Voor een onderneming is het belangrijk om te motiveren "
-"waarom men een bepaalde relatie aan wil gaan met een klantsegment. De keuze "
-"van het type klantrelatie heeft namelijk invloed op alles wat een bedrijf "
-"doet en beïnvloedt ook de andere bouwstenen in het Business Model Canvas. Er"
-" zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke "
-"relatie, digitale relatie, community, co-creatie en zelfservice."
+"In de bouwsteen ”klantrelaties” wordt er beschreven hoe de onderneming in contact staat met de klant en hoe "
+"relaties opgebouwd en onderhouden worden met ieder klantsegment. Er zijn verschillende type relaties die "
+"men aan kan gaan met klanten. Voor een onderneming is het belangrijk om te motiveren waarom men een "
+"bepaalde relatie aan wil gaan met een klantsegment. De keuze van het type klantrelatie heeft namelijk "
+"invloed op alles wat een bedrijf doet en beïnvloedt ook de andere bouwstenen in het Business Model Canvas. "
+"Er zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke relatie, digitale relatie, "
+"community, co-creatie en zelfservice."
 msgstr ""
+"In de bouwsteen \"klantrelaties\" wordt er beschreven hoe de onderneming in contact staat met de klant en "
+"hoe relaties opgebouwd en onderhouden worden met ieder klantsegment. Er zijn verschillende type relaties "
+"die men aan kan gaan met klanten. Voor een onderneming is het belangrijk om te motiveren waarom men een "
+"bepaalde relatie aan wil gaan met een klantsegment. De keuze van het type klantrelatie heeft namelijk "
+"invloed op alles wat een bedrijf doet en beïnvloedt ook de andere bouwstenen in het Business Model Canvas. "
+"Er zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke relatie, digitale relatie, "
+"community, co-creatie en zelfservice."
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__nen_judgement_assessor_status__progress
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_category_filter
+msgid "In progress"
+msgstr "In uitvoering"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.hazard,name:mgmtsystem_info_security_manual_nen7510.hazard_income
+#, fuzzy
 msgid "Income Structure"
-msgstr ""
+msgstr "Inkomensstructuur"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_income
@@ -456,72 +741,96 @@ msgstr "Inkomsten structuur"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.risk.type,name:mgmtsystem_info_security_manual_nen7510.risk_type_information
 #: model:mgmtsystem.hazard.type,name:mgmtsystem_info_security_manual_nen7510.type_information
+#, fuzzy
 msgid "Information Risk"
-msgstr ""
+msgstr "Informatierisico"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__internal_reference
+#, fuzzy
 msgid "Internal Reference(s)"
-msgstr ""
+msgstr "Interne referentie(s)"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Is een volger"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_judgement_assessor
+msgid "Judgement Assessor (%)"
+msgstr "Oordeel Assessor (%)"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_judgement_assessor
+msgid "Judgement Assessor / auditor in percentage completed. (0% = open, 100% = completed)"
+msgstr "Oordeel Assessor / auditor in percentage voltooid. (0% = open, 100% = voltooid)"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_judgement_assessor_status
+msgid "Judgement Assessor Status"
+msgstr "Status Assessor"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_activities
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid "Key Activities"
-msgstr ""
+msgstr "Belangrijkste activiteiten"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_channels
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid "Key Channels"
-msgstr ""
+msgstr "Belangrijkste kanalen"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_cust_relations
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid "Key Customer Relations"
-msgstr ""
+msgstr "Belangrijke klantrelaties"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_cust_segments
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid "Key Customer Segments"
-msgstr ""
+msgstr "Belangrijkste klantsegmenten"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_partners
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid "Key Partners"
-msgstr ""
+msgstr "Belangrijke partners"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_resources
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid "Key Resources"
-msgstr ""
+msgstr "Belangrijke bronnen"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_value_prop
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid "Key Value Proposition"
-msgstr ""
+msgstr "Belangrijkste waardepropositie"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__write_uid
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Laatst bijgewerkt door"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__write_date
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Laatst bijgewerkt op "
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_action__linked_procedure_ids
@@ -531,100 +840,139 @@ msgid "Linked Procedures"
 msgstr "Gekoppelde procedures"
 
 #. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_sources
+#, fuzzy
+msgid "List of sources; person, document, log, other"
+msgstr "Lijst van bronnen; persoon, document, logboek, andere"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#. odoo-python
+#: code:addons/mgmtsystem_info_security_manual_nen7510/models/document_page.py:0
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__mgmtsystem_action_ids
+#, fuzzy, python-format
+msgid "Management System Action"
+msgstr "Managementsysteem Actie"
+
+#. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_mandatory
 msgid "Mandatory"
-msgstr ""
+msgstr "Verplicht"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Bericht afleverfout"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Berichten"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_channels
+#, fuzzy
 msgid ""
-"Met kanalen worden al de manieren waarmee een organisatie in contact staat "
-"met de klant bedoeld. Het vinden van de juiste mix van kanalen is cruciaal "
-"om klanten met de waardepropositie te bereiken. In de bouwsteen kanalen "
-"beschrijf je hoe je bedrijf met de verschillende klanten communiceert en hoe"
-" je deze klanten met de waardepropositie bereikt. De manieren hoe men in "
-"contact staat met de klant kunnen op diverse manieren onderverdeeld worden. "
-"Zo is er onderscheidt te maken in communicatie-, distributie- en "
-"verkoopkanalen. Ook kan er onderscheidt gemaakt worden tussen online- en "
-"fysieke kanalen."
+"Met kanalen worden al de manieren waarmee een organisatie in contact staat met de klant bedoeld. Het vinden "
+"van de juiste mix van kanalen is cruciaal om klanten met de waardepropositie te bereiken. In de bouwsteen "
+"kanalen beschrijf je hoe je bedrijf met de verschillende klanten communiceert en hoe je deze klanten met de "
+"waardepropositie bereikt. De manieren hoe men in contact staat met de klant kunnen op diverse manieren "
+"onderverdeeld worden. Zo is er onderscheidt te maken in communicatie-, distributie- en verkoopkanalen. Ook "
+"kan er onderscheidt gemaakt worden tussen online- en fysieke kanalen."
 msgstr ""
+"Met kanalen worden al de manieren waarmee een organisatie in contact staat met de klant bedoeld. Het vinden "
+"van de juiste mix van kanalen is cruciaal om klanten met de waardepropositie te bereiken. In de bouwsteen "
+"kanalen beschrijf je hoe je bedrijf met de verschillende klanten communiceert en hoe je deze klanten met de "
+"waardepropositie bereikt. De manieren hoe men in contact staat met de klant kunnen op diverse manieren "
+"onderverdeeld worden. Zo is er onderscheidt te maken in communicatie-, distributie- en verkoopkanalen. Ook "
+"kan er onderscheidt gemaakt worden tussen online- en fysieke kanalen."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr ""
+msgstr "Mijn activiteitdeadline"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
 msgid "NEN 7510"
-msgstr ""
+msgstr "NEN 7510"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_document_page_chapter
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_chapter
+#, fuzzy
 msgid "NEN Chapter"
-msgstr ""
+msgstr "NEN Hoofdstuk"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_control
 msgid "NEN Control"
-msgstr ""
+msgstr "NEN Onderdeel"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.type,name:mgmtsystem_info_security_manual_nen7510.type_other
+#, fuzzy
 msgid "NO Information Risk"
-msgstr ""
+msgstr "GEEN informatierisico"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__name
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_hazard_filter
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_calendar_event_id
 msgid "Next Activity Calendar Event"
-msgstr ""
+msgstr "Volgende evenement op de activiteitenkalender"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "Volgende Activiteit Deadline"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "Volgende activiteit omschrijving"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "Volgende activiteit soort"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__non_conformity_ids
 msgid "Non Conformity"
-msgstr ""
+msgstr "Tekortkomingen"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__non_conformity_count
+#, fuzzy
 msgid "Non Conformity Count"
-msgstr ""
+msgstr "Aantal afwijkingen"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_category_filter
+msgid "Non compliant"
+msgstr "Niet compliant"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__state_compliant__non_compliant
+#, fuzzy
 msgid "None Compliant"
-msgstr ""
+msgstr "Niet compliant"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_judgement_assessor_notes
+#, fuzzy
+msgid "Notes Judgement Assessor"
+msgstr "Opmerkingen Beoordelaar"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_judgement_assessor_notes
+#, fuzzy
+msgid "Notes from Judgement Assessor / auditor"
+msgstr "Opmerkingen van beoordelaar / auditor"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_hazard__code
@@ -634,80 +982,118 @@ msgstr "Nummer"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Aantal acties"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Aantal fouten"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Aantal berichten die actie vereisen"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Aantal berichten met leveringsfout"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_observations
+#, fuzzy
+msgid "Observation, evidence. (intent, existence and operation)"
+msgstr "Waarneming, bewijs. (bedoeling, bestaan en werking)"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_observations
+#, fuzzy
+msgid "Observations"
+msgstr "Opmerkingen"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_income
+#, fuzzy
 msgid ""
-"Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten genereren."
-" De inkomsten die een bedrijf genereert moeten hoog genoeg zijn om de kosten"
-" te dekken en onder aan de streep een mooi bedrijfsresultaat(winst) over te "
-"houden. Een bedrijf zonder goed verdienmodel is gedoemd te falen! De kassa "
-"moet rinkelen, want een druppelende geldkraan is niet genoeg om te "
-"overleven."
+"Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten genereren. De inkomsten die een bedrijf "
+"genereert moeten hoog genoeg zijn om de kosten te dekken en onder aan de streep een mooi "
+"bedrijfsresultaat(winst) over te houden. Een bedrijf zonder goed verdienmodel is gedoemd te falen! De kassa "
+"moet rinkelen, want een druppelende geldkraan is niet genoeg om te overleven."
 msgstr ""
+"Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten genereren. De inkomsten die een bedrijf "
+"genereert moeten hoog genoeg zijn om de kosten te dekken en onder aan de streep een mooi "
+"bedrijfsresultaat(winst) over te houden. Een bedrijf zonder goed verdienmodel is gedoemd te falen! De kassa "
+"moet rinkelen, want een druppelende geldkraan is niet genoeg om te overleven."
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__nen_judgement_assessor_status__open
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_category_filter
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
+msgid "Open"
+msgstr "Open"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.risk.type,name:mgmtsystem_info_security_manual_nen7510.risk_type_other
+#, fuzzy
 msgid "Other Risk"
-msgstr ""
+msgstr "Ander risico"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid "Over Canvas"
-msgstr ""
+msgstr "Over Canvas"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__parent_id
+#, fuzzy
 msgid "Parent Chapter"
-msgstr ""
+msgstr "Ouder Hoofdstuk"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_action_form
 msgid "Procedures"
-msgstr ""
+msgstr "Procedures (NL)"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__rating_ids
 msgid "Ratings"
-msgstr ""
+msgstr "Beoordelingen"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Verantwoordelijke gebruiker"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.actions.act_window,name:mgmtsystem_info_security_manual_nen7510.view_risk_canvas_action
 #: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_mgmtsystem_risk_canvas
 #: model:ir.ui.menu,name:mgmtsystem_info_security_manual_nen7510.menu_view_risk_canvas
+#, fuzzy
 msgid "Risk Model Canvas"
-msgstr ""
+msgstr "Risicomodel Canvas"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
+#, fuzzy
 msgid ""
 "Risk Model Canvas is gebaseerd op het Business Model Canvas dat door Alex Osterwalder\n"
-"                                (2010) is bedacht. Het is een visueel overzicht waarbij de belangrijke componenten van\n"
-"                                een bedrijf beschreven zijn op 1 pagina. Het canvas geeft weer hoe een bedrijf of\n"
-"                                organisatie waarde creëert, levert en ten gelde maakt en is een prima raamwerk dat\n"
+"                                (2010) is bedacht. Het is een visueel overzicht waarbij de belangrijke "
+"componenten van\n"
+"                                een bedrijf beschreven zijn op 1 pagina. Het canvas geeft weer hoe een "
+"bedrijf of\n"
+"                                organisatie waarde creëert, levert en ten gelde maakt en is een prima "
+"raamwerk dat\n"
 "                                gebruikt kan worden om risico’s op hoog niveau te analyseren."
 msgstr ""
+"Risk Model Canvas is gebaseerd op het Business Model Canvas dat door Alex Osterwalder\n"
+"                                (2010) is bedacht. Het is een visueel overzicht waarbij de belangrijke "
+"componenten van\n"
+"                                een bedrijf beschreven zijn op 1 pagina. Het canvas geeft weer hoe een "
+"bedrijf of\n"
+"                                organisatie waarde creëert, levert en ten gelde maakt en is een prima "
+"raamwerk dat\n"
+"                                gebruikt kan worden om risico's op hoog niveau te analyseren."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_hazard_form
@@ -722,12 +1108,18 @@ msgstr "Risico's"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "SMS afleverfout"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_sources
+msgid "Sources"
+msgstr "Bronnen"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__state_compliant
+#, fuzzy
 msgid "State Compliant"
-msgstr ""
+msgstr "Status Compliant"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_state
@@ -737,38 +1129,46 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"Status gebaseerd op activiteiten\n"
+"Achterstallig: De vervaldatum is al verstreken\n"
+"Vandaag: Activiteitsdatum is vandaag\n"
+"Gepland: Toekomstige activiteiten."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__system_id
 msgid "System"
-msgstr ""
+msgstr "Systeem"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Type van de uitzondering op activiteitrecord."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Website berichten"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Website communicatie geschiedenis"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_cust_segments
+#, fuzzy
 msgid ""
-"Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de "
-"markt; op één of meerdere segmenten."
+"Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de markt; op één of meerdere "
+"segmenten."
 msgstr ""
+"Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de markt; op één of meerdere "
+"segmenten."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_chapter
+#, fuzzy
 msgid "e.g. Context organisation..."
-msgstr ""
+msgstr "bijv. Contextorganisatie..."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas

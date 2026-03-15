@@ -10,7 +10,8 @@
                 <field name="mgmtsystem_action_id" invisible="1"/>
                 <button string="New ACTION"
                         type="object" name="action_create_corr_action"
-                        invisible="mgmtsystem_action_id" icon="fa-exclamation-circle"/>
+                        invisible="mgmtsystem_action_id" icon="fa-exclamation-circle"
+                        confirm="Are u sure you want to create a new Management system Action? This cannot be undone"/>
                 <button string="Open Action"
                         type="object" name="action_open_mgmtsystem_action"
                         invisible="not mgmtsystem_action_id" icon="fa-exclamation-circle"/>

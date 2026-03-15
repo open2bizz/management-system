@@ -8,19 +8,17 @@
         <field name="inherit_id" ref="mgmtsystem_hazard.view_mgmtsystem_hazard_form"/>
         <field name="arch" type="xml">
             <xpath expr="//sheet[1]/group[1]" position="replace">
-                <div class="oe_title pe-0">
-                    <h1 class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex w-100">
-                            <field name="name" options="{'line_breaks': False}" widget="text"
-                                   class="o_task_name text-truncate w-md-75 w-100 pe-2" placeholder="Risk subject..."/>
-                        </div>
-                    </h1>
+                <div class="oe_title">
+                    <h2>
+                        <field name="name" placeholder="Name"/>
+                    </h2>
                 </div>
                 <group>
                     <group>
                         <field name="code"/>
-                        <field name="type_id"/>
-                        <field name="risk_type_id"/>
+                        <field name="type_id" required="1"/>
+                        <field name="risk_type_id" required="1"/>
+                        <field name="hazard_class" required="1"/>
                         <field name="company_id" groups="base.group_multi_company"/>
                     </group>
                     <group>
@@ -36,6 +34,13 @@
                        domain="[('parent_id', '=', %(document_page_procedure.document_page_group_procedure)d)]"
                        context="{'default_parent_id': %(document_page_procedure.document_page_group_procedure)d}"/>
                 </page>
+            </xpath>
+            <xpath expr="//sheet" position="inside">
+                <div class="oe_button_box" name="button_box">
+                    <button name="action_open_actions" type="object" icon="fa-list-ol">
+                        (<field name="mgmtsystem_action_count"/>)&#160;actions
+                    </button>
+                </div>
             </xpath>
         </field>
     </record>
@@ -66,6 +71,22 @@
             <xpath expr="//field[@name='name']" position="replace"/>
             <xpath expr="//field[@name='type_id']" position="before">
                 <field name="name" string="Name" filter_domain="['|', ('name', 'ilike', self), ('code', 'ilike', self)]"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_mgmtsystem_hazard_control_measure_form" model="ir.ui.view">
+        <field name="name">view_mgmtsystem_hazard_control_measure_form</field>
+        <field name="model">mgmtsystem.hazard.control_measure</field>
+        <field name="inherit_id" ref="mgmtsystem_hazard.view_mgmtsystem_hazard_control_measure_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='comments']" position="after">
+                <field name="mgmtsystem_action_ids" widget="many2many_tags" readonly="1"/>
+            </xpath>
+            <xpath expr="//group[1]" position="before">
+                <header>
+                    <button name="action_create_mgmt_action" type="object" string="Create action" class="btn-primary"/>
+                </header>
             </xpath>
         </field>
     </record>

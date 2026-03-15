@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="view_document_page_theme">
+        <field name="name">view_document_page_theme</field>
+        <field name="model">document.page.theme</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="active" invisible="1"/>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger"
+                        invisible="active"/>
+                    <div class="oe_title">
+                        <h1>
+                            <field class="text-break" options="{'line_breaks': False}" widget="text" name="name"
+                                   placeholder="e.g. Context organisation..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="sequence"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                    <group>
+                        <label for="description"/>
+                        <field name="description" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_document_page_theme_list">
+        <field name="name">view_document_page_theme_list</field>
+        <field name="model">document.page.theme</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_document_page_theme_action" model="ir.actions.act_window">
+      <field name="name">Document Themes</field>
+      <field name="res_model">document.page.theme</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="view_document_page_theme_list" />
+    </record>
+
+    <menuitem
+        id="menu_document_page_theme"
+        name="Document Themes"
+        action="view_document_page_theme_action"
+        parent="document_knowledge.menu_document_configuration"
+        sequence="19"
+        groups="mgmtsystem.group_mgmtsystem_manager"
+    />
+
+</odoo>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="mgmtsystem_action_tag_risk" model="mgmtsystem.action.tag">
+            <field name="name">Risico vanuit ISMS</field>
+        </record>
+    </data>
+</odoo>

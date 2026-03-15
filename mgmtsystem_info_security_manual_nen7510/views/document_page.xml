@@ -1,81 +1,119 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-  <record model="ir.ui.view" id="view_wiki_form">
-      <field name="name">document.page.form</field>
-      <field name="model">document.page</field>
-      <field name="inherit_id" ref="document_page.view_wiki_form"/>
-      <field name="arch" type="xml">
-          <xpath expr="//div[@name='button_box']" position="inside">
-            <button type="object" class="oe_stat_button" id="child_button" icon="fa-list" name="action_open_childs" title="All items" context="{'default_parent_id': id}">
-                <div class="o_stat_info">
-                    <span class="o_stat_text">All items</span>
+    <record model="ir.ui.view" id="view_wiki_form">
+        <field name="name">document.page.form</field>
+        <field name="model">document.page</field>
+        <field name="inherit_id" ref="document_page.view_wiki_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button type="object" class="oe_stat_button" id="child_button" icon="fa-list" name="action_open_childs"
+                        title="All items" context="{'default_parent_id': id}">
+                    <div class="o_stat_info">
+                        <span class="o_stat_text">All items</span>
+                    </div>
+                </button>
+            </xpath>
+            <xpath expr="//h1" position="replace">
+                <div class="oe_title">
+                    <h2>
+                        <field name="name" placeholder="Name"/>
+                    </h2>
                 </div>
-            </button>
-          </xpath>
-          <xpath expr="//page[@name='history']" position="before">
-              <page name="nen_7510" string="NEN 7510">
-                  <group>
-                      <group>
-                          <field name="nen_chapter"/>
-                          <field name="nen_control"/>
-                      </group>
-                      <group>
-                          <field name="nen_mandatory" widget="boolean_toggle"/>
-                          <field name="state_compliant"/>
-                      </group>
-                  </group>
-                  <group>
-                      <label for="internal_reference"/>
-                      <field name="internal_reference" nolabel="1" colspan="2"/>
-                      <label for="external_reference"/>
-                      <field name="external_reference" nolabel="1" colspan="2"/>
-                  </group>
-              </page>
-          </xpath>
-      </field>
-  </record>
+            </xpath>
 
-  <record model="ir.ui.view" id="view_wiki_menu_form">
-      <field name="name">document.page.menu.form</field>
-      <field name="model">document.page</field>
-      <field name="inherit_id" ref="document_page.view_wiki_menu_form"/>
-      <field name="arch" type="xml">
-          <xpath expr="//field[@name='content']" position="before">
-              <group>
-                  <group>
-                      <field name="nen_chapter" readonly="1"/>
-                      <field name="nen_control" readonly="1"/>
-                  </group>
-                  <group>
-                      <field name="nen_mandatory" readonly="1"/>
-                      <field name="state_compliant"/>
-                  </group>
-              </group>
-                  <group>
-                      <label for="internal_reference"/>
-                      <field name="internal_reference" nolabel="1" colspan="2"/>
-                      <label for="external_reference"/>
-                      <field name="external_reference" nolabel="1" colspan="2"/>
-                  </group>
-          </xpath>
-      </field>
-  </record>
+            <xpath expr="//div[@name='button_box']" position="before">
+                <field name="nen_judgement_assessor_status" invisible="1"/>
+                <widget name="web_ribbon" title="NVT" bg_color="text-bg-info"
+                        invisible="state_compliant != 'not_applicable'"/>
+                <widget name="web_ribbon" title="Compliant" bg_color="text-bg-success"
+                        invisible="state_compliant not in ('compliant', 'compliant_improvement')"/>
+                <widget name="web_ribbon" title="Open" bg_color="text-bg-danger"
+                        invisible="nen_judgement_assessor_status != 'open' or state_compliant in ('compliant', 'compliant_improvement')"/>
+                <widget name="web_ribbon" title="Completed" bg_color="text-bg-success"
+                        invisible="nen_judgement_assessor_status != 'completed' or state_compliant in ('compliant', 'compliant_improvement')"/>
+                <widget name="web_ribbon" title="In Progress" bg_color="text-bg-warning"
+                        invisible="nen_judgement_assessor_status != 'progress' or state_compliant in ('compliant', 'compliant_improvement')"/>
+            </xpath>
+            <xpath expr="//page[@name='history']" position="before">
+                <page name="nen_7510" string="NEN 7510">
+                    <group>
+                        <group>
+                            <field name="nen_chapter"/>
+                            <field name="nen_control"/>
+                            <field name="nen_theme_id"/>
+                        </group>
+                        <group>
+                            <field name="nen_mandatory" widget="boolean_toggle"/>
+                            <field name="state_compliant"/>
+                            <field name="not_applicable_reason" invisible="state_compliant != 'not_applicable'"
+                                required="state_compliant == 'not_applicable'"
+                            />
+                        </group>
+                    </group>
+                    <group>
+                        <label for="internal_reference"/>
+                        <field name="internal_reference" nolabel="1" colspan="2"/>
+                        <label for="external_reference"/>
+                        <field name="external_reference" nolabel="1" colspan="2"/>
+                    </group>
+                    <group string="Assessor">
+                        <label for="nen_sources"/>
+                        <field name="nen_sources" nolabel="1" colspan="2"/>
+                        <label for="nen_observations"/>
+                        <field name="nen_observations" nolabel="1" colspan="2"/>
+                    </group>
+                    <group>
+                        <group>
+                            <label for="nen_judgement_assessor"/>
+                            <field name="nen_judgement_assessor" nolabel="1" widget="percentage" class="oe_inline" />
+                        </group>
+                        <label for="nen_judgement_assessor_notes"/>
+                        <field name="nen_judgement_assessor_notes" nolabel="1" colspan="2"/>
+                    </group>
+                </page>
+                <page name="nen_actions" string="Actions">
+                    <group>
+                        <field name="mgmtsystem_action_ids" nolabel="1" colspan="2"/>
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button name="action_create_mgmt_action" class="oe_highlight" data-hotkey="x" string="Create Action"
+                            type="object"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
 
-  <record model="ir.ui.view" id="view_wiki_tree">
-      <field name="name">view_wiki_tree</field>
-      <field name="model">document.page</field>
-      <field name="inherit_id" ref="document_page.view_wiki_tree"/>
-      <field name="arch" type="xml">
-          <xpath expr="//field[@name='parent_id']" position="replace">
-              <field name="parent_id" optional="hide"/>
-              <field name="nen_chapter" optional="show"/>
-              <field name="nen_control" optional="hide"/>
-          </xpath>
-          <xpath expr="//field[@name='content_date']" position="after">
-              <button type="object" icon="fa-list" name="action_open_childs" string="All items" context="{'default_parent_id': id}"/>
-          </xpath>
-      </field>
-  </record>
+    <record model="ir.ui.view" id="view_wiki_menu_form">
+        <field name="name">document.page.menu.form</field>
+        <field name="model">document.page</field>
+        <field name="inherit_id" ref="document_page.view_wiki_menu_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='content']" position="before">
+                <group>
+                    <group>
+                        <field name="nen_chapter" readonly="1"/>
+                        <field name="nen_control" readonly="1"/>
+                    </group>
+                    <group>
+                        <field name="nen_mandatory" readonly="1"/>
+                        <field name="state_compliant"/>
+                        <field name="not_applicable_reason" invisible="state_compliant != 'not_applicable'"
+                            required="state_compliant == 'not_applicable'"
+                        />
+                    </group>
+                </group>
+                <group>
+                    <label for="internal_reference"/>
+                    <field name="internal_reference" nolabel="1" colspan="2"/>
+                    <label for="external_reference"/>
+                    <field name="external_reference" nolabel="1" colspan="2"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
 
   <record model="ir.ui.view" id="view_wiki_filter">
       <field name="name">document.page.search</field>
@@ -95,10 +133,39 @@
           <xpath expr="//search" position="inside">
                 <searchpanel>
                     <field name="parent_id" icon="fa-folder" string="Categories" enable_counters="1"/>
+                    <field name="nen_theme_id" icon="fa-certificate" string="Themes" enable_counters="1"/>
                     <field name="nen_chapter" icon="fa-shield" string="Chapter" enable_counters="1"/>
+                    <field name="state_compliant" icon="fa-hourglass-3" string="Compliant" enable_counters="1"/>
+                    <field name="nen_judgement_assessor_status" icon="fa-battery-2" string="Ass Status" enable_counters="1"/>
                 </searchpanel>
-          </xpath>
-      </field>
-  </record>
+            </xpath>
+            <xpath expr="//field[@name='company_id']" position="after">
+                <separator/>
+                <filter string="Compliant" name="compliant" domain="[('state_compliant', '=', 'compliant')]"/>
+                <filter string="Non compliant" name="non_compliant" domain="['|',('state_compliant', '=', 'non_compliant'), ('state_compliant', '=', False)]"/>
+                <filter string="Implemented" name="implemented" domain="[('state_compliant', '=', 'implemented')]"/>
+                <separator/>
+                <filter string="Open" name="open" domain="[('nen_judgement_assessor_status', '=', 'open')]"/>
+                <filter string="In progress" name="progress" domain="[('nen_judgement_assessor_status', '=', 'progress')]"/>
+                <filter string="Completed" name="completed" domain="[('nen_judgement_assessor_status', '=', 'completed')]"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_manuals_form" model="ir.actions.act_window.view">
+        <field name="sequence" eval="5" />
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="document_page.view_wiki_form" />
+        <field name="act_window_id" ref="action_manuals" />
+    </record>
+
+    <menuitem
+        id="menu_mgmtsystem_manuals_manuals"
+        name="Standardization"
+        action="action_manuals"
+        parent="mgmtsystem.menu_mgmtsystem_manuals"
+        sequence="0"
+        groups="mgmtsystem.group_mgmtsystem_viewer"
+    />
 
 </odoo>

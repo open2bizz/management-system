@@ -16,19 +16,15 @@
         <field name="view_id" ref="document_page.view_wiki_tree" />
         <field name="act_window_id" ref="action_manuals" />
     </record>
-    <record id="action_manuals_form" model="ir.actions.act_window.view">
-        <field name="sequence" eval="5" />
-        <field name="view_mode">form</field>
-        <field name="view_id" ref="document_page.view_wiki_form" />
-        <field name="act_window_id" ref="action_manuals" />
-    </record>
+
 
     <menuitem
-        id="menu_mgmtsystem_manuals_manuals"
-        name="Manuals"
-        action="action_manuals"
+        id="menu_mgmtsystem_standarisation"
+        name="Standardization"
+        action="mgmtsystem_manual.action_manuals"
         parent="mgmtsystem.menu_mgmtsystem_manuals"
         sequence="0"
         groups="mgmtsystem.group_mgmtsystem_viewer"
     />
+
 </odoo>

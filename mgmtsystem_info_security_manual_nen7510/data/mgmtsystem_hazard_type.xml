@@ -22,5 +22,36 @@
             <field name="description">Valt NIET onder informatie Risico</field>
         </record>
 
+        <record id="probability_low" model="mgmtsystem.hazard.probability">
+            <field name="name">Low</field>
+            <field name="value">0</field>
+            <field name="description">Lage waarschijnlijkheid</field>
+        </record>
+        <record id="probability_med" model="mgmtsystem.hazard.probability">
+            <field name="name">Medium</field>
+            <field name="value">1</field>
+            <field name="description">Medium waarschijnlijkheid</field>
+        </record>
+        <record id="probability_high" model="mgmtsystem.hazard.probability">
+            <field name="name">Hoog</field>
+            <field name="value">3</field>
+            <field name="description">Hoge waarschijnlijkheid</field>
+        </record>
+
+        <record id="severity_low" model="mgmtsystem.hazard.severity">
+            <field name="name">Low</field>
+            <field name="value">0</field>
+            <field name="description">Lage impact</field>
+        </record>
+        <record id="severity_med" model="mgmtsystem.hazard.severity">
+            <field name="name">Medium</field>
+            <field name="value">1</field>
+            <field name="description">Medium impact</field>
+        </record>
+        <record id="severity_high" model="mgmtsystem.hazard.severity">
+            <field name="name">Hoog</field>
+            <field name="value">3</field>
+            <field name="description">Hoge impact</field>
+        </record>
 
 </odoo>

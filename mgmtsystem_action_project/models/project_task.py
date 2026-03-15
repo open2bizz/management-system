@@ -29,11 +29,13 @@ class MgmtsystemSystem(models.Model):
         """ Also Change the state of the action when linked """
         if self.stage_id and self.mgmtsystem_action_id:
             if self.stage_id.fold:
-                close_stage = self.mgmtsystem_action_id._get_closing_fase()
-                if close_stage:
-                    self.mgmtsystem_action_id.write({'stage_id': close_stage.id})
-                    message = _("Action stage was closed because the linked task was set in closed stage")
-                    self.mgmtsystem_action_id.message_post(body=message)
+                check_stage = self.mgmtsystem_action_id._get_checking_phase()
+                if check_stage:
+                    self.mgmtsystem_action_id.write({'stage_id': check_stage.id})
+                    message = _("Action stage was set to check because the linked task was set in closed stage")
+                else:
+                    message = _("Action stage was NOT set to check when linked task was set in closed stage; No stage to check found!")
+                self.mgmtsystem_action_id.message_post(body=message)
 
     def action_create_corr_action(self):
         """
