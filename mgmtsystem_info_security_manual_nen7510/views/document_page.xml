@@ -115,6 +115,22 @@
         </field>
     </record>
 
+      <record model="ir.ui.view" id="view_wiki_tree">
+      <field name="name">view_wiki_tree</field>
+      <field name="model">document.page</field>
+      <field name="inherit_id" ref="document_page.view_wiki_tree"/>
+      <field name="arch" type="xml">
+          <xpath expr="//field[@name='parent_id']" position="replace">
+              <field name="parent_id" optional="hide"/>
+              <field name="nen_chapter" optional="show"/>
+              <field name="nen_control" optional="hide"/>
+          </xpath>
+          <xpath expr="//field[@name='content_date']" position="after">
+              <button type="object" icon="fa-list" name="action_open_childs" string="All items" context="{'default_parent_id': id}"/>
+          </xpath>
+      </field>
+  </record>
+
   <record model="ir.ui.view" id="view_wiki_filter">
       <field name="name">document.page.search</field>
       <field name="model">document.page</field>
@@ -152,17 +168,17 @@
         </field>
     </record>
 
-    <record id="action_manuals_form" model="ir.actions.act_window.view">
-        <field name="sequence" eval="5" />
-        <field name="view_mode">form</field>
-        <field name="view_id" ref="document_page.view_wiki_form" />
-        <field name="act_window_id" ref="mgmtsystem_manual.action_manuals" />
-    </record>
+<!--    <record id="action_manuals_form" model="ir.actions.act_window.view">-->
+<!--        <field name="sequence" eval="5" />-->
+<!--        <field name="view_mode">form</field>-->
+<!--        <field name="view_id" ref="document_page.view_wiki_form" />-->
+<!--        <field name="act_window_id" ref="mgmtsystem_manual.action_manuals" />-->
+<!--    </record>-->
 
     <menuitem
         id="menu_mgmtsystem_manuals_manuals"
         name="Standardization"
-        action="action_manuals_form"
+        action="mgmtsystem_manual.action_manuals"
         parent="mgmtsystem.menu_mgmtsystem_manuals"
         sequence="0"
         groups="mgmtsystem.group_mgmtsystem_viewer"
