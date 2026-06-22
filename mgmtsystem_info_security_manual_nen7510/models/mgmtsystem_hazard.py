@@ -50,7 +50,7 @@ class MgmtsystemHazard(models.Model):
                 "name": "Child Documents",
                 "res_model": "mgmtsystem.action",
                 "domain": [('origin_hazard_id', '=', record.id)],
-                "view_mode": "tree,form",
+                "view_mode": "list,form",
                 "target": "current",
                 "context": {
                     'default_origin_hazard_id': record.id,
