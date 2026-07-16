@@ -72,10 +72,16 @@ class DocumentPage(models.Model):
         }
         action = self.env['mgmtsystem.action'].create(vals)
         self.message_post(
-            body=_(
-                "A management action has been created. You can view it <a href='/web#id=%s&model=mgmtsystem.action' target='_blank'>here</a>.")
-                 % html_escape(action.id),
-            subtype_id=self.env.ref('mail.mt_note').id,
+            body=Markup(
+                _(
+                    "Er is een managementactie aangemaakt. "
+                    "Je kunt deze <a href=\"{url}\" target=\"_blank\">hier</a> bekijken."
+                )
+            ).format(
+                url=f"/web#id={action.id}&model=mgmtsystem.action&view_type=form",
+            ),
+            body_is_html=True,
+            subtype_xmlid="mail.mt_note",
         )
         return {
             'name': _('Management System Action'),
