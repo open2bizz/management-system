@@ -25,7 +25,10 @@ class MgmtsystemRootCauseAnalysis(models.Model):
     user_id = fields.Many2one("res.users", string="User", tracking=True)
 
     # Source of the incident. Can be a task, ticket, etc.
-    res_model_id = fields.Many2one("ir.model", string="Model", domain=[("model", "!=", "mgmtsystem.root_cause_analysis")])
+    res_model_id = fields.Many2one(
+        "ir.model", string="Model", tracking=True,
+        domain=[("model", "!=", "mgmtsystem.root_cause_analysis")]
+    )
     res_id = fields.Integer(string="Record ID")
     record_ref = fields.Reference(
         selection="_selection_target_model",
@@ -44,17 +47,17 @@ class MgmtsystemRootCauseAnalysis(models.Model):
             self.res_model_id = self.env['ir.model'].search([('model', '=', self.record_ref._name)], limit=1)
             self.res_id = self.record_ref.id
 
-    incident_description = fields.Html(string="Incident Description")
+    incident_description = fields.Html(string="Incident Description", tracking=True)
 
-    incident_sym_con = fields.Html(string="Incident Symptoms and Consequences")
+    incident_sym_con = fields.Html(string="Incident Symptoms and Consequences", tracking=True)
 
-    incident_root_cause = fields.Html(string="Incident Root Cause", help="Root cause of the incident. Use 5x Why?")
+    incident_root_cause = fields.Html(string="Incident Root Cause", help="Root cause of the incident. Use 5x Why?", tracking=True)
 
     # Fields for incident identification
-    incident_identification_primary = fields.Text(string="Primary Cause(s)")
-    incident_identification_secondary = fields.Text(string="Secondary Cause(s)")
+    incident_identification_primary = fields.Text(string="Primary Cause(s)", tracking=True)
+    incident_identification_secondary = fields.Text(string="Secondary Cause(s)", tracking=True)
     incident_identification_factors = fields.Text(
-        string="Secondary Cause(s)",
+        string="Secondary Cause(s)", tracking=True,
         help="Contributing factors (human, process, technical, etc.)"
     )
     incident_category_ids = fields.Many2many(
@@ -63,19 +66,20 @@ class MgmtsystemRootCauseAnalysis(models.Model):
         column1="rca_id",
         column2="category_id",
         string="Categories",
-        help="Categories of the incident"
+        help="Categories of the incident",
+        tracking=True
     )
 
     incident_corr_actions = fields.Html(
-        string="Corrective Actions",
+        string="Corrective Actions", tracking=True,
         help="Actions defined to remedy the primary and secondary causes"
     )
     incident_prevent_actions = fields.Html(
-        string="Preventive Actions",
+        string="Preventive Actions", tracking=True,
         help="Long-term measures to prevent recurrence."
     )
     incident_lessons_learned = fields.Html(
-        string="Lessons Learned",
+        string="Lessons Learned", tracking=True,
         help="What have we learned? What could be improved? Best practices identified? Share with other teams?"
     )
 

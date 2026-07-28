@@ -56,6 +56,7 @@
                 <hr></hr>
             </field>
             <label for="incident_identification_primary" position="after">
+                <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_incident_identification_primary" nolabel="1" class="oe_inline"
                        options="{'no_create': True}"/>

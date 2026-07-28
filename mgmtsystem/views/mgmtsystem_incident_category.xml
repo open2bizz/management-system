@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <record model="ir.ui.view" id="incident_category_form">
+      <field name="name">mgmtsystem_incident_category_form</field>
+      <field name="model">mgmtsystem.incident_categories</field>
+      <field name="arch" type="xml">
+        <form string="Incident Category">
+          <group>
+            <field name="name" />
+            <field name="company_id" groups="base.group_multi_company" />
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="incident_category_tree">
+      <field name="name">mgmtsystem_incident_category_tree</field>
+      <field name="model">mgmtsystem.incident_categories</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name" />
+          <field name="company_id" groups="base.group_multi_company" />
+        </list>
+      </field>
+    </record>
+
+    <record id="incident_category_action" model="ir.actions.act_window">
+      <field name="name">Incident Categories</field>
+      <field name="res_model">mgmtsystem.incident_categories</field>
+      <field name="view_mode">list,form</field>
+      <field name="view_id" ref="incident_category_tree" />
+    </record>
+
+    <menuitem
+        id="menu_mgmtsystem_configuration_incident_category"
+        name="Incident Categories"
+        parent="menu_mgmtsystem_configuration"
+        groups="group_mgmtsystem_manager"
+        sequence="20"
+        action="incident_category_action"
+    />
+</odoo>
