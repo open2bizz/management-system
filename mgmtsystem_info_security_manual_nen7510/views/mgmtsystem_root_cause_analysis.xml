@@ -58,11 +58,11 @@
                             </group>
                         </page>
                         <page name="actions" string="Actions">
-                            <label for="Corrective Actions"/>
+                            <label for="incident_corr_actions"/>
                             <field name="incident_corr_actions"/>
-                            <label for="Preventive Actions"/>
+                            <label for="incident_prevent_actions"/>
                             <field name="incident_prevent_actions"/>
-                            <label for="Lessons Learned"/>
+                            <label for="incident_lessons_learned"/>
                             <field name="incident_lessons_learned"/>
                         </page>
                     </notebook>
