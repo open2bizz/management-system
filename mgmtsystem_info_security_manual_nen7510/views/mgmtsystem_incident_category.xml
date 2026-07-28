@@ -35,7 +35,7 @@
         id="menu_mgmtsystem_configuration_incident_category"
         name="Incident Categories"
         parent="mgmtsystem.menu_mgmtsystem_configuration"
-        groups="group_mgmtsystem_manager"
+        groups="mgmtsystem.group_mgmtsystem_manager"
         sequence="20"
         action="incident_category_action"
     />
