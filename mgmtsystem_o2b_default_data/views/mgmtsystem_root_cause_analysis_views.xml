@@ -5,7 +5,8 @@
         <field name="model">mgmtsystem.root_cause_analysis</field>
         <field name="inherit_id" ref="mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_root_cause_analysis_form"/>
         <field name="arch" type="xml">
-            <field name="incident_description" position="before">
+            <label for="incident_description" position="after">
+                <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_incident_description" nolabel="1" class="oe_inline"
                        options="{'no_create': True}"/>
@@ -16,12 +17,13 @@
                         context="{'field_name': 'incident_description', 'default_data_field': 'default_incident_description'}"
                         help="Add the value as new default data" type="object" icon="fa-save"
                 />
-
+            </label>
+            <field name="incident_description" position="after">
+                <hr></hr>
             </field>
 
-
-
-            <field name="incident_sym_con" position="before">
+            <label for="incident_sym_con" position="after">
+                <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_incident_sym_con" nolabel="1" class="oe_inline"
                        options="{'no_create': True}"/>
@@ -32,8 +34,13 @@
                         context="{'field_name': 'incident_sym_con', 'default_data_field': 'default_incident_sym_con'}"
                         help="Add the value as new default data" type="object" icon="fa-save"
                 />
+            </label>
+            <field name="incident_sym_con" position="after">
+                <hr></hr>
             </field>
-            <field name="incident_root_cause" position="before">
+
+            <label for="incident_root_cause" position="after">
+                <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_incident_root_cause" nolabel="1" class="oe_inline"
                        options="{'no_create': True}"/>
@@ -44,8 +51,11 @@
                         context="{'field_name': 'incident_root_cause', 'default_data_field': 'default_incident_root_cause'}"
                         help="Add the value as new default data" type="object" icon="fa-save"
                 />
+            </label>
+            <field name="incident_identification_primary" position="after">
+                <hr></hr>
             </field>
-            <field name="incident_identification_primary" position="before">
+            <label for="incident_identification_primary" position="after">
                 <strong>Use Template:</strong>
                 <field name="default_incident_identification_primary" nolabel="1" class="oe_inline"
                        options="{'no_create': True}"/>
@@ -56,8 +66,12 @@
                         context="{'field_name': 'incident_identification_primary', 'default_data_field': 'default_incident_identification_primary'}"
                         help="Add the value as new default data" type="object" icon="fa-save"
                 />
+            </label>
+            <field name="incident_identification_primary" position="after">
+                <hr></hr>
             </field>
-            <field name="incident_identification_secondary" position="before">
+            <label for="incident_identification_secondary" position="after">
+                <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_incident_identification_secondary" nolabel="1" class="oe_inline"
                        options="{'no_create': True}"/>
@@ -68,8 +82,12 @@
                         context="{'field_name': 'incident_identification_secondary', 'default_data_field': 'default_incident_identification_secondary'}"
                         help="Add the value as new default data" type="object" icon="fa-save"
                 />
+            </label>
+            <field name="incident_identification_secondary" position="after">
+                <hr></hr>
             </field>
-            <field name="incident_identification_factors" position="before">
+            <label for="incident_identification_factors" position="after">
+                <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_incident_identification_factors" nolabel="1" class="oe_inline"
                        options="{'no_create': True}"/>
@@ -80,8 +98,12 @@
                         context="{'field_name': 'incident_identification_factors', 'default_data_field': 'default_incident_identification_factors'}"
                         help="Add the value as new default data" type="object" icon="fa-save"
                 />
+            </label>
+            <field name="incident_identification_factors" position="after">
+                <hr></hr>
             </field>
-            <field name="incident_corr_actions" position="before">
+            <label for="incident_corr_actions" position="after">
+                <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_incident_corr_actions" nolabel="1" class="oe_inline"
                        options="{'no_create': True}"/>
@@ -92,8 +114,12 @@
                         context="{'field_name': 'incident_corr_actions', 'default_data_field': 'default_incident_corr_actions'}"
                         help="Add the value as new default data" type="object" icon="fa-save"
                 />
+            </label>
+            <field name="incident_corr_actions" position="after">
+                <hr></hr>
             </field>
-            <field name="incident_prevent_actions" position="before">
+            <label for="incident_prevent_actions" position="after">
+                <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_incident_prevent_actions" nolabel="1" class="oe_inline"
                        options="{'no_create': True}"/>
@@ -104,8 +130,12 @@
                         context="{'field_name': 'incident_prevent_actions', 'default_data_field': 'default_incident_prevent_actions'}"
                         help="Add the value as new default data" type="object" icon="fa-save"
                 />
+            </label>
+            <field name="incident_prevent_actions" position="after">
+                <hr></hr>
             </field>
-            <field name="incident_lessons_learned" position="before">
+            <label for="incident_lessons_learned" position="after">
+                <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_incident_lessons_learned" nolabel="1" class="oe_inline"
                        options="{'no_create': True}"/>
@@ -116,7 +146,7 @@
                         context="{'field_name': 'incident_lessons_learned', 'default_data_field': 'default_incident_lessons_learned'}"
                         help="Add the value as new default data" type="object" icon="fa-save"
                 />
-            </field>
+            </label>
         </field>
     </record>
 </odoo>

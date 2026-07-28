@@ -27,7 +27,11 @@ class MgmtsystemRootCauseAnalysis(models.Model):
     # Source of the incident. Can be a task, ticket, etc.
     res_model_id = fields.Many2one("ir.model", string="Model", domain=[("model", "!=", "mgmtsystem.root_cause_analysis")])
     res_id = fields.Integer(string="Record ID")
-    record_ref = fields.Reference(selection="_selection_target_model", string="Target Record")
+    record_ref = fields.Reference(
+        selection="_selection_target_model",
+        string="Target Record",
+        help="Reference to the target record. Only change this field if you want to replace it under another record.",
+    )
 
     @api.model
     def _selection_target_model(self):

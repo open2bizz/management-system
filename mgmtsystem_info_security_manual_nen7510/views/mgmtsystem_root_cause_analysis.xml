@@ -51,11 +51,14 @@
                             <field name="incident_root_cause"/>
                         </page>
                         <page name="identification" string="Identification">
-                            <group>
-                                <field name="incident_identification_primary"/>
-                                <field name="incident_identification_secondary"/>
-                                <field name="incident_identification_factors"/>
-                            </group>
+                            <label for="incident_identification_primary"/>
+                            <field name="incident_identification_primary"/>
+
+                            <label for="incident_identification_secondary"/>
+                            <field name="incident_identification_secondary"/>
+
+                            <label for="incident_identification_factors"/>
+                            <field name="incident_identification_factors"/>
                         </page>
                         <page name="actions" string="Actions">
                             <label for="incident_corr_actions"/>
