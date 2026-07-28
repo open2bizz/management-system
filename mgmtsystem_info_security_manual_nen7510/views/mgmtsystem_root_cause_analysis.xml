@@ -36,16 +36,18 @@
                         </group>
                         <group name="right" string="Link to record">
                             <field name="res_model_id" invisible="1"/>
-                            <field name="res_id" invisible=""/>
-                            <field name="record_ref" string="Link to record"/>
+                            <field name="res_id" invisible="1"/>
+                            <field name="record_ref" string="Link to record"
+                                   groups="mgmtsystem.group_mgmtsystem_manager"/>
                         </group>
                     </group>
                     <notebook>
                         <page name="incident" string="Incident">
+                            <label for="incident_description"/>
                             <field name="incident_description"/>
-                            <separator string="Symptoms and Consequences"/>
+                            <label for="incident_sym_con"/>
                             <field name="incident_sym_con"/>
-                            <separator string="Root Cause"/>
+                            <label for="incident_root_cause"/>
                             <field name="incident_root_cause"/>
                         </page>
                         <page name="identification" string="Identification">
@@ -56,11 +58,11 @@
                             </group>
                         </page>
                         <page name="actions" string="Actions">
-                            <separator string="Corrective Actions"/>
+                            <label for="Corrective Actions"/>
                             <field name="incident_corr_actions"/>
-                            <separator string="Preventive Actions"/>
+                            <label for="Preventive Actions"/>
                             <field name="incident_prevent_actions"/>
-                            <separator string="Lessons Learned"/>
+                            <label for="Lessons Learned"/>
                             <field name="incident_lessons_learned"/>
                         </page>
                     </notebook>
