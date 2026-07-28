@@ -47,11 +47,11 @@ class MgmtsystemRootCauseAnalysis(models.Model):
             self.res_model_id = self.env['ir.model'].search([('model', '=', self.record_ref._name)], limit=1)
             self.res_id = self.record_ref.id
 
-    incident_description = fields.Html(string="Incident Description", tracking=True)
+    incident_description = fields.Html(string="Incident Description")
 
-    incident_sym_con = fields.Html(string="Incident Symptoms and Consequences", tracking=True)
+    incident_sym_con = fields.Html(string="Incident Symptoms and Consequences")
 
-    incident_root_cause = fields.Html(string="Incident Root Cause", help="Root cause of the incident. Use 5x Why?", tracking=True)
+    incident_root_cause = fields.Html(string="Incident Root Cause", help="Root cause of the incident. Use 5x Why?")
 
     # Fields for incident identification
     incident_identification_primary = fields.Text(string="Primary Cause(s)", tracking=True)
@@ -71,15 +71,15 @@ class MgmtsystemRootCauseAnalysis(models.Model):
     )
 
     incident_corr_actions = fields.Html(
-        string="Corrective Actions", tracking=True,
+        string="Corrective Actions",
         help="Actions defined to remedy the primary and secondary causes"
     )
     incident_prevent_actions = fields.Html(
-        string="Preventive Actions", tracking=True,
+        string="Preventive Actions",
         help="Long-term measures to prevent recurrence."
     )
     incident_lessons_learned = fields.Html(
-        string="Lessons Learned", tracking=True,
+        string="Lessons Learned",
         help="What have we learned? What could be improved? Best practices identified? Share with other teams?"
     )
 
