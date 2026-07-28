@@ -30,6 +30,7 @@
         "views/mgmtsystem_root_cause_analysis.xml",
         "views/mgmtsystem_action.xml",
         "views/mgmtsystem_hazard.xml",
+        "views/mgmtsystem_incident_category.xml",
 
     ],
     "demo": [],
