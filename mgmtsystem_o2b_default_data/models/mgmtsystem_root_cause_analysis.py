@@ -1,7 +1,7 @@
 # Copyright 2026 Open2Bizz <info@open2bizz.nl>
 # License LGPL-3
 
-from odoo import api, fields, exceptions, models
+from odoo import api, fields, exceptions, models, _
 
 
 class MgmtsystemRootCauseAnalysis(models.Model):
