@@ -6,7 +6,17 @@
         <field name="inherit_id" ref="mgmtsystem_action.view_mgmtsystem_action_form"/>
         <field name="arch" type="xml">
             <field name="description" position="before">
-                <field name="default_description"/>
+                <strong>Use Template:</strong>
+                <field name="default_description" nolabel="1" class="oe_inline"
+                       options="{'no_create': True}"/>
+                <button name="extend_default_data_field"
+                        context="{'field_name': 'description'}"
+                        string="Extend" type="object" class="oe_inline" icon="fa-plus-square"/>
+                <button name="action_create_default_data" class="oe_inline" string="Save"
+                        context="{'field_name': 'description', 'default_data_field': 'default_description'}"
+                        help="Add the value as new default data" type="object" icon="fa-save"
+                />
+
             </field>
         </field>
     </record>
