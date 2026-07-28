@@ -2,7 +2,7 @@
 
 {
     "name": "Information Security Management System Manual NEN7510",
-    "version": "19.0.1.0.0",
+    "version": "19.0.2.0.0",
     "author": "Open2bizz BV",
     "website": "https://github.com/open2bizz/management-system",
     "license": "AGPL-3",
