@@ -6,18 +6,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-28 09:36+0000\n"
-"PO-Revision-Date: 2026-07-28 11:43+0200\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2026-07-28 19:18+0000\n"
+"PO-Revision-Date: 2026-07-28 21:25+0200\n"
+"Last-Translator: Thomas Pot | Open2bizz <info@open2bizz.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Source-Language: en_US\n"
 "X-Generator: Poedit 3.9\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: en_US.po\n"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_hazard_form
@@ -436,6 +435,11 @@ msgid "All items"
 msgstr "Alle items"
 
 #. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_identification_secondary
+msgid "Andere oorza(a)k(en) waardoor probleem zich voordeed"
+msgstr "Andere oorzaak(en) waardoor het probleem zich voordeed"
+
+#. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_theme
 msgid "Archived"
 msgstr "Gearchiveerd"
@@ -448,7 +452,17 @@ msgstr "Ass. Status"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
 msgid "Assessor"
-msgstr "Beoordelaar"
+msgstr "Status Assessor"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_history_form_inherit_extra_fields
+msgid "Assessor Notes"
+msgstr "Opmerkingen van de beoordelaar"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_history_form_inherit_extra_fields
+msgid "Assessor Notes Changes"
+msgstr "Wijzigingen in de aantekeningen van de beoordelaar"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_attachment_count
@@ -515,12 +529,17 @@ msgstr "In overeenstemming met"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__state_compliant__compliant_improvement
 msgid "Compliant with points for improvement"
-msgstr "In overeenstemming met de aandachtspunten"
+msgstr "Compliant maar met verbeterpunten"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__content
 msgid "Content"
 msgstr "Inhoud"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_identification_factors
+msgid "Contributing factors"
+msgstr "Secundaire oorzaak(en)"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_identification_factors
@@ -559,7 +578,6 @@ msgstr "Kernmiddelen/waardepropositie"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_corr_actions
-#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_root_cause_analysis_form
 msgid "Corrective Actions"
 msgstr "Correctieve maatregelen"
 
@@ -587,7 +605,7 @@ msgstr "Een analyse van de onderliggende oorzaak opstellen"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_hazard_control_measure_form
 msgid "Create action"
-msgstr "Actie toevoegen"
+msgstr "Actie maken"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__create_uid
@@ -632,12 +650,6 @@ msgid ""
 "helpen om dingen te doen die alleen niet mogelijk zijn. De juiste partnerships helpen om succesvol te zijn, "
 "te groeien en te concurreren."
 msgstr ""
-"De bouwsteen ‘kernpartners’ heeft betrekking op het netwerk van leveranciers en partners dat nodig is om "
-"het bedrijfsmodel te laten functioneren. Bedrijven gaan om allerlei redenen partnerschappen aan. Het "
-"opbouwen van het juiste netwerk kan worden gezien als een belangrijke factor voor succesvol "
-"ondernemerschap. Een oud gezegde luidt niet voor niets: „Het geheel is meer dan de som der delen“. Partners "
-"kunnen een organisatie helpen om dingen te doen die in haar eentje niet mogelijk zijn. De juiste "
-"partnerschappen helpen om succesvol te zijn, te groeien en te concurreren."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_costs
@@ -665,11 +677,6 @@ msgid ""
 "resources kunnen in de volgende categorieën worden ingedeeld: fysiek, financieel, intellectueel en "
 "menselijk (human resources)."
 msgstr ""
-"De bouwsteen ‘Key Resources’ van het Business Model Canvas beschrijft de belangrijkste middelen die nodig "
-"zijn om de waardepropositie te kunnen realiseren en het bedrijfsmodel te laten functioneren. Key resources "
-"kunnen eigendom zijn van het bedrijf, maar kunnen ook worden geleased of worden verkregen via belangrijke "
-"partners. Key resources kunnen worden ingedeeld in de volgende categorieën: fysiek, financieel, "
-"intellectueel en menselijk (human resources)."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_value_prop
@@ -690,6 +697,7 @@ msgstr "Omschrijving"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__display_name
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__display_name
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_history__display_name
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_theme__display_name
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_action__display_name
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_hazard__display_name
@@ -710,6 +718,11 @@ msgstr "Document Hoofdstukken"
 #: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_document_page
 msgid "Document Page"
 msgstr "Documentpagina"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_document_page_history
+msgid "Document Page History"
+msgstr "Document pagina historie"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.actions.act_window,name:mgmtsystem_info_security_manual_nen7510.view_document_page_theme_action
@@ -736,7 +749,23 @@ msgid "Explanation"
 msgstr "Uitleg/Toelichting"
 
 #. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_history__external_reference
+msgid "External Reference"
+msgstr "Externe referentie"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_history_form_inherit_extra_fields
+msgid "External Reference Changes"
+msgstr "Wijzigingen in externe verwijzingen"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_history__external_reference_diff
+msgid "External Reference Diff"
+msgstr "Verschil in externe referentie"
+
+#. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__external_reference
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_history_form_inherit_extra_fields
 msgid "External Reference(s)"
 msgstr "Externe referentie(s)"
 
@@ -772,7 +801,7 @@ msgstr "Heeft bericht"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_mgmtsystem_hazard
 msgid "Hazards of the health and safety management system"
-msgstr "Gevaren van het gezondheids- en veiligheidsbeheersysteem"
+msgstr "Gevaren van het Managementsysteem"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__mgmtsystem_hazard__hazard_class__high
@@ -788,6 +817,7 @@ msgstr "Hoog"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__id
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__id
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_history__id
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_theme__id
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_action__id
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_hazard__id
@@ -851,7 +881,7 @@ msgstr ""
 "In de bouwsteen ‘kernactiviteiten’ worden de belangrijkste activiteiten beschreven die een onderneming "
 "nodig heeft om goed te presteren. Het gaat dus om de kernactiviteiten die de organisatie moet uitvoeren om "
 "de waardepropositie te realiseren, klanten te bereiken, klantrelaties te onderhouden en inkomsten te "
-"genereren. Welke activiteiten dit zijn, hangt volledig af van de opzet van het bedrijfsmodel."
+"genereren. Welke activiteiten dit zijn, hangt volledig af van de opzet van het bedrijfsmodel"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_cust_relations
@@ -884,9 +914,16 @@ msgid "Incident"
 msgstr "Incident"
 
 #. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.actions.act_window,name:mgmtsystem_info_security_manual_nen7510.incident_category_action
 #: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_mgmtsystem_incident_categories
+#: model:ir.ui.menu,name:mgmtsystem_info_security_manual_nen7510.menu_mgmtsystem_configuration_incident_category
 msgid "Incident Categories"
 msgstr "Incidentcategorieën"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.incident_category_form
+msgid "Incident Category"
+msgstr "Incidentcategorie"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_description
@@ -921,7 +958,23 @@ msgid "Information Risk"
 msgstr "Informatierisico"
 
 #. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_history__internal_reference
+msgid "Internal Reference"
+msgstr "Interne referentie"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_history_form_inherit_extra_fields
+msgid "Internal Reference Changes"
+msgstr "Wijzigingen in interne verwijzingen"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_history__internal_reference_diff
+msgid "Internal Reference Diff"
+msgstr "Intern referentieverschil"
+
+#. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__internal_reference
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_history_form_inherit_extra_fields
 msgid "Internal Reference(s)"
 msgstr "Interne referentie(s)"
 
@@ -1004,11 +1057,10 @@ msgstr "Laatst bijgewerkt door"
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__write_date
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__write_date
 msgid "Last Updated on"
-msgstr "Laatst bijgewerkt op "
+msgstr "Laatst bijgewerkt op"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_lessons_learned
-#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_root_cause_analysis_form
 msgid "Lessons Learned"
 msgstr "Geleerde lessen"
 
@@ -1095,7 +1147,7 @@ msgstr ""
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_hazard__mgmtsystem_action_count
 msgid "Mgmtsystem Action Count"
-msgstr "Aantal acties in het beheersysteem"
+msgstr "Mgmtsystem actietelling"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__res_model_id
@@ -1127,7 +1179,7 @@ msgstr "NEN Onderdeel"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_theme_id
 msgid "NEN Theme"
-msgstr "NEN-thema"
+msgstr "NEN Thema"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.type,name:mgmtsystem_info_security_manual_nen7510.type_other
@@ -1144,6 +1196,32 @@ msgstr "GEEN informatierisico"
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
 msgid "Name"
 msgstr "Naam"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_history__nen_judgement_assessor_notes
+msgid "Nen Judgement Assessor Notes"
+msgstr "Aantekeningen van de beoordelaar bij het Nen-oordeel"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_history__nen_judgement_assessor_notes_diff
+msgid "Nen Judgement Assessor Notes Diff"
+msgstr "Nen-beoordelaar: opmerkingen over verschillen"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_history__nen_observations
+msgid "Nen Observations"
+msgstr "Opmerkingen van Nen"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_history__nen_observations_diff
+msgid "Nen Observations Diff"
+msgstr "Nen-waarnemingen Diff"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_calendar_event_id
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Volgende evenement op de activiteitenkalender"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_date_deadline
@@ -1189,7 +1267,7 @@ msgstr "Niet compliant"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__state_compliant__non_compliant
 msgid "None Compliant"
-msgstr "Niet compliant"
+msgstr "Niet Compliant"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__state_compliant__not_applicable
@@ -1199,7 +1277,7 @@ msgstr "Niet van toepassing"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_judgement_assessor_notes
 msgid "Notes Judgement Assessor"
-msgstr "Opmerkingen Beoordelaar"
+msgstr "Opmerkingen Assessor"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_judgement_assessor_notes
@@ -1242,8 +1320,14 @@ msgstr "Waarneming, bewijs. (bedoeling, bestaan en werking)"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_observations
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_history_form_inherit_extra_fields
 msgid "Observations"
 msgstr "Opmerkingen"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_history_form_inherit_extra_fields
+msgid "Observations Changes"
+msgstr "Opmerkingen Wijzigingen"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_income
@@ -1267,12 +1351,12 @@ msgstr "Open"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_action__origin_hazard_id
 msgid "Origin Hazard"
-msgstr "Oorsprong van het gevaar"
+msgstr "Oorsprong Risico"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_action__origin_hazard_control_measure_id
 msgid "Origin Hazard Control Measure"
-msgstr "Maatregel ter beheersing van risico’s in de herkomstregio"
+msgstr "Oorsprong Maatregel voor risicobeheersing"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:mgmtsystem.hazard.risk.type,name:mgmtsystem_info_security_manual_nen7510.risk_type_other
@@ -1291,9 +1375,13 @@ msgstr "Ouder Hoofdstuk"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_prevent_actions
-#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_root_cause_analysis_form
 msgid "Preventive Actions"
 msgstr "Preventieve maatregelen"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_identification_primary
+msgid "Primaire oorzaak; wat was het waardoor probleem zich voordeed"
+msgstr "Primaire oorzaak; wat was de reden dat het probleem zich voordeed?"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_identification_primary
@@ -1314,12 +1402,18 @@ msgstr "Beoordelingen"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__not_applicable_reason
 msgid "Reason or comments why Not applicable"
-msgstr "Reden of opmerkingen waarom ‘Niet van toepassing’"
+msgstr "Reden of opmerkingen waarom Niet van toepassing"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__res_id
 msgid "Record ID"
 msgstr "Record ID"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__record_ref
+msgid "Reference to the target record. Only change this field if you want to replace it under another record."
+msgstr ""
+"Verwijzing naar het doelrecord. Wijzig dit veld alleen als je het wilt vervangen door een ander record."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_user_id
@@ -1361,11 +1455,6 @@ msgid "Risks"
 msgstr "Risico's"
 
 #. module: mgmtsystem_info_security_manual_nen7510
-#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_root_cause_analysis_form
-msgid "Root Cause"
-msgstr "Oorzaak"
-
-#. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.actions.act_window,name:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_root_cause_analysis_action
 #: model:ir.ui.menu,name:mgmtsystem_info_security_manual_nen7510.menu_mgmtsystem_root_cause_analysis
 msgid "Root Cause Analyses"
@@ -1401,7 +1490,6 @@ msgid "SMS Delivery error"
 msgstr "SMS afleverfout"
 
 #. module: mgmtsystem_info_security_manual_nen7510
-#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_identification_factors
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_identification_secondary
 msgid "Secondary Cause(s)"
 msgstr "Secundaire oorzaak(en)"
@@ -1444,11 +1532,6 @@ msgstr ""
 "Achterstallig: De vervaldatum is al verstreken\n"
 "Vandaag: Activiteitsdatum is vandaag\n"
 "Gepland: Toekomstige activiteiten."
-
-#. module: mgmtsystem_info_security_manual_nen7510
-#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_root_cause_analysis_form
-msgid "Symptoms and Consequences"
-msgstr "Symptomen en gevolgen"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__system_id

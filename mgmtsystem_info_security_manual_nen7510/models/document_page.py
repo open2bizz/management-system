@@ -3,6 +3,7 @@
 from odoo import fields, models, api, _
 from markupsafe import Markup
 from odoo.tools import html_escape
+import re
 
 
 class DocumentPage(models.Model):
@@ -105,6 +106,47 @@ class DocumentPage(models.Model):
 
     # --- Document history integration for extra HTML fields ---
 
+    def _get_next_history_version(self):
+        self.ensure_one()
+        count = self.env['document.page.history'].search_count([('page_id', '=', self.id)])
+        return count + 1
+
+    def _format_changed_fields_label(self, fields_list):
+        labels = {
+            'content': 'Content',
+            'external_reference': 'External Reference(s)',
+            'internal_reference': 'Internal Reference(s)',
+            'nen_observations': 'Observations',
+            'nen_judgement_assessor_notes': 'Assessor Notes',
+        }
+        return ", ".join(labels.get(f, f) for f in fields_list)
+
+    def _apply_version_and_summary(self, changed_field_keys):
+        """Append version to draft_name and add changed fields note to draft_summary.
+        This runs before creating a history entry so the history stores updated values.
+        """
+        self.ensure_one()
+        version = self._get_next_history_version()
+
+        # Name: strip trailing " v<number>" if already present, then append current
+        base_name = self.draft_name or self.name or ""
+        base_name = re.sub(r"\s+v\d+$", "", base_name).strip()
+        new_name = (base_name + f" v{version}").strip()
+
+        # Summary: remove existing trailing "Changed fields: ..." then append current list
+        base_summary = self.draft_summary or ""
+        base_summary = re.sub(r"\s*Changed fields:.*$", "", base_summary).rstrip()
+        changed_note = ""
+        if changed_field_keys:
+            changed_note = (" " if base_summary else "") + "Changed fields: " + self._format_changed_fields_label(changed_field_keys)
+        new_summary = (base_summary + changed_note) or False
+
+        # Update without triggering extra history (these fields are not tracked here)
+        self.with_context(prefetch_fields=False).write({
+            'draft_name': new_name,
+            'draft_summary': new_summary,
+        })
+
     def _history_extra_fields_vals(self):
         self.ensure_one()
         return {
@@ -138,10 +180,21 @@ class DocumentPage(models.Model):
         if need_history and not content_changed:
             for rec in self:
                 if rec.type == 'content':
+                    changed_keys = [f for f in tracked_fields if f in vals]
+                    rec._apply_version_and_summary(changed_keys)
                     rec._create_history(rec._history_full_vals())
         return res
 
     def _inverse_content(self):
         for rec in self:
             if rec.type == "content" and rec.content != rec.history_head.content:
+                # Determine which HTML fields changed vs. previous history head
+                changed_keys = ['content']
+                prev = rec.history_head if rec.history_head else False
+                for f in ['external_reference', 'internal_reference', 'nen_observations', 'nen_judgement_assessor_notes']:
+                    prev_val = getattr(prev, f) if prev else False
+                    new_val = getattr(rec, f)
+                    if (new_val or "") != (prev_val or ""):
+                        changed_keys.append(f)
+                rec._apply_version_and_summary(changed_keys)
                 rec._create_history(rec._history_full_vals())
