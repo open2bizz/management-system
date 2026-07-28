@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Extend Document Page History form to show extra HTML fields and their diffs -->
+    <record id="view_document_page_history_form_inherit_extra_fields" model="ir.ui.view">
+        <field name="name">document.page.history.form.inherit.nen7510.extras</field>
+        <field name="model">document.page.history</field>
+        <field name="inherit_id" ref="document_page.wiki_history_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <!-- External Reference -->
+                <page name="external_reference" string="External Reference(s)">
+                    <field name="external_reference" widget="html" options="{'safe': True, 'codeview': True}"/>
+                </page>
+                <page name="external_reference_diff" string="External Reference Changes">
+                    <field name="external_reference_diff" widget="html" class="o_document_page_diff" style="overflow-x: scroll"/>
+                </page>
+
+                <!-- Internal Reference -->
+                <page name="internal_reference" string="Internal Reference(s)">
+                    <field name="internal_reference" widget="html" options="{'safe': True, 'codeview': True}"/>
+                </page>
+                <page name="internal_reference_diff" string="Internal Reference Changes">
+                    <field name="internal_reference_diff" widget="html" class="o_document_page_diff" style="overflow-x: scroll"/>
+                </page>
+
+                <!-- Observations -->
+                <page name="nen_observations" string="Observations">
+                    <field name="nen_observations" widget="html" options="{'safe': True, 'codeview': True}"/>
+                </page>
+                <page name="nen_observations_diff" string="Observations Changes">
+                    <field name="nen_observations_diff" widget="html" class="o_document_page_diff" style="overflow-x: scroll"/>
+                </page>
+
+                <!-- Assessor Notes -->
+                <page name="nen_judgement_assessor_notes" string="Assessor Notes">
+                    <field name="nen_judgement_assessor_notes" widget="html" options="{'safe': True, 'codeview': True}"/>
+                </page>
+                <page name="nen_judgement_assessor_notes_diff" string="Assessor Notes Changes">
+                    <field name="nen_judgement_assessor_notes_diff" widget="html" class="o_document_page_diff" style="overflow-x: scroll"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

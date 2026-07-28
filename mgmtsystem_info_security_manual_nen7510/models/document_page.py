@@ -102,3 +102,46 @@ class DocumentPage(models.Model):
             elif record.nen_judgement_assessor > 0.0:
                 nen_judgement_assessor_status = 'progress'
             record.nen_judgement_assessor_status = nen_judgement_assessor_status
+
+    # --- Document history integration for extra HTML fields ---
+
+    def _history_extra_fields_vals(self):
+        self.ensure_one()
+        return {
+            'external_reference': self.external_reference,
+            'internal_reference': self.internal_reference,
+            'nen_observations': self.nen_observations,
+            'nen_judgement_assessor_notes': self.nen_judgement_assessor_notes,
+        }
+
+    def _history_full_vals(self):
+        self.ensure_one()
+        vals = {
+            'page_id': self.id,
+            'name': self.draft_name,
+            'summary': self.draft_summary,
+            'content': self.content,
+        }
+        vals.update(self._history_extra_fields_vals())
+        return vals
+
+    def write(self, vals):
+        tracked_fields = {
+            'external_reference',
+            'internal_reference',
+            'nen_observations',
+            'nen_judgement_assessor_notes',
+        }
+        need_history = any(f in vals for f in tracked_fields)
+        content_changed = 'content' in vals  # handled by _inverse_content
+        res = super().write(vals)
+        if need_history and not content_changed:
+            for rec in self:
+                if rec.type == 'content':
+                    rec._create_history(rec._history_full_vals())
+        return res
+
+    def _inverse_content(self):
+        for rec in self:
+            if rec.type == "content" and rec.content != rec.history_head.content:
+                rec._create_history(rec._history_full_vals())

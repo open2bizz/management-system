@@ -54,10 +54,16 @@ class MgmtsystemRootCauseAnalysis(models.Model):
     incident_root_cause = fields.Html(string="Incident Root Cause", help="Root cause of the incident. Use 5x Why?")
 
     # Fields for incident identification
-    incident_identification_primary = fields.Text(string="Primary Cause(s)", tracking=True)
-    incident_identification_secondary = fields.Text(string="Secondary Cause(s)", tracking=True)
-    incident_identification_factors = fields.Text(
+    incident_identification_primary = fields.Text(
+        string="Primary Cause(s)", tracking=True,
+        help="Primaire oorzaak; wat was het waardoor probleem zich voordeed"
+    )
+    incident_identification_secondary = fields.Text(
         string="Secondary Cause(s)", tracking=True,
+        help="Andere oorza(a)k(en) waardoor probleem zich voordeed"
+    )
+    incident_identification_factors = fields.Text(
+        string="Contributing factors", tracking=True,
         help="Contributing factors (human, process, technical, etc.)"
     )
     incident_category_ids = fields.Many2many(

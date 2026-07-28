@@ -31,6 +31,7 @@
         "views/mgmtsystem_action.xml",
         "views/mgmtsystem_hazard.xml",
         "views/mgmtsystem_incident_category.xml",
+        "views/document_page_history.xml",
 
     ],
     "demo": [],
