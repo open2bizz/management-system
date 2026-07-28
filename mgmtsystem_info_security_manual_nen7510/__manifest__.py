@@ -21,6 +21,7 @@
         "data/mgmtsystem_hazard_hazard.xml",
         "data/sequence_data.xml",
         "data/mgmtsystem_action_tag.xml",
+        "data/mgmtsystem_incident_categories.xml",
         "security/ir_model_access.xml",
         "views/document_page.xml",
         "views/document_page_theme.xml",

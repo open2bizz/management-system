@@ -46,6 +46,7 @@ class MgmtsystemAction(models.Model):
             'name': self.name,
             'res_model_id': action_model.id,
             'res_id': self.id,
+            'user_id': self.user_id.id or False,
         })
         self.root_cause_analysis_id = rca.id
         return {

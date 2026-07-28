@@ -30,14 +30,14 @@
                         </h1>
                     </div>
                     <group name="main">
-                        <group name="left">
+                        <group name="left" string="General">
                             <field name="user_id"/>
                             <field name="incident_category_ids" widget="many2many_tags"/>
                         </group>
-                        <group name="right">
-                            <field name="res_model_id"/>
-                            <field name="res_id"/>
-                            <field name="record_ref"/>
+                        <group name="right" string="Link to record">
+                            <field name="res_model_id" invisible="1"/>
+                            <field name="res_id" invisible=""/>
+                            <field name="record_ref" string="Link to record"/>
                         </group>
                     </group>
                     <notebook>

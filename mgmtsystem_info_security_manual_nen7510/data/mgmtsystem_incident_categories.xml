@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="mgmtsystem_incident_category_human_error" model="mgmtsystem.incident_categories">
+            <field name="name">Human error</field>
+        </record>
+        <record id="mgmtsystem_incident_category_process_gap" model="mgmtsystem.incident_categories">
+            <field name="name">Process gap</field>
+        </record>
+        <record id="mgmtsystem_incident_category_technical_failure" model="mgmtsystem.incident_categories">
+            <field name="name">Technical failure</field>
+        </record>
+        <record id="mgmtsystem_incident_category_design_flaw" model="mgmtsystem.incident_categories">
+            <field name="name">Design flaw</field>
+        </record>
+        <record id="mgmtsystem_incident_category_external_factor" model="mgmtsystem.incident_categories">
+            <field name="name">External factor</field>
+        </record>
+    </data>
+</odoo>
