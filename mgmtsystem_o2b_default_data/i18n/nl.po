@@ -1,0 +1,144 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mgmtsystem_o2b_default_data
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-28 17:59+0000\n"
+"PO-Revision-Date: 2026-07-28 20:00+0200\n"
+"Last-Translator: Thomas Pot | Open2bizz <info@open2bizz.nl>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. module: mgmtsystem_o2b_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_root_cause_analysis_form_default_data
+msgid ""
+"<br/>\n"
+"                <strong>Use Template:</strong>"
+msgstr ""
+"<br/>\n"
+"               <strong>Sjabloon gebruiken:</strong>"
+
+#. module: mgmtsystem_o2b_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_action_form_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_root_cause_analysis_form_default_data
+msgid "<strong>Use Template:</strong>"
+msgstr "<strong>Sjabloon gebruiken:</strong>"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model,name:mgmtsystem_o2b_default_data.model_mgmtsystem_action
+msgid "Action"
+msgstr "Actie"
+
+#. module: mgmtsystem_o2b_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_action_form_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_root_cause_analysis_form_default_data
+msgid "Add the value as new default data"
+msgstr "Voeg de waarde toe als nieuwe standaardgegevens"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_identification_factors
+msgid "Default Contributing Factors"
+msgstr "Standaard factoren die een rol spelen"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_corr_actions
+msgid "Default Corrective Actions"
+msgstr "Standaard corrigerende maatregelen"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_action__default_description
+msgid "Default Description"
+msgstr "Standaard Beschrijving"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_description
+msgid "Default Incident Description"
+msgstr "Standaardbeschrijving van het incident"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_lessons_learned
+msgid "Default Lessons Learned"
+msgstr "Standaard geleerde lessen"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_prevent_actions
+msgid "Default Preventive Actions"
+msgstr "Standaard preventieve maatregelen"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_identification_primary
+msgid "Default Primary Cause(s)"
+msgstr "Standaard primaire oorzaak(en)"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_root_cause
+msgid "Default Root Cause"
+msgstr "Standaard hoofdoorzaak"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_identification_secondary
+msgid "Default Secondary Cause(s)"
+msgstr "Standaard secundaire oorzaak(en)"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_sym_con
+msgid "Default Symptoms and Consequences"
+msgstr "Typische symptomen en gevolgen"
+
+#. module: mgmtsystem_o2b_default_data
+#. odoo-python
+#: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_action.py:0
+#: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_root_cause_analysis.py:0
+msgid "Default data field is required! Missing in context"
+msgstr "Het standaardgegevensveld is verplicht! Ontbreekt in de context"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_action__display_name
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__display_name
+msgid "Display Name"
+msgstr "Weergavenaam"
+
+#. module: mgmtsystem_o2b_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_action_form_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_root_cause_analysis_form_default_data
+msgid "Extend"
+msgstr "Tekst Uitbreiden"
+
+#. module: mgmtsystem_o2b_default_data
+#. odoo-python
+#: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_action.py:0
+#: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_root_cause_analysis.py:0
+msgid "Field name is required! Missing in context"
+msgstr "Veldnaam is verplicht! Ontbreekt in de context"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_action__id
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model,name:mgmtsystem_o2b_default_data.model_mgmtsystem_root_cause_analysis
+msgid "Root Cause Analysis"
+msgstr "Oorzaakanalyse"
+
+#. module: mgmtsystem_o2b_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_action_form_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_root_cause_analysis_form_default_data
+msgid "Save"
+msgstr "Opslaan"
+
+#. module: mgmtsystem_o2b_default_data
+#. odoo-python
+#: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_action.py:0
+#: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_root_cause_analysis.py:0
+msgid "There is already a default linked"
+msgstr "Er is al een sjabloon gebruikt"

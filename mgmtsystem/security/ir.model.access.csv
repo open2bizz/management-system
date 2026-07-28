@@ -3,3 +3,7 @@
 "access_mgmtsystem_system_viewer","mgmtsystem.system.viewer","model_mgmtsystem_system","mgmtsystem.group_mgmtsystem_viewer",1,0,0,0
 "access_mgmtsystem_system_auditor","mgmtsystem.system.auditor","model_mgmtsystem_system","mgmtsystem.group_mgmtsystem_auditor",1,0,0,0
 "access_mgmtsystem_system_manager","mgmtsystem.system.manager","model_mgmtsystem_system","mgmtsystem.group_mgmtsystem_manager",1,1,1,1
+"access_mgmtsystem_incident_categories_user","mgmtsystem.incident_categories.user","model_mgmtsystem_incident_categories","mgmtsystem.group_mgmtsystem_user",1,0,0,0
+"access_mgmtsystem_incident_categories_viewer","mgmtsystem.incident_categories.viewer","model_mgmtsystem_incident_categories","mgmtsystem.group_mgmtsystem_viewer",1,0,0,0
+"access_mgmtsystem_incident_categories_auditor","mgmtsystem.incident_categories.auditor","model_mgmtsystem_incident_categories","mgmtsystem.group_mgmtsystem_auditor",1,0,0,0
+"access_mgmtsystem_incident_categories_manager","mgmtsystem.incident_categories.manager","model_mgmtsystem_incident_categories","mgmtsystem.group_mgmtsystem_manager",1,1,1,1
