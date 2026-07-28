@@ -53,7 +53,14 @@ class MgmtsystemRootCauseAnalysis(models.Model):
         string="Secondary Cause(s)",
         help="Contributing factors (human, process, technical, etc.)"
     )
-    incident_category_ids = fields.Many2many("mgmtsystem.incident_categories", string="Categories", help="Categories of the incident")
+    incident_category_ids = fields.Many2many(
+        "mgmtsystem.incident_categories",
+        relation="mgmtsystem_rca_incident_cat_rel",
+        column1="rca_id",
+        column2="category_id",
+        string="Categories",
+        help="Categories of the incident"
+    )
 
     incident_corr_actions = fields.Html(
         string="Corrective Actions",
