@@ -1,7 +1,7 @@
 # Copyright 2026 Open2Bizz <info@open2bizz.nl>
 # License LGPL-3
 
-from odoo import api, fields, models
+from odoo import api, fields, exceptions, models
 
 
 class MgmtsystemAction(models.Model):
@@ -29,12 +29,12 @@ class MgmtsystemAction(models.Model):
         default_data_field = self.env.context.get('default_data_field', 'none')
 
         if field_name == "none":
-            raise ValueError(_("Field name is required! Missing in context"))
+            raise exceptions.ValidationError(_("Field name is required! Missing in context"))
         if default_data_field == "none":
-            raise ValueError(_("Default data field is required! Missing in context"))
+            raise exceptions.ValidationError(_("Default data field is required! Missing in context"))
 
         if self[default_data_field]:
-            raise UserError(_("There is already a default linked"))
+            raise exceptions.ValidationError(_("There is already a default linked"))
 
         def_data_model = self.env['default.data']
         target_model = self.env['ir.model'].search([('model', '=', self._name)], limit=1)
@@ -50,7 +50,7 @@ class MgmtsystemAction(models.Model):
         # Use this in the view: context="{'field_name', 'destination_field_name'}"
         field_name = self.env.context.get('field_name', 'none')
         if field_name == "none":
-            raise ValueError(_("Field name is required! Missing in context"))
+            raise exceptions.ValidationError(_("Field name is required! Missing in context"))
 
         model_obj = self.env['ir.model'].search([('model', '=', self._name)], limit=1)
         field = self.env['ir.model.fields'].search([('model_id', '=', model_obj.id), ('name', '=', field_name)])
