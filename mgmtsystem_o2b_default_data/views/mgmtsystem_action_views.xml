@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_mgmtsystem_action_form_default_data" model="ir.ui.view">
+        <field name="name">mgmtsystem.action.form.default.data</field>
+        <field name="model">mgmtsystem.action</field>
+        <field name="inherit_id" ref="mgmtsystem_action.view_mgmtsystem_action_form"/>
+        <field name="arch" type="xml">
+            <field name="description" position="before">
+                <field name="default_description"/>
+            </field>
+        </field>
+    </record>
+</odoo>
