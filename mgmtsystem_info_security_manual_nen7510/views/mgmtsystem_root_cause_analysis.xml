@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_mgmtsystem_root_cause_analysis_list" model="ir.ui.view">
+        <field name="name">mgmtsystem.root_cause_analysis.list</field>
+        <field name="model">mgmtsystem.root_cause_analysis</field>
+        <field name="type">list</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="state"/>
+                <field name="user_id"/>
+                <field name="incident_category_ids" widget="many2many_tags"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_mgmtsystem_root_cause_analysis_form" model="ir.ui.view">
+        <field name="name">mgmtsystem.root_cause_analysis.form</field>
+        <field name="model">mgmtsystem.root_cause_analysis</field>
+        <field name="arch" type="xml">
+            <form string="Root Cause Analysis">
+                <header>
+                    <field name="state" widget="statusbar" options="{'clickable': 1}"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Root Cause Analysis Name..."/>
+                        </h1>
+                    </div>
+                    <group name="main">
+                        <group name="left" string="General">
+                            <field name="user_id"/>
+                            <field name="incident_category_ids" widget="many2many_tags"/>
+                        </group>
+                        <group name="right" string="Link to record">
+                            <field name="res_model_id" invisible="1"/>
+                            <field name="res_id" invisible="1"/>
+                            <field name="record_ref" string="Link to record"
+                                   groups="mgmtsystem.group_mgmtsystem_manager"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="incident" string="Incident">
+                            <label for="incident_description"/>
+                            <field name="incident_description"/>
+                            <label for="incident_sym_con"/>
+                            <field name="incident_sym_con"/>
+                            <label for="incident_root_cause"/>
+                            <field name="incident_root_cause"/>
+                        </page>
+                        <page name="identification" string="Identification">
+                            <label for="incident_identification_primary"/>
+                            <field name="incident_identification_primary"/>
+
+                            <label for="incident_identification_secondary"/>
+                            <field name="incident_identification_secondary"/>
+
+                            <label for="incident_identification_factors"/>
+                            <field name="incident_identification_factors"/>
+                        </page>
+                        <page name="actions" string="Actions">
+                            <label for="incident_corr_actions"/>
+                            <field name="incident_corr_actions"/>
+                            <label for="incident_prevent_actions"/>
+                            <field name="incident_prevent_actions"/>
+                            <label for="incident_lessons_learned"/>
+                            <field name="incident_lessons_learned"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_mgmtsystem_root_cause_analysis_action" model="ir.actions.act_window">
+        <field name="name">Root Cause Analyses</field>
+        <field name="res_model">mgmtsystem.root_cause_analysis</field>
+        <field name="view_mode">list,form</field>
+        <field name="view_id" ref="view_mgmtsystem_root_cause_analysis_list"/>
+    </record>
+
+    <menuitem
+        id="menu_mgmtsystem_root_cause_analysis"
+        name="Root Cause Analyses"
+        action="view_mgmtsystem_root_cause_analysis_action"
+        parent="mgmtsystem.menu_mgmtsystem_main"
+        sequence="30"
+    />
+
+</odoo>

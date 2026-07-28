@@ -21,11 +21,13 @@
         "data/mgmtsystem_hazard_hazard.xml",
         "data/sequence_data.xml",
         "data/mgmtsystem_action_tag.xml",
+        "data/mgmtsystem_incident_categories.xml",
         "security/ir_model_access.xml",
         "views/document_page.xml",
         "views/document_page_theme.xml",
         "views/document_page_chapter.xml",
         "views/mgmtsystem_risk_canvas.xml",
+        "views/mgmtsystem_root_cause_analysis.xml",
         "views/mgmtsystem_action.xml",
         "views/mgmtsystem_hazard.xml",
 

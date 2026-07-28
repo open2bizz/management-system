@@ -17,6 +17,23 @@
                     <field name="origin_hazard_id"/>
                     <field name="origin_hazard_control_measure_id" invisible="not origin_hazard_id" domain="[('hazard_id', '=', origin_hazard_id)]"/>
                 </xpath>
+                <xpath expr="//notebook" position="inside">
+                    <page name="root_cause_analysis" string="Root Cause Analysis">
+                        <group>
+                            <field name="root_cause_analysis"/>
+                            <field name="root_cause_analysis_id" readonly="1"/>
+                        </group>
+                        <div invisible="root_cause_analysis_id">
+                            <button
+                                name="action_create_root_cause_analysis"
+                                string="Create Root Cause Analysis"
+                                type="object"
+                                class="btn-primary"
+                                invisible="not root_cause_analysis"
+                            />
+                        </div>
+                    </page>
+                </xpath>
             </field>
         </record>
 
