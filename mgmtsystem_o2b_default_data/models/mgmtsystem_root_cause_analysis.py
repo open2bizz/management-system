@@ -144,7 +144,7 @@ class MgmtsystemRootCauseAnalysis(models.Model):
 
         def_data_model = self.env['default.data']
         target_model = self.env['ir.model'].search([('model', '=', self._name)], limit=1)
-        field_id = self.env['ir.model.fields'].search([('model', '=', 'project.task'), ('name', '=', field_name)])
+        field_id = self.env['ir.model.fields'].search([('model', '=', self._name), ('name', '=', field_name)])
         value = self[field_name]
 
         default_data_value = def_data_model.action_create_default_data(target_model, field_id, value)
