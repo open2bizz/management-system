@@ -6,17 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-28 19:18+0000\n"
-"PO-Revision-Date: 2026-07-28 21:25+0200\n"
-"Last-Translator: Thomas Pot | Open2bizz <info@open2bizz.nl>\n"
+"POT-Creation-Date: 2026-07-29 18:05+0000\n"
+"PO-Revision-Date: 2026-07-29 18:05+0000\n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Source-Language: en_US\n"
-"X-Generator: Poedit 3.9\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_hazard_form
@@ -27,7 +24,9 @@ msgstr ") acties"
 #. odoo-python
 #: code:addons/mgmtsystem_info_security_manual_nen7510/models/mgmtsystem_hazard.py:0
 msgid "<p><br/></p><hr/><p>Control Measure of hazard comments:</p><br/>"
-msgstr "<p><br/></p><hr/><p>Opmerkingen over beheersmaatregelen voor gevaren:</p><br/>"
+msgstr ""
+"<p><br/></p><hr/><p>Opmerkingen over beheersmaatregelen voor "
+"gevaren:</p><br/>"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
@@ -42,7 +41,7 @@ msgstr "<span>Voltooid</span>"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
 msgid "<span>Compliant</span>"
-msgstr "<span>Compliant</span>"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
@@ -52,38 +51,30 @@ msgstr "<span>In uitvoering</span>"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
 msgid "<span>NVT</span>"
-msgstr "<span>NVT</span>"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
 msgid "<span>Open</span>"
-msgstr "<span>Open</span>"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
 msgid ""
 "<strong>Inkomstenstromen.</strong>\n"
 "                                <br/>\n"
-"                                Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten "
-"genereren. De\n"
-"                                inkomsten die een bedrijf genereert moeten hoog genoeg zijn om de kosten te "
-"dekken en\n"
-"                                onder aan de streep een mooi bedrijfsresultaat(winst) over te houden. Een "
-"bedrijf zonder\n"
-"                                goed verdienmodel is gedoemd te falen! De kassa moet rinkelen, want een "
-"druppelende\n"
+"                                Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten genereren. De\n"
+"                                inkomsten die een bedrijf genereert moeten hoog genoeg zijn om de kosten te dekken en\n"
+"                                onder aan de streep een mooi bedrijfsresultaat(winst) over te houden. Een bedrijf zonder\n"
+"                                goed verdienmodel is gedoemd te falen! De kassa moet rinkelen, want een druppelende\n"
 "                                geldkraan is niet genoeg om te overleven."
 msgstr ""
 "<strong>Inkomstenstromen.</strong>\n"
 "                               <br/>\n"
-"                                Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten "
-"genereren. De\n"
-"                                inkomsten die een bedrijf genereert moeten hoog genoeg zijn om de kosten te "
-"dekken en\n"
-"                                onder aan de streep een mooi bedrijfsresultaat(winst) over te houden. Een "
-"bedrijf zonder\n"
-"                                goed verdienmodel is gedoemd te mislukken! De kassa moet rinkelen, want een "
-"druppelende\n"
+"                                Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten genereren. De\n"
+"                                inkomsten die een bedrijf genereert moeten hoog genoeg zijn om de kosten te dekken en\n"
+"                                onder aan de streep een mooi bedrijfsresultaat(winst) over te houden. Een bedrijf zonder\n"
+"                                goed verdienmodel is gedoemd te mislukken! De kassa moet rinkelen, want een druppelende\n"
 "                                geldkraan is niet genoeg om te overleven."
 
 #. module: mgmtsystem_info_security_manual_nen7510
@@ -91,38 +82,24 @@ msgstr ""
 msgid ""
 "<strong>Kanalen.</strong>\n"
 "                                <br/>\n"
-"                                Met kanalen worden al de manieren waarmee een organisatie in contact staat "
-"met de klant\n"
-"                                bedoeld. Het vinden van de juiste mix van kanalen is cruciaal om klanten "
-"met de\n"
-"                                waardepropositie te bereiken. In de bouwsteen kanalen beschrijf je hoe je "
-"bedrijf met de\n"
-"                                verschillende klanten communiceert en hoe je deze klanten met de "
-"waardepropositie\n"
-"                                bereikt. De manieren hoe men in contact staat met de klant kunnen op "
-"diverse manieren\n"
-"                                onderverdeeld worden. Zo is er onderscheidt te maken in communicatie-, "
-"distributie- en\n"
-"                                verkoopkanalen. Ook kan er onderscheidt gemaakt worden tussen online- en "
-"fysieke\n"
+"                                Met kanalen worden al de manieren waarmee een organisatie in contact staat met de klant\n"
+"                                bedoeld. Het vinden van de juiste mix van kanalen is cruciaal om klanten met de\n"
+"                                waardepropositie te bereiken. In de bouwsteen kanalen beschrijf je hoe je bedrijf met de\n"
+"                                verschillende klanten communiceert en hoe je deze klanten met de waardepropositie\n"
+"                                bereikt. De manieren hoe men in contact staat met de klant kunnen op diverse manieren\n"
+"                                onderverdeeld worden. Zo is er onderscheidt te maken in communicatie-, distributie- en\n"
+"                                verkoopkanalen. Ook kan er onderscheidt gemaakt worden tussen online- en fysieke\n"
 "                                kanalen."
 msgstr ""
 "<strong>Kanalen.</strong>\n"
 "                               <br/>\n"
-"                                Met kanalen worden alle manieren waarmee een organisatie in contact staat "
-"met de klant\n"
-"                                bedoeld. Het vinden van de juiste mix van kanalen is cruciaal om klanten "
-"met de\n"
-"                                waardepropositie te bereiken. In de bouwsteen kanalen beschrijf je hoe je "
-"bedrijf met de\n"
-"                                verschillende klanten communiceert en hoe je deze klanten met de "
-"waardepropositie\n"
-"                                bereikt. De manieren waarop men in contact staat met de klant kunnen op "
-"diverse manieren\n"
-"                                onderverdeeld worden. Zo is er onderscheidt te maken in communicatie-, "
-"distributie- en\n"
-"                                verkoopkanalen. Ook kan er onderscheidt gemaakt worden tussen online- en "
-"fysieke\n"
+"                                Met kanalen worden alle manieren waarmee een organisatie in contact staat met de klant\n"
+"                                bedoeld. Het vinden van de juiste mix van kanalen is cruciaal om klanten met de\n"
+"                                waardepropositie te bereiken. In de bouwsteen kanalen beschrijf je hoe je bedrijf met de\n"
+"                                verschillende klanten communiceert en hoe je deze klanten met de waardepropositie\n"
+"                                bereikt. De manieren waarop men in contact staat met de klant kunnen op diverse manieren\n"
+"                                onderverdeeld worden. Zo is er onderscheidt te maken in communicatie-, distributie- en\n"
+"                                verkoopkanalen. Ook kan er onderscheidt gemaakt worden tussen online- en fysieke\n"
 "                                kanalen."
 
 #. module: mgmtsystem_info_security_manual_nen7510
@@ -130,34 +107,22 @@ msgstr ""
 msgid ""
 "<strong>Kern (strategische) partners.</strong>\n"
 "                                <br/>\n"
-"                                De bouwsteen kern partners gaat over het netwerk van leveranciers en "
-"partners die nodig\n"
-"                                zijn om het businessmodel te laten werken. Bedrijven gaan om allerlei "
-"redenen\n"
-"                                partnerschappen aan. Het creëren van het juiste netwerk kan als een "
-"belangrijke factor\n"
-"                                voor succesvol ondernemerschap gezien worden. Een oude wijsheid luidt niet "
-"voor niks:\n"
-"                                ”Het geheel is meer dan de som der delen”. Partners kunnen een organisatie "
-"helpen om\n"
-"                                dingen te doen die alleen niet mogelijk zijn. De juiste partnerships helpen "
-"om succesvol\n"
+"                                De bouwsteen kern partners gaat over het netwerk van leveranciers en partners die nodig\n"
+"                                zijn om het businessmodel te laten werken. Bedrijven gaan om allerlei redenen\n"
+"                                partnerschappen aan. Het creëren van het juiste netwerk kan als een belangrijke factor\n"
+"                                voor succesvol ondernemerschap gezien worden. Een oude wijsheid luidt niet voor niks:\n"
+"                                ”Het geheel is meer dan de som der delen”. Partners kunnen een organisatie helpen om\n"
+"                                dingen te doen die alleen niet mogelijk zijn. De juiste partnerships helpen om succesvol\n"
 "                                te zijn, te groeien en te concurreren"
 msgstr ""
 "<strong>Kern (strategische) partners.</strong>\n"
 "                               <br/>\n"
-"                                De bouwsteen kernpartners gaat over het netwerk van leveranciers en "
-"partners die nodig\n"
-"                                zijn om het businessmodel te laten werken. Bedrijven gaan om allerlei "
-"redenen\n"
-"                                partnerschappen aan. Het creëren van het juiste netwerk kan als een "
-"belangrijke factor\n"
-"                                voor succesvol ondernemerschap gezien worden. Een oude wijsheid luidt niet "
-"voor niks:\n"
-"                                \"Het geheel is meer dan de som der delen\". Partners kunnen een "
-"organisatie helpen om\n"
-"                                dingen te doen die alleen niet mogelijk zijn. De juiste partnerships helpen "
-"om succesvol\n"
+"                                De bouwsteen kernpartners gaat over het netwerk van leveranciers en partners die nodig\n"
+"                                zijn om het businessmodel te laten werken. Bedrijven gaan om allerlei redenen\n"
+"                                partnerschappen aan. Het creëren van het juiste netwerk kan als een belangrijke factor\n"
+"                                voor succesvol ondernemerschap gezien worden. Een oude wijsheid luidt niet voor niks:\n"
+"                                \"Het geheel is meer dan de som der delen\". Partners kunnen een organisatie helpen om\n"
+"                                dingen te doen die alleen niet mogelijk zijn. De juiste partnerships helpen om succesvol\n"
 "                                te zijn, te groeien en te concurreren"
 
 #. module: mgmtsystem_info_security_manual_nen7510
@@ -165,30 +130,20 @@ msgstr ""
 msgid ""
 "<strong>Kernmiddelen.</strong>\n"
 "                                <br/>\n"
-"                                De key resources Business Model Canvas bouwsteen beschrijft de "
-"belangrijkste middelen\n"
-"                                die nodig zijn om de waardepropositie te kunnen realiseren en het "
-"businessmodel te laten\n"
-"                                werken. Key resources kunnen in eigendom zijn van het bedrijf, maar kunnen "
-"ook geleased\n"
-"                                worden of bij key partners verkregen worden. Key resources kunnen in de "
-"volgende\n"
-"                                categorieën worden ingedeeld: fysiek, financieel, intellectueel en "
-"menselijk (human\n"
+"                                De key resources Business Model Canvas bouwsteen beschrijft de belangrijkste middelen\n"
+"                                die nodig zijn om de waardepropositie te kunnen realiseren en het businessmodel te laten\n"
+"                                werken. Key resources kunnen in eigendom zijn van het bedrijf, maar kunnen ook geleased\n"
+"                                worden of bij key partners verkregen worden. Key resources kunnen in de volgende\n"
+"                                categorieën worden ingedeeld: fysiek, financieel, intellectueel en menselijk (human\n"
 "                                resources)."
 msgstr ""
 "<strong>Kernmiddelen.</strong>\n"
 "                               <br/>\n"
-"                                De belangrijkste middelen Business Model Canvas bouwsteen beschrijft de "
-"belangrijkste middelen\n"
-"                                die nodig zijn om de waardepropositie te kunnen realiseren en het "
-"businessmodel te laten\n"
-"                                werken. Key resources kunnen in eigendom zijn van het bedrijf, maar kunnen "
-"ook geleased\n"
-"                                worden of bij belangrijke partners verkregen worden. Key resources kunnen "
-"in de volgende\n"
-"                                categorieën worden ingedeeld: fysiek, financieel, intellectueel en "
-"menselijk (human\n"
+"                                De belangrijkste middelen Business Model Canvas bouwsteen beschrijft de belangrijkste middelen\n"
+"                                die nodig zijn om de waardepropositie te kunnen realiseren en het businessmodel te laten\n"
+"                                werken. Key resources kunnen in eigendom zijn van het bedrijf, maar kunnen ook geleased\n"
+"                                worden of bij belangrijke partners verkregen worden. Key resources kunnen in de volgende\n"
+"                                categorieën worden ingedeeld: fysiek, financieel, intellectueel en menselijk (human\n"
 "                                middelen)."
 
 #. module: mgmtsystem_info_security_manual_nen7510
@@ -196,26 +151,18 @@ msgstr ""
 msgid ""
 "<strong>Kernprocessen.</strong>\n"
 "                                <br/>\n"
-"                                In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten "
-"beschreven die een\n"
-"                                onderneming nodig heeft om goed te presteren. Het gaat dus om de "
-"kernactiviteiten die de\n"
-"                                organisatie moet uitvoeren om de waardepropositie te realiseren, klanten te "
-"bereiken,\n"
-"                                klantrelaties te onderhouden en inkomsten te verdienen. Welke activiteiten "
-"dit zijn\n"
+"                                In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten beschreven die een\n"
+"                                onderneming nodig heeft om goed te presteren. Het gaat dus om de kernactiviteiten die de\n"
+"                                organisatie moet uitvoeren om de waardepropositie te realiseren, klanten te bereiken,\n"
+"                                klantrelaties te onderhouden en inkomsten te verdienen. Welke activiteiten dit zijn\n"
 "                                hangt compleet af van de inrichting van het businessmodel."
 msgstr ""
 "<strong>Kernprocessen.</strong>\n"
 "                               <br/>\n"
-"                                In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten "
-"beschreven die een\n"
-"                                onderneming nodig heeft om goed te presteren. Het gaat dus om de "
-"kernactiviteiten die de\n"
-"                                organisatie moet uitvoeren om de waardepropositie te realiseren, klanten te "
-"bereiken,\n"
-"                                klantrelaties te onderhouden en inkomsten te verdienen. Welke activiteiten "
-"dit zijn\n"
+"                                In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten beschreven die een\n"
+"                                onderneming nodig heeft om goed te presteren. Het gaat dus om de kernactiviteiten die de\n"
+"                                organisatie moet uitvoeren om de waardepropositie te realiseren, klanten te bereiken,\n"
+"                                klantrelaties te onderhouden en inkomsten te verdienen. Welke activiteiten dit zijn\n"
 "                                hangt compleet af van de inrichting van het businessmodel."
 
 #. module: mgmtsystem_info_security_manual_nen7510
@@ -223,38 +170,24 @@ msgstr ""
 msgid ""
 "<strong>Klantrelaties.</strong>\n"
 "                                <br/>\n"
-"                                In de bouwsteen ”klantrelaties” wordt er beschreven hoe de onderneming in "
-"contact staat\n"
-"                                met de klant en hoe relaties opgebouwd en onderhouden worden met ieder "
-"klantsegment. Er\n"
-"                                zijn verschillende type relaties die men aan kan gaan met klanten. Voor een "
-"onderneming\n"
-"                                is het belangrijk om te motiveren waarom men een bepaalde relatie aan wil "
-"gaan met een\n"
-"                                klantsegment. De keuze van het type klantrelatie heeft namelijk invloed op "
-"alles wat een\n"
-"                                bedrijf doet en beïnvloedt ook de andere bouwstenen in het Business Model "
-"Canvas. Er\n"
-"                                zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke "
-"relatie, digitale\n"
+"                                In de bouwsteen ”klantrelaties” wordt er beschreven hoe de onderneming in contact staat\n"
+"                                met de klant en hoe relaties opgebouwd en onderhouden worden met ieder klantsegment. Er\n"
+"                                zijn verschillende type relaties die men aan kan gaan met klanten. Voor een onderneming\n"
+"                                is het belangrijk om te motiveren waarom men een bepaalde relatie aan wil gaan met een\n"
+"                                klantsegment. De keuze van het type klantrelatie heeft namelijk invloed op alles wat een\n"
+"                                bedrijf doet en beïnvloedt ook de andere bouwstenen in het Business Model Canvas. Er\n"
+"                                zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke relatie, digitale\n"
 "                                relatie, community, co-creatie en zelfservice."
 msgstr ""
 "<strong>Klantrelaties.</strong>\n"
 "                               <br/>\n"
-"                                In de bouwsteen \"klantrelaties\" wordt er beschreven hoe de onderneming in "
-"contact staat\n"
-"                                met de klant en hoe relaties opgebouwd en onderhouden worden met ieder "
-"klantsegment. Er\n"
-"                                zijn verschillende type relaties die men aan kan gaan met klanten. Voor een "
-"onderneming\n"
-"                                is het belangrijk om te motiveren waarom men een bepaalde relatie aan wil "
-"gaan met een\n"
-"                                klantsegment. De keuze van het type klantrelatie heeft namelijk invloed op "
-"alles wat een\n"
-"                                bedrijf doet en beïnvloedt ook de andere bouwstenen in het Business Model "
-"Canvas. Er\n"
-"                                zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke "
-"relatie, digitale\n"
+"                                In de bouwsteen \"klantrelaties\" wordt er beschreven hoe de onderneming in contact staat\n"
+"                                met de klant en hoe relaties opgebouwd en onderhouden worden met ieder klantsegment. Er\n"
+"                                zijn verschillende type relaties die men aan kan gaan met klanten. Voor een onderneming\n"
+"                                is het belangrijk om te motiveren waarom men een bepaalde relatie aan wil gaan met een\n"
+"                                klantsegment. De keuze van het type klantrelatie heeft namelijk invloed op alles wat een\n"
+"                                bedrijf doet en beïnvloedt ook de andere bouwstenen in het Business Model Canvas. Er\n"
+"                                zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke relatie, digitale\n"
 "                                relatie, community, co-creatie en zelfservice."
 
 #. module: mgmtsystem_info_security_manual_nen7510
@@ -262,26 +195,20 @@ msgstr ""
 msgid ""
 "<strong>Klantsegmenten.</strong>\n"
 "                                <br/>\n"
-"                                Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de "
-"markt; op één\n"
+"                                Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de markt; op één\n"
 "                                of meerdere segmenten.\n"
 "                                Waarde propositie\n"
-"                                De ”Waardeproposities” vormt de kern van je bedrijf. Richt je op de waarde "
-"die je voor\n"
-"                                je klanten creëert, de belofte aan je klanten; dat is meer dan een "
-"opsomming van\n"
+"                                De ”Waardeproposities” vormt de kern van je bedrijf. Richt je op de waarde die je voor\n"
+"                                je klanten creëert, de belofte aan je klanten; dat is meer dan een opsomming van\n"
 "                                producten. Wat is de kern van je product aanbod, welke elementen zijn uniek."
 msgstr ""
 "<strong>Klantsegmenten.</strong>\n"
 "                               <br/>\n"
-"                                Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de "
-"markt; op één\n"
+"                                Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de markt; op één\n"
 "                                of meerdere segmenten.\n"
 "                                Waarde propositie\n"
-"                                De \"Waardeproposities\" vormt de kern van je bedrijf. Richt je op de "
-"waarde die je voor\n"
-"                                je klanten creëert, de belofte aan je klanten; dat is meer dan een "
-"opsomming van\n"
+"                                De \"Waardeproposities\" vormt de kern van je bedrijf. Richt je op de waarde die je voor\n"
+"                                je klanten creëert, de belofte aan je klanten; dat is meer dan een opsomming van\n"
 "                                producten. Wat is de kern van je productaanbod, welke elementen zijn uniek."
 
 #. module: mgmtsystem_info_security_manual_nen7510
@@ -289,34 +216,22 @@ msgstr ""
 msgid ""
 "<strong>Kostenstructuur.</strong>\n"
 "                                <br/>\n"
-"                                De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die "
-"gemaakt worden bij\n"
-"                                het uitvoeren van een businessmodel. Kosten zijn onvermijdbaar! Het creëren "
-"van waarde,\n"
-"                                het onderhouden van klantrelaties en het genereren van inkomsten brengen "
-"allemaal kosten\n"
-"                                met zich mee. Zoals vanzelfsprekend is het belangrijk om de kosten binnen "
-"de perken te\n"
-"                                houden en te focussen op zaken die daadwerkelijk waarde toevoegen voor "
-"klanten. Voor het\n"
-"                                ene businessmodel is kostenreductie één van de belangrijkste zaken, terwijl "
-"dit in\n"
+"                                De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die gemaakt worden bij\n"
+"                                het uitvoeren van een businessmodel. Kosten zijn onvermijdbaar! Het creëren van waarde,\n"
+"                                het onderhouden van klantrelaties en het genereren van inkomsten brengen allemaal kosten\n"
+"                                met zich mee. Zoals vanzelfsprekend is het belangrijk om de kosten binnen de perken te\n"
+"                                houden en te focussen op zaken die daadwerkelijk waarde toevoegen voor klanten. Voor het\n"
+"                                ene businessmodel is kostenreductie één van de belangrijkste zaken, terwijl dit in\n"
 "                                andere businessmodellen minder belangrijk is."
 msgstr ""
 "<strong>Kostenstructuur.</strong>\n"
 "                               <br/>\n"
-"                                De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die "
-"gemaakt worden bij\n"
-"                                het uitvoeren van een businessmodel. Kosten zijn onvermijdbaar! Het creëren "
-"van waarde,\n"
-"                                het onderhouden van klantrelaties en het genereren van inkomsten brengen "
-"allemaal kosten\n"
-"                                met zich mee. Zoals vanzelfsprekend is het belangrijk om de kosten binnen "
-"de perken te\n"
-"                                houden en te focussen op zaken die daadwerkelijk waarde toevoegen voor "
-"klanten. Voor het\n"
-"                                ene businessmodel is kostenreductie één van de belangrijkste zaken, terwijl "
-"dit in\n"
+"                                De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die gemaakt worden bij\n"
+"                                het uitvoeren van een businessmodel. Kosten zijn onvermijdbaar! Het creëren van waarde,\n"
+"                                het onderhouden van klantrelaties en het genereren van inkomsten brengen allemaal kosten\n"
+"                                met zich mee. Zoals vanzelfsprekend is het belangrijk om de kosten binnen de perken te\n"
+"                                houden en te focussen op zaken die daadwerkelijk waarde toevoegen voor klanten. Voor het\n"
+"                                ene businessmodel is kostenreductie één van de belangrijkste zaken, terwijl dit in\n"
 "                                andere businessmodellen minder belangrijk is."
 
 #. module: mgmtsystem_info_security_manual_nen7510
@@ -324,57 +239,49 @@ msgstr ""
 msgid ""
 "<strong>Voordelen van het gebruik van Risk Model Canvas.</strong>\n"
 "                                <br/>\n"
-"                                Breng je bedrijf en context met 1 pagina op overzichtelijke en transparante "
-"manier in\n"
+"                                Breng je bedrijf en context met 1 pagina op overzichtelijke en transparante manier in\n"
 "                                kaart.\n"
-"                                Éen plaatje zegt meer dan duizend woorden en communiceert makkelijk met "
-"derden.\n"
-"                                Het is een multifunctionele tool die én brug slaat tussen business en "
-"techniek.\n"
+"                                Éen plaatje zegt meer dan duizend woorden en communiceert makkelijk met derden.\n"
+"                                Het is een multifunctionele tool die én brug slaat tussen business en techniek.\n"
 "                                Het helpt je om je bedrijf van een afstandje te analyseren.\n"
-"                                Het is een methode die bruikbaar is om invulling te geven aan de basis "
-"vereisten van\n"
+"                                Het is een methode die bruikbaar is om invulling te geven aan de basis vereisten van\n"
 "                                kwaliteitsnormen zoals ISO27001, NEN7510 of ISO9001\n"
 "                                Lees meer over Risk Model Canvas op: riskmodelcanvas.net\n"
 "                                Lees meer over the business model canvas op: strategyzer.com\n"
-"                                Risk Model © 2023 by Gilbert van Zeijl and Vincent van Dijk is licensed "
-"under CC BY-SA\n"
+"                                Risk Model © 2023 by Gilbert van Zeijl and Vincent van Dijk is licensed under CC BY-SA\n"
 "                                4.0"
 msgstr ""
 "<strong>Voordelen van het gebruik van Risk Model Canvas.</strong>\n"
 "                               <br/>\n"
-"                                Breng je bedrijf en context met 1 pagina op overzichtelijke en transparante "
-"manier in\n"
+"                                Breng je bedrijf en context met 1 pagina op overzichtelijke en transparante manier in\n"
 "                                kaart.\n"
-"                                Éen plaatje zegt meer dan duizend woorden en communiceert makkelijk met "
-"derden.\n"
-"                                Het is een multifunctionele tool die én brug slaat tussen business en "
-"techniek.\n"
+"                                Éen plaatje zegt meer dan duizend woorden en communiceert makkelijk met derden.\n"
+"                                Het is een multifunctionele tool die én brug slaat tussen business en techniek.\n"
 "                                Het helpt je om je bedrijf van een afstandje te analyseren.\n"
-"                                Het is een methode die bruikbaar is om invulling te geven aan de basis "
-"vereisten van\n"
+"                                Het is een methode die bruikbaar is om invulling te geven aan de basis vereisten van\n"
 "                                kwaliteitsnormen zoals ISO27001, NEN7510 of ISO9001\n"
 "                                Lees meer over Risk Model Canvas op: riskmodelcanvas.net\n"
 "                                Lees meer over het business model canvas op: strategyzer.com\n"
-"                                Risk Model © 2023 door Gilbert van Zeijl en Vincent van Dijk is "
-"gelicenseerd onder CC BY-SA\n"
+"                                Risk Model © 2023 door Gilbert van Zeijl en Vincent van Dijk is gelicenseerd onder CC BY-SA\n"
 "                                4.0"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #. odoo-python
 #: code:addons/mgmtsystem_info_security_manual_nen7510/models/mgmtsystem_action.py:0
+#: code:addons/mgmtsystem_info_security_manual_nen7510/models/mgmtsystem_nonconformity.py:0
 msgid "A Root Cause Analysis already exists for this action."
-msgstr "Er is al een analyse van de onderliggende oorzaak voor deze maatregel."
+msgstr ""
+"Er is al een analyse van de onderliggende oorzaak voor deze maatregel."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #. odoo-python
 #: code:addons/mgmtsystem_info_security_manual_nen7510/models/mgmtsystem_hazard.py:0
 msgid ""
-"A management action has been created. You can view it <a href='/web#id=%s&model=mgmtsystem.action' "
-"target='_blank'>here</a>."
+"A management action has been created. You can view it <a "
+"href='/web#id=%s&model=mgmtsystem.action' target='_blank'>here</a>."
 msgstr ""
-"Er is een managementactie aangemaakt. Je kunt deze <a href='/web#id=%s&model=mgmtsystem.action' "
-"target='_blank'>hier</a> bekijken."
+"Er is een managementactie aangemaakt. Je kunt deze <a "
+"href='/web#id=%s&model=mgmtsystem.action' target='_blank'>hier</a> bekijken."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_mgmtsystem_action
@@ -396,7 +303,9 @@ msgstr "Acties"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_corr_actions
 msgid "Actions defined to remedy the primary and secondary causes"
-msgstr "Maatregelen die zijn vastgesteld om de primaire en secundaire oorzaken aan te pakken"
+msgstr ""
+"Maatregelen die zijn vastgesteld om de primaire en secundaire oorzaken aan "
+"te pakken"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_theme__active
@@ -450,11 +359,6 @@ msgid "Ass Status"
 msgstr "Ass. Status"
 
 #. module: mgmtsystem_info_security_manual_nen7510
-#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
-msgid "Assessor"
-msgstr "Status Assessor"
-
-#. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_history_form_inherit_extra_fields
 msgid "Assessor Notes"
 msgstr "Opmerkingen van de beoordelaar"
@@ -473,7 +377,7 @@ msgstr "Aantal bijlagen"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
 msgid "Canvas"
-msgstr "Canvas"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_hazard__canvas_name
@@ -506,7 +410,7 @@ msgstr "Klasse"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__code
 msgid "Code"
-msgstr "Code"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__company_id
@@ -599,6 +503,7 @@ msgstr "Actie maken"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_action_form
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_nonconformity_form
 msgid "Create Root Cause Analysis"
 msgstr "Een analyse van de onderliggende oorzaak opstellen"
 
@@ -643,51 +548,60 @@ msgstr "Klantrelaties/waardepropositie"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_partners
 msgid ""
-"De bouwsteen kern partners gaat over het netwerk van leveranciers en partners die nodig zijn om het "
-"businessmodel te laten werken. Bedrijven gaan om allerlei redenen partnerschappen aan. Het creëren van het "
-"juiste netwerk kan als een belangrijke factor voor succesvol ondernemerschap gezien worden. Een oude "
-"wijsheid luidt niet voor niks: -Het geheel is meer dan de som der delen-. Partners kunnen een organisatie "
-"helpen om dingen te doen die alleen niet mogelijk zijn. De juiste partnerships helpen om succesvol te zijn, "
-"te groeien en te concurreren."
+"De bouwsteen kern partners gaat over het netwerk van leveranciers en "
+"partners die nodig zijn om het businessmodel te laten werken. Bedrijven gaan"
+" om allerlei redenen partnerschappen aan. Het creëren van het juiste netwerk"
+" kan als een belangrijke factor voor succesvol ondernemerschap gezien "
+"worden. Een oude wijsheid luidt niet voor niks: -Het geheel is meer dan de "
+"som der delen-. Partners kunnen een organisatie helpen om dingen te doen die"
+" alleen niet mogelijk zijn. De juiste partnerships helpen om succesvol te "
+"zijn, te groeien en te concurreren."
 msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_costs
 msgid ""
-"De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die gemaakt worden bij het uitvoeren van "
-"een businessmodel. Kosten zijn onvermijdbaar! Het creëren van waarde, het onderhouden van klantrelaties en "
-"het genereren van inkomsten brengen allemaal kosten met zich mee. Zoals vanzelfsprekend is het belangrijk "
-"om de kosten binnen de perken te houden en te focussen op zaken die daadwerkelijk waarde toevoegen voor "
-"klanten. Voor het ene businessmodel is kostenreductie één van de belangrijkste zaken, terwijl dit in andere "
-"businessmodellen minder belangrijk is"
+"De bouwsteen kostenstructuur beschrijft al de belangrijke kosten die gemaakt"
+" worden bij het uitvoeren van een businessmodel. Kosten zijn onvermijdbaar! "
+"Het creëren van waarde, het onderhouden van klantrelaties en het genereren "
+"van inkomsten brengen allemaal kosten met zich mee. Zoals vanzelfsprekend is"
+" het belangrijk om de kosten binnen de perken te houden en te focussen op "
+"zaken die daadwerkelijk waarde toevoegen voor klanten. Voor het ene "
+"businessmodel is kostenreductie één van de belangrijkste zaken, terwijl dit "
+"in andere businessmodellen minder belangrijk is"
 msgstr ""
-"De bouwsteen kostenstructuur beschrijft alle belangrijke kosten die worden gemaakt bij de uitvoering van "
-"een bedrijfsmodel. Kosten zijn onvermijdelijk! Het creëren van waarde, het onderhouden van klantrelaties en "
-"het genereren van inkomsten brengen allemaal kosten met zich mee. Het spreekt voor zich dat het belangrijk "
-"is om de kosten binnen de perken te houden en te focussen op zaken die daadwerkelijk waarde toevoegen voor "
-"klanten. Voor het ene bedrijfsmodel is kostenreductie een van de belangrijkste zaken, terwijl dit in andere "
-"bedrijfsmodellen minder belangrijk is"
+"De bouwsteen kostenstructuur beschrijft alle belangrijke kosten die worden "
+"gemaakt bij de uitvoering van een bedrijfsmodel. Kosten zijn onvermijdelijk!"
+" Het creëren van waarde, het onderhouden van klantrelaties en het genereren "
+"van inkomsten brengen allemaal kosten met zich mee. Het spreekt voor zich "
+"dat het belangrijk is om de kosten binnen de perken te houden en te focussen"
+" op zaken die daadwerkelijk waarde toevoegen voor klanten. Voor het ene "
+"bedrijfsmodel is kostenreductie een van de belangrijkste zaken, terwijl dit "
+"in andere bedrijfsmodellen minder belangrijk is"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_resources
 msgid ""
-"De key resources Business Model Canvas bouwsteen beschrijft de belangrijkste middelendie nodig zijn om de "
-"waardepropositie te kunnen realiseren en het businessmodel te laten werken. Key resources kunnen in "
-"eigendom zijn van het bedrijf, maar kunnen ook geleased worden of bij key partners verkregen worden. Key "
-"resources kunnen in de volgende categorieën worden ingedeeld: fysiek, financieel, intellectueel en "
-"menselijk (human resources)."
+"De key resources Business Model Canvas bouwsteen beschrijft de belangrijkste"
+" middelendie nodig zijn om de waardepropositie te kunnen realiseren en het "
+"businessmodel te laten werken. Key resources kunnen in eigendom zijn van het"
+" bedrijf, maar kunnen ook geleased worden of bij key partners verkregen "
+"worden. Key resources kunnen in de volgende categorieën worden ingedeeld: "
+"fysiek, financieel, intellectueel en menselijk (human resources)."
 msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_value_prop
 msgid ""
-"De ”Waardeproposities” vormt de kern van je bedrijf. Richt je op de waarde die je voor je klanten creëert, "
-"de belofte aan je klanten; dat is meer dan een opsomming van producten. Wat is de kern van je product "
-"aanbod, welke elementen zijn uniek"
+"De ”Waardeproposities” vormt de kern van je bedrijf. Richt je op de waarde "
+"die je voor je klanten creëert, de belofte aan je klanten; dat is meer dan "
+"een opsomming van producten. Wat is de kern van je product aanbod, welke "
+"elementen zijn uniek"
 msgstr ""
-"De \"Waardeproposities\" vormt de kern van je bedrijf. Richt je op de waarde die je voor je klanten "
-"creëert, de belofte aan je klanten; dat is meer dan een opsomming van producten. Wat is de kern van je "
-"productaanbod, welke elementen zijn uniek"
+"De \"Waardeproposities\" vormt de kern van je bedrijf. Richt je op de waarde"
+" die je voor je klanten creëert, de belofte aan je klanten; dat is meer dan "
+"een opsomming van producten. Wat is de kern van je productaanbod, welke "
+"elementen zijn uniek"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_theme__description
@@ -703,6 +617,7 @@ msgstr "Omschrijving"
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_hazard__display_name
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_hazard_control_measure__display_name
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_incident_categories__display_name
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_nonconformity__display_name
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__display_name
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__display_name
 msgid "Display Name"
@@ -739,9 +654,9 @@ msgstr "Concept"
 #. odoo-python
 #: code:addons/mgmtsystem_info_security_manual_nen7510/models/document_page.py:0
 msgid ""
-"Er is een managementactie aangemaakt. Je kunt deze <a href=\"{url}\" target=\"_blank\">hier</a> bekijken."
+"Er is een managementactie aangemaakt. Je kunt deze <a href=\"{url}\" "
+"target=\"_blank\">hier</a> bekijken."
 msgstr ""
-"Er is een managementactie aangemaakt. Je kunt deze <a href=\"{url}\" target=\"_blank\">hier</a> bekijken."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
@@ -812,7 +727,7 @@ msgstr "Hoog"
 #: model:mgmtsystem.hazard.probability,name:mgmtsystem_info_security_manual_nen7510.probability_high
 #: model:mgmtsystem.hazard.severity,name:mgmtsystem_info_security_manual_nen7510.severity_high
 msgid "Hoog"
-msgstr "Hoog"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__id
@@ -823,10 +738,11 @@ msgstr "Hoog"
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_hazard__id
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_hazard_control_measure__id
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_incident_categories__id
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_nonconformity__id
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__id
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_exception_icon
@@ -873,34 +789,42 @@ msgstr "In uitvoering"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_activities
 msgid ""
-"In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten beschreven die een onderneming nodig "
-"heeft om goed te presteren. Het gaat dus om de kernactiviteiten die de organisatie moet uitvoeren om de "
-"waardepropositie te realiseren, klanten te bereiken, klantrelaties te onderhouden en inkomsten te "
-"verdienen. Welke activiteiten dit zijn hangt compleet af van de inrichting van het businessmodel"
+"In de bouwsteen kernactiviteiten worden de belangrijkste activiteiten "
+"beschreven die een onderneming nodig heeft om goed te presteren. Het gaat "
+"dus om de kernactiviteiten die de organisatie moet uitvoeren om de "
+"waardepropositie te realiseren, klanten te bereiken, klantrelaties te "
+"onderhouden en inkomsten te verdienen. Welke activiteiten dit zijn hangt "
+"compleet af van de inrichting van het businessmodel"
 msgstr ""
-"In de bouwsteen ‘kernactiviteiten’ worden de belangrijkste activiteiten beschreven die een onderneming "
-"nodig heeft om goed te presteren. Het gaat dus om de kernactiviteiten die de organisatie moet uitvoeren om "
-"de waardepropositie te realiseren, klanten te bereiken, klantrelaties te onderhouden en inkomsten te "
-"genereren. Welke activiteiten dit zijn, hangt volledig af van de opzet van het bedrijfsmodel"
+"In de bouwsteen ‘kernactiviteiten’ worden de belangrijkste activiteiten "
+"beschreven die een onderneming nodig heeft om goed te presteren. Het gaat "
+"dus om de kernactiviteiten die de organisatie moet uitvoeren om de "
+"waardepropositie te realiseren, klanten te bereiken, klantrelaties te "
+"onderhouden en inkomsten te genereren. Welke activiteiten dit zijn, hangt "
+"volledig af van de opzet van het bedrijfsmodel"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_cust_relations
 msgid ""
-"In de bouwsteen ”klantrelaties” wordt er beschreven hoe de onderneming in contact staat met de klant en hoe "
-"relaties opgebouwd en onderhouden worden met ieder klantsegment. Er zijn verschillende type relaties die "
-"men aan kan gaan met klanten. Voor een onderneming is het belangrijk om te motiveren waarom men een "
-"bepaalde relatie aan wil gaan met een klantsegment. De keuze van het type klantrelatie heeft namelijk "
-"invloed op alles wat een bedrijf doet en beïnvloedt ook de andere bouwstenen in het Business Model Canvas. "
-"Er zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke relatie, digitale relatie, "
-"community, co-creatie en zelfservice."
+"In de bouwsteen ”klantrelaties” wordt er beschreven hoe de onderneming in "
+"contact staat met de klant en hoe relaties opgebouwd en onderhouden worden "
+"met ieder klantsegment. Er zijn verschillende type relaties die men aan kan "
+"gaan met klanten. Voor een onderneming is het belangrijk om te motiveren "
+"waarom men een bepaalde relatie aan wil gaan met een klantsegment. De keuze "
+"van het type klantrelatie heeft namelijk invloed op alles wat een bedrijf "
+"doet en beïnvloedt ook de andere bouwstenen in het Business Model Canvas. Er"
+" zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke "
+"relatie, digitale relatie, community, co-creatie en zelfservice."
 msgstr ""
-"In de bouwsteen \"klantrelaties\" wordt er beschreven hoe de onderneming in contact staat met de klant en "
-"hoe relaties opgebouwd en onderhouden worden met ieder klantsegment. Er zijn verschillende type relaties "
-"die men aan kan gaan met klanten. Voor een onderneming is het belangrijk om te motiveren waarom men een "
-"bepaalde relatie aan wil gaan met een klantsegment. De keuze van het type klantrelatie heeft namelijk "
-"invloed op alles wat een bedrijf doet en beïnvloedt ook de andere bouwstenen in het Business Model Canvas. "
-"Er zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke relatie, digitale relatie, "
-"community, co-creatie en zelfservice."
+"In de bouwsteen \"klantrelaties\" wordt er beschreven hoe de onderneming in "
+"contact staat met de klant en hoe relaties opgebouwd en onderhouden worden "
+"met ieder klantsegment. Er zijn verschillende type relaties die men aan kan "
+"gaan met klanten. Voor een onderneming is het belangrijk om te motiveren "
+"waarom men een bepaalde relatie aan wil gaan met een klantsegment. De keuze "
+"van het type klantrelatie heeft namelijk invloed op alles wat een bedrijf "
+"doet en beïnvloedt ook de andere bouwstenen in het Business Model Canvas. Er"
+" zijn de volgende soorten klantrelaties te onderscheiden: Persoonlijke "
+"relatie, digitale relatie, community, co-creatie en zelfservice."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__nen_judgement_assessor_status__progress
@@ -911,7 +835,7 @@ msgstr "In uitvoering"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_root_cause_analysis_form
 msgid "Incident"
-msgstr "Incident"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.actions.act_window,name:mgmtsystem_info_security_manual_nen7510.incident_category_action
@@ -985,14 +909,23 @@ msgid "Is Follower"
 msgstr "Is een volger"
 
 #. module: mgmtsystem_info_security_manual_nen7510
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
+msgid "Judgement Assessor"
+msgstr "Oordeel van de assessor"
+
+#. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_judgement_assessor
 msgid "Judgement Assessor (%)"
 msgstr "Oordeel Assessor (%)"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_judgement_assessor
-msgid "Judgement Assessor / auditor in percentage completed. (0% = open, 100% = completed)"
-msgstr "Oordeel Assessor / auditor in percentage voltooid. (0% = open, 100% = voltooid)"
+msgid ""
+"Judgement Assessor / auditor in percentage completed. (0% = open, 100% = "
+"completed)"
+msgstr ""
+"Oordeel Assessor / auditor in percentage voltooid. (0% = open, 100% = "
+"voltooid)"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page__nen_judgement_assessor_status
@@ -1113,7 +1046,7 @@ msgstr "Verplicht"
 #: model:mgmtsystem.hazard.probability,name:mgmtsystem_info_security_manual_nen7510.probability_med
 #: model:mgmtsystem.hazard.severity,name:mgmtsystem_info_security_manual_nen7510.severity_med
 msgid "Medium"
-msgstr "Medium"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_has_error
@@ -1130,19 +1063,25 @@ msgstr "Berichten"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_channels
 msgid ""
-"Met kanalen worden al de manieren waarmee een organisatie in contact staat met de klant bedoeld. Het vinden "
-"van de juiste mix van kanalen is cruciaal om klanten met de waardepropositie te bereiken. In de bouwsteen "
-"kanalen beschrijf je hoe je bedrijf met de verschillende klanten communiceert en hoe je deze klanten met de "
-"waardepropositie bereikt. De manieren hoe men in contact staat met de klant kunnen op diverse manieren "
-"onderverdeeld worden. Zo is er onderscheidt te maken in communicatie-, distributie- en verkoopkanalen. Ook "
-"kan er onderscheidt gemaakt worden tussen online- en fysieke kanalen."
+"Met kanalen worden al de manieren waarmee een organisatie in contact staat "
+"met de klant bedoeld. Het vinden van de juiste mix van kanalen is cruciaal "
+"om klanten met de waardepropositie te bereiken. In de bouwsteen kanalen "
+"beschrijf je hoe je bedrijf met de verschillende klanten communiceert en hoe"
+" je deze klanten met de waardepropositie bereikt. De manieren hoe men in "
+"contact staat met de klant kunnen op diverse manieren onderverdeeld worden. "
+"Zo is er onderscheidt te maken in communicatie-, distributie- en "
+"verkoopkanalen. Ook kan er onderscheidt gemaakt worden tussen online- en "
+"fysieke kanalen."
 msgstr ""
-"Met ‘kanalen’ worden alle manieren bedoeld waarop een organisatie in contact staat met de klant. Het vinden "
-"van de juiste mix van kanalen is cruciaal om klanten te bereiken met de waardepropositie. In de bouwsteen "
-"‘kanalen’ beschrijf je hoe je bedrijf met de verschillende klanten communiceert en hoe je deze klanten "
-"bereikt met de waardepropositie. De manieren waarop contact wordt onderhouden met de klant kunnen op "
-"diverse manieren worden onderverdeeld. Zo kan er onderscheid worden gemaakt tussen communicatie-, "
-"distributie- en verkoopkanalen. Ook kan er onderscheid worden gemaakt tussen online- en fysieke kanalen."
+"Met ‘kanalen’ worden alle manieren bedoeld waarop een organisatie in contact"
+" staat met de klant. Het vinden van de juiste mix van kanalen is cruciaal om"
+" klanten te bereiken met de waardepropositie. In de bouwsteen ‘kanalen’ "
+"beschrijf je hoe je bedrijf met de verschillende klanten communiceert en hoe"
+" je deze klanten bereikt met de waardepropositie. De manieren waarop contact"
+" wordt onderhouden met de klant kunnen op diverse manieren worden "
+"onderverdeeld. Zo kan er onderscheid worden gemaakt tussen communicatie-, "
+"distributie- en verkoopkanalen. Ook kan er onderscheid worden gemaakt tussen"
+" online- en fysieke kanalen."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_hazard__mgmtsystem_action_count
@@ -1152,7 +1091,7 @@ msgstr "Mgmtsystem actietelling"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__res_model_id
 msgid "Model"
-msgstr "Model"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__my_activity_date_deadline
@@ -1163,7 +1102,7 @@ msgstr "Mijn activiteitdeadline"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_wiki_form
 msgid "NEN 7510"
-msgstr "NEN 7510"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_document_page_chapter
@@ -1244,8 +1183,12 @@ msgstr "Volgende activiteit soort"
 #. module: mgmtsystem_info_security_manual_nen7510
 #. odoo-python
 #: code:addons/mgmtsystem_info_security_manual_nen7510/models/mgmtsystem_hazard.py:0
-msgid "No default tag found! Please reload the module 'mgmtsystem_info_security_manual_nen7510'"
-msgstr "Er is geen standaardtag gevonden! Laad de module 'mgmtsystem_info_security_manual_nen7510' opnieuw."
+msgid ""
+"No default tag found! Please reload the module "
+"'mgmtsystem_info_security_manual_nen7510'"
+msgstr ""
+"Er is geen standaardtag gevonden! Laad de module "
+"'mgmtsystem_info_security_manual_nen7510' opnieuw."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__non_conformity_ids
@@ -1263,6 +1206,11 @@ msgstr "Aantal afwijkingen"
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_category_filter
 msgid "Non compliant"
 msgstr "Niet compliant"
+
+#. module: mgmtsystem_info_security_manual_nen7510
+#: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_mgmtsystem_nonconformity
+msgid "Nonconformity"
+msgstr "Non-conformiteiten"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__state_compliant__non_compliant
@@ -1332,21 +1280,25 @@ msgstr "Opmerkingen Wijzigingen"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_income
 msgid ""
-"Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten genereren. De inkomsten die een bedrijf "
-"genereert moeten hoog genoeg zijn om de kosten te dekken en onder aan de streep een mooi "
-"bedrijfsresultaat(winst) over te houden. Een bedrijf zonder goed verdienmodel is gedoemd te falen! De kassa "
-"moet rinkelen, want een druppelende geldkraan is niet genoeg om te overleven."
+"Om als bedrijf levensvatbaar te zijn moet het voldoende inkomsten genereren."
+" De inkomsten die een bedrijf genereert moeten hoog genoeg zijn om de kosten"
+" te dekken en onder aan de streep een mooi bedrijfsresultaat(winst) over te "
+"houden. Een bedrijf zonder goed verdienmodel is gedoemd te falen! De kassa "
+"moet rinkelen, want een druppelende geldkraan is niet genoeg om te "
+"overleven."
 msgstr ""
-"Om als bedrijf levensvatbaar te zijn, moet het voldoende inkomsten genereren. De inkomsten die een bedrijf "
-"genereert, moeten hoog genoeg zijn om de kosten te dekken en onder aan de streep een mooi bedrijfsresultaat "
-"(winst) over te houden. Een bedrijf zonder goed verdienmodel is gedoemd te mislukken! De kassa moet "
-"rinkelen, want een druppelende geldkraan is niet genoeg om te overleven."
+"Om als bedrijf levensvatbaar te zijn, moet het voldoende inkomsten "
+"genereren. De inkomsten die een bedrijf genereert, moeten hoog genoeg zijn "
+"om de kosten te dekken en onder aan de streep een mooi bedrijfsresultaat "
+"(winst) over te houden. Een bedrijf zonder goed verdienmodel is gedoemd te "
+"mislukken! De kassa moet rinkelen, want een druppelende geldkraan is niet "
+"genoeg om te overleven."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields.selection,name:mgmtsystem_info_security_manual_nen7510.selection__document_page__nen_judgement_assessor_status__open
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_category_filter
 msgid "Open"
-msgstr "Open"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_action__origin_hazard_id
@@ -1366,7 +1318,7 @@ msgstr "Ander risico"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
 msgid "Over Canvas"
-msgstr "Over Canvas"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_document_page_chapter__parent_id
@@ -1407,13 +1359,16 @@ msgstr "Reden of opmerkingen waarom Niet van toepassing"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__res_id
 msgid "Record ID"
-msgstr "Record ID"
+msgstr ""
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__record_ref
-msgid "Reference to the target record. Only change this field if you want to replace it under another record."
+msgid ""
+"Reference to the target record. Only change this field if you want to "
+"replace it under another record."
 msgstr ""
-"Verwijzing naar het doelrecord. Wijzig dit veld alleen als je het wilt vervangen door een ander record."
+"Verwijzing naar het doelrecord. Wijzig dit veld alleen als je het wilt "
+"vervangen door een ander record."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__activity_user_id
@@ -1432,21 +1387,15 @@ msgstr "Risicomodel Canvas"
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_risk_canvas
 msgid ""
 "Risk Model Canvas is gebaseerd op het Business Model Canvas dat door Alex Osterwalder\n"
-"                                (2010) is bedacht. Het is een visueel overzicht waarbij de belangrijke "
-"componenten van\n"
-"                                een bedrijf beschreven zijn op 1 pagina. Het canvas geeft weer hoe een "
-"bedrijf of\n"
-"                                organisatie waarde creëert, levert en ten gelde maakt en is een prima "
-"raamwerk dat\n"
+"                                (2010) is bedacht. Het is een visueel overzicht waarbij de belangrijke componenten van\n"
+"                                een bedrijf beschreven zijn op 1 pagina. Het canvas geeft weer hoe een bedrijf of\n"
+"                                organisatie waarde creëert, levert en ten gelde maakt en is een prima raamwerk dat\n"
 "                                gebruikt kan worden om risico’s op hoog niveau te analyseren."
 msgstr ""
 "Risk Model Canvas is gebaseerd op het Business Model Canvas dat door Alex Osterwalder\n"
-"                                (2010) is bedacht. Het is een visueel overzicht waarbij de belangrijke "
-"componenten van\n"
-"                                een bedrijf beschreven zijn op 1 pagina. Het canvas geeft weer hoe een "
-"bedrijf of\n"
-"                                organisatie waarde creëert, levert en ten gelde maakt en is een prima "
-"raamwerk dat\n"
+"                                (2010) is bedacht. Het is een visueel overzicht waarbij de belangrijke componenten van\n"
+"                                een bedrijf beschreven zijn op 1 pagina. Het canvas geeft weer hoe een bedrijf of\n"
+"                                organisatie waarde creëert, levert en ten gelde maakt en is een prima raamwerk dat\n"
 "                                gebruikt kan worden om risico's op hoog niveau te analyseren."
 
 #. module: mgmtsystem_info_security_manual_nen7510
@@ -1463,7 +1412,9 @@ msgstr "Analyses van de onderliggende oorzaken"
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model,name:mgmtsystem_info_security_manual_nen7510.model_mgmtsystem_root_cause_analysis
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_action__root_cause_analysis_id
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_nonconformity__root_cause_analysis_id
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_action_form
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_nonconformity_form
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_mgmtsystem_root_cause_analysis_form
 msgid "Root Cause Analysis"
 msgstr "Oorzaakanalyse"
@@ -1475,13 +1426,15 @@ msgstr "Naam van de analyse van de onderliggende oorzaak..."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_action__root_cause_analysis
+#: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_nonconformity__root_cause_analysis
 msgid "Root Cause Analysis Needed?"
 msgstr "Is een analyse van de onderliggende oorzaak nodig?"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_root_cause
 msgid "Root cause of the incident. Use 5x Why?"
-msgstr "De onderliggende oorzaak van het incident. Gebruik de ‘5x Waarom?’-methode."
+msgstr ""
+"De onderliggende oorzaak van het incident. Gebruik de ‘5x Waarom?’-methode."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,field_description:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__message_has_sms_error
@@ -1578,19 +1531,19 @@ msgstr "Website communicatie geschiedenis"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_root_cause_analysis__incident_lessons_learned
-msgid "What have we learned? What could be improved? Best practices identified? Share with other teams?"
+msgid ""
+"What have we learned? What could be improved? Best practices identified? "
+"Share with other teams?"
 msgstr ""
-"Wat hebben we geleerd? Wat kan er beter? Zijn er best practices naar voren gekomen? Kunnen we deze met "
-"andere teams delen?"
+"Wat hebben we geleerd? Wat kan er beter? Zijn er best practices naar voren "
+"gekomen? Kunnen we deze met andere teams delen?"
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model:ir.model.fields,help:mgmtsystem_info_security_manual_nen7510.field_mgmtsystem_risk_canvas__risks_key_cust_segments
 msgid ""
-"Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de markt; op één of meerdere "
-"segmenten."
+"Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de "
+"markt; op één of meerdere segmenten."
 msgstr ""
-"Wie zijn je klanten? De meeste bedrijven richten zich op een deel van de markt; op één of meerdere "
-"segmenten."
 
 #. module: mgmtsystem_info_security_manual_nen7510
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_info_security_manual_nen7510.view_document_page_chapter

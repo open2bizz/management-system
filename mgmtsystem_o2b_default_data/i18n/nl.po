@@ -6,19 +6,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-28 17:59+0000\n"
-"PO-Revision-Date: 2026-07-28 20:00+0200\n"
-"Last-Translator: Thomas Pot | Open2bizz <info@open2bizz.nl>\n"
+"POT-Creation-Date: 2026-07-29 18:04+0000\n"
+"PO-Revision-Date: 2026-07-29 18:04+0000\n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.9\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: mgmtsystem_o2b_default_data
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_root_cause_analysis_form_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_wiki_form
 msgid ""
 "<br/>\n"
 "                <strong>Use Template:</strong>"
@@ -28,7 +27,6 @@ msgstr ""
 
 #. module: mgmtsystem_o2b_default_data
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_action_form_default_data
-#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_root_cause_analysis_form_default_data
 msgid "<strong>Use Template:</strong>"
 msgstr "<strong>Sjabloon gebruiken:</strong>"
 
@@ -40,6 +38,7 @@ msgstr "Actie"
 #. module: mgmtsystem_o2b_default_data
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_action_form_default_data
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_root_cause_analysis_form_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_wiki_form
 msgid "Add the value as new default data"
 msgstr "Voeg de waarde toe als nieuwe standaardgegevens"
 
@@ -59,14 +58,34 @@ msgid "Default Description"
 msgstr "Standaard Beschrijving"
 
 #. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_document_page__default_external_reference
+msgid "Default External Reference"
+msgstr ""
+
+#. module: mgmtsystem_o2b_default_data
 #: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_description
 msgid "Default Incident Description"
 msgstr "Standaardbeschrijving van het incident"
 
 #. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_document_page__default_internal_reference
+msgid "Default Internal Reference"
+msgstr ""
+
+#. module: mgmtsystem_o2b_default_data
 #: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_lessons_learned
 msgid "Default Lessons Learned"
 msgstr "Standaard geleerde lessen"
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_document_page__default_nen_observations
+msgid "Default NEN Observations"
+msgstr ""
+
+#. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_document_page__default_nen_sources
+msgid "Default NEN Sources"
+msgstr ""
 
 #. module: mgmtsystem_o2b_default_data
 #: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__default_incident_prevent_actions
@@ -95,35 +114,45 @@ msgstr "Typische symptomen en gevolgen"
 
 #. module: mgmtsystem_o2b_default_data
 #. odoo-python
+#: code:addons/mgmtsystem_o2b_default_data/models/document_page.py:0
 #: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_action.py:0
 #: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_root_cause_analysis.py:0
 msgid "Default data field is required! Missing in context"
 msgstr "Het standaardgegevensveld is verplicht! Ontbreekt in de context"
 
 #. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_document_page__display_name
 #: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_action__display_name
 #: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__display_name
 msgid "Display Name"
 msgstr "Weergavenaam"
 
 #. module: mgmtsystem_o2b_default_data
+#: model:ir.model,name:mgmtsystem_o2b_default_data.model_document_page
+msgid "Document Page"
+msgstr "Documentpagina"
+
+#. module: mgmtsystem_o2b_default_data
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_action_form_default_data
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_root_cause_analysis_form_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_wiki_form
 msgid "Extend"
 msgstr "Tekst Uitbreiden"
 
 #. module: mgmtsystem_o2b_default_data
 #. odoo-python
+#: code:addons/mgmtsystem_o2b_default_data/models/document_page.py:0
 #: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_action.py:0
 #: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_root_cause_analysis.py:0
 msgid "Field name is required! Missing in context"
 msgstr "Veldnaam is verplicht! Ontbreekt in de context"
 
 #. module: mgmtsystem_o2b_default_data
+#: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_document_page__id
 #: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_action__id
 #: model:ir.model.fields,field_description:mgmtsystem_o2b_default_data.field_mgmtsystem_root_cause_analysis__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: mgmtsystem_o2b_default_data
 #: model:ir.model,name:mgmtsystem_o2b_default_data.model_mgmtsystem_root_cause_analysis
@@ -133,11 +162,13 @@ msgstr "Oorzaakanalyse"
 #. module: mgmtsystem_o2b_default_data
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_action_form_default_data
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_mgmtsystem_root_cause_analysis_form_default_data
+#: model_terms:ir.ui.view,arch_db:mgmtsystem_o2b_default_data.view_wiki_form
 msgid "Save"
 msgstr "Opslaan"
 
 #. module: mgmtsystem_o2b_default_data
 #. odoo-python
+#: code:addons/mgmtsystem_o2b_default_data/models/document_page.py:0
 #: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_action.py:0
 #: code:addons/mgmtsystem_o2b_default_data/models/mgmtsystem_root_cause_analysis.py:0
 msgid "There is already a default linked"

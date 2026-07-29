@@ -74,10 +74,9 @@
                     <hr/>
                     <label for="nen_observations"/>
                     <field name="nen_observations" nolabel="1" colspan="2"/>
-                    <hr/>
-                    <group>
+                    <group string="Judgement Assessor">
                         <group>
-                            <field name="nen_judgement_assessor" nolabel="1" widget="percentage" class="oe_inline" />
+                            <field name="nen_judgement_assessor" widget="percentage"/>
                         </group>
                         <group>
                             <field name="nen_judgement_assessor_notes"/>
