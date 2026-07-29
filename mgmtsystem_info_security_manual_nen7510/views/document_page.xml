@@ -63,26 +63,27 @@
                             />
                         </group>
                     </group>
-                    <group>
-                        <label for="internal_reference"/>
-                        <field name="internal_reference" nolabel="1" colspan="2"/>
-                        <label for="external_reference"/>
-                        <field name="external_reference" nolabel="1" colspan="2"/>
-                    </group>
-                    <group string="Assessor">
-                        <label for="nen_sources"/>
-                        <field name="nen_sources" nolabel="1" colspan="2"/>
-                        <label for="nen_observations"/>
-                        <field name="nen_observations" nolabel="1" colspan="2"/>
-                    </group>
+                    <label for="internal_reference"/>
+                    <field name="internal_reference" nolabel="1" colspan="2"/>
+                    <hr/>
+                    <label for="external_reference"/>
+                    <field name="external_reference" nolabel="1" colspan="2"/>
+                    <hr/>
+                    <label for="nen_sources"/>
+                    <field name="nen_sources" nolabel="1" colspan="2"/>
+                    <hr/>
+                    <label for="nen_observations"/>
+                    <field name="nen_observations" nolabel="1" colspan="2"/>
+                    <hr/>
                     <group>
                         <group>
-                            <label for="nen_judgement_assessor"/>
                             <field name="nen_judgement_assessor" nolabel="1" widget="percentage" class="oe_inline" />
                         </group>
-                        <label for="nen_judgement_assessor_notes"/>
-                        <field name="nen_judgement_assessor_notes" nolabel="1" colspan="2"/>
+                        <group>
+                            <field name="nen_judgement_assessor_notes"/>
+                        </group>
                     </group>
+
                 </page>
                 <page name="nen_actions" string="Actions">
                     <group>

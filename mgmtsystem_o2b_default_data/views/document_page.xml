@@ -5,8 +5,7 @@
         <field name="model">document.page</field>
         <field name="inherit_id" ref="mgmtsystem_info_security_manual_nen7510.view_wiki_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='external_reference']" position="replace">
-                <label for="external_reference"/>
+            <xpath expr="//label[@for='external_reference']" position="after">
                 <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_external_reference" nolabel="1" class="oe_inline"
@@ -18,8 +17,7 @@
                         context="{'field_name': 'external_reference', 'default_data_field': 'default_external_reference'}"
                         help="Add the value as new default data" type="object" icon="fa-save"/>
             </xpath>
-            <xpath expr="//field[@name='internal_reference']" position="replace">
-                <label for="internal_reference"/>
+            <xpath expr="//label[@for=='internal_reference']" position="after">
                 <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_internal_reference" nolabel="1" class="oe_inline"
@@ -31,8 +29,7 @@
                         context="{'field_name': 'internal_reference', 'default_data_field': 'default_internal_reference'}"
                         help="Add the value as new default data" type="object" icon="fa-save"/>
             </xpath>
-            <xpath expr="//field[@name='nen_sources']" position="replace">
-                <label for="nen_sources"/>
+            <xpath expr="//label[@for='nen_sources']" position="after">
                 <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_nen_sources" nolabel="1" class="oe_inline"
@@ -44,8 +41,7 @@
                         context="{'field_name': 'nen_sources', 'default_data_field': 'default_nen_sources'}"
                         help="Add the value as new default data" type="object" icon="fa-save"/>
             </xpath>
-            <xpath expr="//field[@name='nen_observations']" position="replace">
-                <label for="nen_observations"/>
+            <xpath expr="//label[@for='nen_observations']" position="after">
                 <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_nen_observations" nolabel="1" class="oe_inline"
