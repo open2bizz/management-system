@@ -32,6 +32,9 @@ class DocumentPage(models.Model):
 
     default_nen_sources = fields.Many2many(
         comodel_name='default.data',
+        relation='document_page_default_nen_sources_rel',
+        column1='document_page_id',
+        column2='default_data_id',
         string='Default NEN Sources',
         domain="[('model', '=', 'document.page'), ('field', '=', 'default_nen_sources')]"
     )
@@ -42,6 +45,9 @@ class DocumentPage(models.Model):
 
     default_nen_observations = fields.Many2many(
         comodel_name='default.data',
+        relation='document_page_default_nen_observations_rel',
+        column1='document_page_id',
+        column2='default_data_id',
         string='Default NEN Observations',
         domain="[('model', '=', 'document.page'), ('field', '=', 'default_nen_observations')]"
     )
