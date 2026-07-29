@@ -17,7 +17,7 @@
                         context="{'field_name': 'external_reference', 'default_data_field': 'default_external_reference'}"
                         help="Add the value as new default data" type="object" icon="fa-save"/>
             </xpath>
-            <xpath expr="//label[@for=='internal_reference']" position="after">
+            <xpath expr="//label[@for='internal_reference']" position="after">
                 <br></br>
                 <strong>Use Template:</strong>
                 <field name="default_internal_reference" nolabel="1" class="oe_inline"
