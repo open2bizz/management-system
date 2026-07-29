@@ -31,7 +31,7 @@ class DocumentPage(models.Model):
         self.with_context(field_name='default_internal_reference').onchange_default_data()
 
     default_nen_sources = fields.Many2many(
-        comodel_name='nen.source',
+        comodel_name='default.data',
         string='Default NEN Sources',
         domain="[('model', '=', 'document.page'), ('field', '=', 'default_nen_sources')]"
     )
@@ -41,7 +41,7 @@ class DocumentPage(models.Model):
         self.with_context(field_name='default_nen_sources').onchange_default_data()
 
     default_nen_observations = fields.Many2many(
-        comodel_name='nen.observation',
+        comodel_name='default.data',
         string='Default NEN Observations',
         domain="[('model', '=', 'document.page'), ('field', '=', 'default_nen_observations')]"
     )
