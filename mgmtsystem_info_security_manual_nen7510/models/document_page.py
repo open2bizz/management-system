@@ -1,6 +1,6 @@
 #    Copyright (C) 2025 Open2bizz BV www.open2bizz.nl
 
-from odoo import fields, models, api, _
+from odoo import fields, models, exceptions, api, _
 from markupsafe import Markup
 from odoo.tools import html_escape
 import re

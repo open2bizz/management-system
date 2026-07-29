@@ -15,6 +15,7 @@
         'mgmtsystem_info_security_manual_nen7510',
     ],
     'data': [
+        'views/document_page.xml',
         'views/mgmtsystem_action_views.xml',
         'views/mgmtsystem_root_cause_analysis_views.xml',
     ],

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="view_wiki_form">
+        <field name="name">document.page.form</field>
+        <field name="model">document.page</field>
+        <field name="inherit_id" ref="mgmtsystem_info_security_manual_nen7510.view_wiki_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='external_reference']" position="replace">
+                <label for="external_reference"/>
+                <br></br>
+                <strong>Use Template:</strong>
+                <field name="default_external_reference" nolabel="1" class="oe_inline"
+                       options="{'no_create': True}"/>
+                <button name="extend_default_data_field"
+                        context="{'field_name': 'external_reference'}"
+                        string="Extend" type="object" class="oe_inline" icon="fa-plus-square"/>
+                <button name="action_create_default_data" class="oe_inline" string="Save"
+                        context="{'field_name': 'external_reference', 'default_data_field': 'default_external_reference'}"
+                        help="Add the value as new default data" type="object" icon="fa-save"/>
+            </xpath>
+            <xpath expr="//field[@name='internal_reference']" position="replace">
+                <label for="internal_reference"/>
+                <br></br>
+                <strong>Use Template:</strong>
+                <field name="default_internal_reference" nolabel="1" class="oe_inline"
+                       options="{'no_create': True}"/>
+                <button name="extend_default_data_field"
+                        context="{'field_name': 'internal_reference'}"
+                        string="Extend" type="object" class="oe_inline" icon="fa-plus-square"/>
+                <button name="action_create_default_data" class="oe_inline" string="Save"
+                        context="{'field_name': 'internal_reference', 'default_data_field': 'default_internal_reference'}"
+                        help="Add the value as new default data" type="object" icon="fa-save"/>
+            </xpath>
+            <xpath expr="//field[@name='nen_sources']" position="replace">
+                <label for="nen_sources"/>
+                <br></br>
+                <strong>Use Template:</strong>
+                <field name="default_nen_sources" nolabel="1" class="oe_inline"
+                       options="{'no_create': True}"/>
+                <button name="extend_default_data_field"
+                        context="{'field_name': 'nen_sources'}"
+                        string="Extend" type="object" class="oe_inline" icon="fa-plus-square"/>
+                <button name="action_create_default_data" class="oe_inline" string="Save"
+                        context="{'field_name': 'nen_sources', 'default_data_field': 'default_nen_sources'}"
+                        help="Add the value as new default data" type="object" icon="fa-save"/>
+            </xpath>
+            <xpath expr="//field[@name='nen_observations']" position="replace">
+                <label for="nen_observations"/>
+                <br></br>
+                <strong>Use Template:</strong>
+                <field name="default_nen_observations" nolabel="1" class="oe_inline"
+                       options="{'no_create': True}"/>
+                <button name="extend_default_data_field"
+                        context="{'field_name': 'nen_observations'}"
+                        string="Extend" type="object" class="oe_inline" icon="fa-plus-square"/>
+                <button name="action_create_default_data" class="oe_inline" string="Save"
+                        context="{'field_name': 'nen_observations', 'default_data_field': 'default_nen_observations'}"
+                        help="Add the value as new default data" type="object" icon="fa-save"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

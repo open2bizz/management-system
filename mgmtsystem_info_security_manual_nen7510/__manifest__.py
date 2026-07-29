@@ -26,6 +26,7 @@
         "views/document_page.xml",
         "views/document_page_theme.xml",
         "views/document_page_chapter.xml",
+        "views/mgmtsystem_nonconformity.xml",
         "views/mgmtsystem_risk_canvas.xml",
         "views/mgmtsystem_root_cause_analysis.xml",
         "views/mgmtsystem_action.xml",
