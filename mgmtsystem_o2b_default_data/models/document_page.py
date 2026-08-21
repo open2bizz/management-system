@@ -13,7 +13,7 @@ class DocumentPage(models.Model):
     default_external_reference = fields.Many2one(
         comodel_name='default.data',
         string='Default External Reference',
-        domain="[('model', '=', 'document.page'), ('field', '=', 'default_external_reference')]"
+        domain="[('model', '=', 'document.page'), ('field', '=', 'external_reference')]"
     )
 
     @api.onchange('default_external_reference')
@@ -23,7 +23,7 @@ class DocumentPage(models.Model):
     default_internal_reference = fields.Many2one(
         comodel_name='default.data',
         string='Default Internal Reference',
-        domain="[('model', '=', 'document.page'), ('field', '=', 'default_internal_reference')]"
+        domain="[('model', '=', 'document.page'), ('field', '=', 'internal_reference')]"
     )
 
     @api.onchange('default_internal_reference')
@@ -33,7 +33,7 @@ class DocumentPage(models.Model):
     default_nen_sources = fields.Many2one(
         comodel_name='default.data',
         string='Default NEN Sources',
-        domain="[('model', '=', 'document.page'), ('field', '=', 'default_nen_sources')]"
+        domain="[('model', '=', 'document.page'), ('field', '=', 'nen_sources')]"
     )
 
     @api.onchange('default_nen_sources')
@@ -43,7 +43,7 @@ class DocumentPage(models.Model):
     default_nen_observations = fields.Many2one(
         comodel_name='default.data',
         string='Default NEN Observations',
-        domain="[('model', '=', 'document.page'), ('field', '=', 'default_nen_observations')]"
+        domain="[('model', '=', 'document.page'), ('field', '=', 'nen_observations')]"
     )
 
     @api.onchange('default_nen_observations')
