@@ -101,7 +101,7 @@ class MgmtsystemRiskCanvas(models.Model):
         return {
             'name': 'Risks (Canvas)',
             'type': 'ir.actions.act_window',
-            'view_mode': 'list,form',
+            'view_mode': 'tree,form',
             'res_model':'mgmtsystem.hazard',
             'target': 'current',
             'views': [(False, 'tree'),(False, 'form')]
