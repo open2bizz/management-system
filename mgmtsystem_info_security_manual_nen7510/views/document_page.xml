@@ -65,22 +65,19 @@
                     </group>
                     <label for="internal_reference"/>
                     <field name="internal_reference" nolabel="1" colspan="2"/>
-                    <hr/>
-                    <label for="external_reference"/>
-                    <field name="external_reference" nolabel="1" colspan="2"/>
-                    <hr/>
-                    <label for="nen_sources"/>
-                    <field name="nen_sources" nolabel="1" colspan="2"/>
-                    <hr/>
+<!--                    <hr/>-->
+<!--                    <label for="external_reference"/>-->
+<!--                    <field name="external_reference" nolabel="1" colspan="2"/>-->
+<!--                    <hr/>-->
+<!--                    <label for="nen_sources"/>-->
+<!--                    <field name="nen_sources" nolabel="1" colspan="2"/>-->
+<!--                    <hr/>-->
                     <label for="nen_observations"/>
                     <field name="nen_observations" nolabel="1" colspan="2"/>
                     <group string="Judgement Assessor">
-                        <group>
-                            <field name="nen_judgement_assessor" widget="percentage"/>
-                        </group>
-                        <group>
-                            <field name="nen_judgement_assessor_notes"/>
-                        </group>
+                        <field name="nen_judgement_assessor" widget="percentage"/>
+                        <label for="nen_judgement_assessor_notes"/>
+                        <field name="nen_judgement_assessor_notes" nolabel="1"/>
                     </group>
 
                 </page>
